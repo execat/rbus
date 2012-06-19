@@ -1,0 +1,14 @@
+defaults: &defaults
+  adapter: postgres
+  username: svs
+
+development:
+  database: rbus_dev
+  <<: *defaults
+
+test:
+  database: rbus_test
+  <<: *defaults
+production:
+  database: db/rbus_production.db
+  <<: *defaults

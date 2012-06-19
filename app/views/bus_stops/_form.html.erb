@@ -1,0 +1,17 @@
+<%= form_for(@bus_stop) do |f| %>
+  <% if @bus_stop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bus_stop.errors.count, "error") %> prohibited this bus_stop from being saved:</h2>
+
+      <ul>
+      <% @bus_stop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

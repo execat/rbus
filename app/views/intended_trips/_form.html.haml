@@ -1,0 +1,10 @@
+= form_for @intended_trip do |f|
+  -if @intended_trip.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@intended_trip.errors.count, "error")} prohibited this intended_trip from being saved:"
+      %ul
+        - @intended_trip.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'
