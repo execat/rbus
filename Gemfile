@@ -13,21 +13,6 @@ gem 'tzinfo',         '~> 0.3.32'
 gem 'dm-rails',               '~> 1.2.1'
 gem 'dm-postgres-adapter', DM_VERSION
 
-# You can use any of the other available database adapters.
-# This is only a small excerpt of the list of all available adapters
-# Have a look at
-#
-#  http://wiki.github.com/datamapper/dm-core/adapters
-#  http://wiki.github.com/datamapper/dm-core/community-plugins
-#
-# for a rather complete list of available datamapper adapters and plugins
-
-# gem 'dm-sqlite-adapter',    DM_VERSION
-# gem 'dm-mysql-adapter',     DM_VERSION
-# gem 'dm-postgres-adapter',  DM_VERSION
-# gem 'dm-oracle-adapter',    DM_VERSION
-# gem 'dm-sqlserver-adapter', DM_VERSION
-
 gem 'dm-migrations',   DM_VERSION
 gem 'dm-types',        DM_VERSION
 gem 'dm-validations',  DM_VERSION
@@ -37,7 +22,7 @@ gem 'dm-aggregates',   DM_VERSION
 gem 'dm-timestamps',   DM_VERSION
 gem 'dm-observer',     DM_VERSION
 gem 'dm-devise'
-gem 'dm-geokit'
+
 
 gem 'haml-rails'
 
@@ -50,6 +35,8 @@ group :assets do
 end
 
 gem 'jquery-rails', '~> 2.0.1'
+gem 'hpricot'
+gem 'ruby_parser'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.1'
@@ -61,7 +48,7 @@ gem 'jquery-rails', '~> 2.0.1'
 # gem 'capistrano', '~> 2.11.2'
 
 # To use debugger
-# gem 'ruby-debug19', '~> 0.11.6', :require => 'ruby-debug'
+gem 'debugger'
 
 group :test, :development do
   # Pretty printed test output
@@ -70,4 +57,5 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'dm-rspec'
   gem 'factory_girl_rails'
+  gem 'capybara'
 end
