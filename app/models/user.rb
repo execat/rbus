@@ -46,6 +46,11 @@ class User
   # property :invitation_token, String, :length => 255
 
   property :id, Serial
+  property :role, String
 
+  # Public: returns true if user is an admin
+  def admin?
+    role == "admin"
+  end
 
 end

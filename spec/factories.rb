@@ -7,11 +7,21 @@ FactoryGirl.define do
     lat   0
     lng   0
     name  { generate(:bus_stop_name) }
+
+    factory :from_stop do
+    end
+
+    factory :to_stop do
+    end
   end
 
   factory :user do
     email     { generate :email }
     password "s3cr3t"
+
+    factory :admin_user do
+      role "admin"
+    end
   end
 
   factory :intended_trip do
