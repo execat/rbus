@@ -10,7 +10,7 @@
     %tr
       %td= link_to 'Show', intended_trip
       %td= link_to 'Edit', edit_intended_trip_path(intended_trip)
-      %td= link_to 'Destroy', intended_trip, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'Destroy', intended_trip, :data => {:confirm => 'Are you sure?'}, :method => :delete
 
 %br
 

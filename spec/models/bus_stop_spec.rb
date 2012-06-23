@@ -40,6 +40,7 @@ describe BusStop do
 
   describe "nearby bus stops" do
     before :all do
+      IntendedTrip.all.destroy!
       BusStop.all.destroy!
       @s1 = FactoryGirl.create(:bus_stop, :lat => 0.0, :lng => 0.0)
       @s2 = FactoryGirl.create(:bus_stop, :lat => 0.008, :lng => 0.0) # distance < 1km

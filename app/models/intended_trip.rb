@@ -1,7 +1,6 @@
 class IntendedTrip
 
   include DataMapper::Resource
-
   property :id, Serial
 
   property :on, Enum["weekdays", "weekdays and saturday", "all days"], :required => true
@@ -10,7 +9,8 @@ class IntendedTrip
   belongs_to :to_stop, :model => BusStop
   belongs_to :user
 
-  
+  # accepts_nested_attributes_for :user
+
   # Public: finds all the trips starting and ending within a particular radius of this trip
   # start_radius -> an Integer, specifying the maximum distance from the start point to search within. Pass nil to ignore
   # end_radius   -> an Integer, specifying the maximum distance from the end point to search within. Pass nil or omit this parameter to ignore
@@ -36,9 +36,8 @@ class IntendedTrip
                                 LEFT JOIN bus_stops bs2 on it.to_stop_id = bs2.id) AS trip_distances 
       ORDER BY fdist + tdist LIMIT #{params[:limit]} OFFSET #{params[:offset]}; 
       }
-    sorted_trips = repository.adapter.query(sql)
+    sorted_trips = repository.adapter.select(sql)
     sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact
   end
   
-
 end

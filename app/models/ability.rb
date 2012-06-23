@@ -8,6 +8,7 @@ class Ability
       else
         can :manage, :users, :id => user.id
         can :manage, :intended_trips, :user_id => user.id
+        can :read, :intended_trips
       end
     else
       can :read, :intended_trips

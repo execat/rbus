@@ -22,7 +22,7 @@ gem 'dm-aggregates',   DM_VERSION
 gem 'dm-timestamps',   DM_VERSION
 gem 'dm-observer',     DM_VERSION
 gem 'dm-devise'
-
+gem 'dm-accepts_nested_attributes_for'
 gem 'cancan', :git => "https://github.com/ryanb/cancan.git", :branch => "2.0"
 
 

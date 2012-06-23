@@ -64,7 +64,7 @@ describe Ability do
         @ability.should_not be_able_to :manage, @other_trip
       end
       it "can read other user's trips" do
-        @ability.should_not be_able_to :read, @other_trip
+        @ability.should be_able_to :read, @other_trip
       end        
     end
 

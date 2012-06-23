@@ -40,16 +40,19 @@ class IntendedTripsController < ApplicationController
   # POST /intended_trips
   # POST /intended_trips.json
   def create
-    @intended_trip = IntendedTrip.new(params[:intended_trip])
-
-    respond_to do |format|
-      if @intended_trip.save
-        format.html { redirect_to @intended_trip, notice: 'Intended trip was successfully created.' }
-        format.json { render json: @intended_trip, status: :created, location: @intended_trip }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @intended_trip.errors, status: :unprocessable_entity }
+    @intended_trip = IntendedTripCreator.new(params[:intended_trip]).intended_trip
+    if (current_ability.can?(:manage, @intended_trip)) || !current_user
+      respond_to do |format|
+        if @intended_trip.save
+          format.html { redirect_to @intended_trip, notice: 'Intended trip was successfully created.' }
+          format.json { render json: @intended_trip, status: :created, location: @intended_trip }
+        else
+          format.html { render action: "new" }
+          format.json { render json: @intended_trip.errors, status: :unprocessable_entity }
+        end
       end
+    else
+      redirect_to intended_trips_path, error: "You do not have sufficient privileges to do this"
     end
   end
 

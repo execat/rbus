@@ -2,8 +2,8 @@ require 'spec_helper'
 
 feature "the first trip" do
   background do
-    @bus_stop1 = Factory.create(:bus_stop)
-    @bus_stop2 = Factory.create(:bus_stop)
+    @bus_stop1 = FactoryGirl.create(:bus_stop)
+    @bus_stop2 = FactoryGirl.create(:bus_stop)
   end
   
   scenario "creating an intended trip without having a user account" do

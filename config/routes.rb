@@ -1,7 +1,9 @@
 Rbus::Application.routes.draw do
-  resources :intended_trips
 
+  resources :intended_trips
   resources :bus_stops
+
+  devise_for :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
