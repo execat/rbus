@@ -23,8 +23,13 @@ gem 'dm-timestamps',   DM_VERSION
 gem 'dm-observer',     DM_VERSION
 gem 'dm-devise'
 
+gem 'cancan', :git => "https://github.com/ryanb/cancan.git", :branch => "2.0"
+
+
 
 gem 'haml-rails'
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -55,7 +60,7 @@ group :test, :development do
   gem 'turn', '~> 0.9.4', :require => false
   gem 'rspec'
   gem 'rspec-rails'
-  gem 'dm-rspec'
+  gem 'dm-rspec2', '~> 0.2.3'
   gem 'factory_girl_rails'
   gem 'capybara'
 end

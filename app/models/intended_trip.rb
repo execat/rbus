@@ -4,7 +4,7 @@ class IntendedTrip
 
   property :id, Serial
 
-  property :on, Enum[:weekdays, :weekdays_and_saturday, :all_days], :required => true
+  property :on, Enum["weekdays", "weekdays and saturday", "all days"], :required => true
 
   belongs_to :from_stop, :model => BusStop
   belongs_to :to_stop, :model => BusStop

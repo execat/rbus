@@ -1,15 +1,16 @@
 require 'spec_helper'
 
 describe BusStop do
-  it { should have_property(:lat) }
-  it { should have_property(:lng) }
-  it { should have_property(:name) }
+  it { should have_property(:lat).of_type(DataMapper::Property::Decimal) }
+  it { should have_property(:lng).of_type(DataMapper::Property::Decimal) }
+  it { should have_property(:name).of_type(DataMapper::Property::String) }
   
   it { should validate_presence_of(:lat) }
   it { should validate_presence_of(:lng) }
   it { should validate_presence_of(:name) }
 
-  it { should have_many(:intended_trips) }
+  it { should have_many(:trip_starts) }
+  it { should have_many(:trip_ends) }
 
   describe "latitude and lng" do
     before :all do

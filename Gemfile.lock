@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/ryanb/cancan.git
+  revision: 76d465ae13cabb1e803d61ea3972189290163fd0
+  branch: 2.0
+  specs:
+    cancan (2.0.0.alpha)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -90,8 +97,9 @@ GEM
       dm-active_model (~> 1.2.0)
       dm-core (~> 1.2.0)
       railties (~> 3.0)
-    dm-rspec (0.2.1)
+    dm-rspec2 (0.2.3)
       dm-core
+      dm-types
       dm-validations
     dm-serializer (1.2.1)
       dm-core (~> 1.2.0)
@@ -118,10 +126,10 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    factory_girl (3.4.1)
+    factory_girl (3.5.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (3.4.0)
-      factory_girl (~> 3.4.0)
+    factory_girl_rails (3.5.0)
+      factory_girl (~> 3.5.0)
       railties (>= 3.0.0)
     fastercsv (1.5.5)
     ffi (1.0.11)
@@ -146,10 +154,10 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.18)
+    mime-types (1.19)
     multi_json (1.0.4)
     nokogiri (1.5.4)
-    orm_adapter (0.1.0)
+    orm_adapter (0.3.0)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -225,6 +233,7 @@ DEPENDENCIES
   actionpack (~> 3.2.6)
   activeresource (~> 3.2.6)
   activesupport (~> 3.2.6)
+  cancan!
   capybara
   coffee-rails (~> 3.2.2)
   debugger
@@ -235,7 +244,7 @@ DEPENDENCIES
   dm-observer (~> 1.2.0)
   dm-postgres-adapter (~> 1.2.0)
   dm-rails (~> 1.2.1)
-  dm-rspec
+  dm-rspec2 (~> 0.2.3)
   dm-timestamps (~> 1.2.0)
   dm-transactions (~> 1.2.0)
   dm-types (~> 1.2.0)

@@ -7,6 +7,7 @@ describe IntendedTrip do
   it {should belong_to(:from_stop) }
 
   it { should validate_presence_of(:on)}
+  it { should validate_inclusion_of(:on).within(["weekdays", "weekdays and saturday", "all days"])}
   it {should belong_to(:user)}
 
   describe "nearby trips" do
