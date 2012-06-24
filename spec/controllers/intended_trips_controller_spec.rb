@@ -19,6 +19,7 @@ describe IntendedTripsController do
       it "should assign @trip properly" do
         post :create, @valid_user_params
         assigns[:intended_trip].should  be_instance_of(IntendedTrip).with(:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => "weekdays")
+        @controller.current_user.email.should == @email
         response.should redirect_to assigns(:intended_trip)
       end
       it "should add a new trip" do

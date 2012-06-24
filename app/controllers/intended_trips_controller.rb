@@ -44,6 +44,7 @@ class IntendedTripsController < ApplicationController
     if (current_ability.can?(:manage, @intended_trip)) || !current_user
       respond_to do |format|
         if @intended_trip.save
+          sign_in(@intended_trip.user) unless current_user   # if we've just created a new user, sign him/her in
           format.html { redirect_to @intended_trip, notice: 'Intended trip was successfully created.' }
           format.json { render json: @intended_trip, status: :created, location: @intended_trip }
         else
