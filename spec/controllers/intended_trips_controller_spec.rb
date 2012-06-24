@@ -2,13 +2,15 @@ require 'debugger'
 require 'spec_helper'
 
 describe IntendedTripsController do
-  context "new trip by brand new user" do
-    before :each do
+  before :each do
       @request.env["devise.mapping"] = Devise.mappings[:admin]
       @bs1 = FactoryGirl.create(:bus_stop)
       @bs2 = FactoryGirl.create(:bus_stop)
-    end
+      @u = FactoryGirl.create(:user)
+      @u2 = FactoryGirl.create(:user)
+  end
 
+  context "new trip by brand new user" do
     describe "user with valid email" do
       before :each do
         @email = FactoryGirl.generate(:email)
@@ -27,10 +29,6 @@ describe IntendedTripsController do
     end
 
     describe "user with invalid email" do
-      before :all do
-        IntendedTrip.all.destroy!
-        User.all.destroy!
-      end
       it "should not create new trip and account" do
         post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user => {:email => "abc"}}}
         assigns(:intended_trip).user.errors.keys.should == [:email]
@@ -39,15 +37,7 @@ describe IntendedTripsController do
     end      
   end
 
-  context "new trip by unloggedin user" do
-    before :each do
-      @bs1 = FactoryGirl.create(:bus_stop)
-      @bs2 = FactoryGirl.create(:bus_stop)
-      @request.env["devise.mapping"] = Devise.mappings[:user]
-      @u = FactoryGirl.create(:user)
-      @u2 = FactoryGirl.create(:user)
-    end
-    
+  context "new trip by unloggedin user with existing email" do
     it "should not create new trip" do
       expect {
         post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user => {:email => @u.email}}}
@@ -57,11 +47,6 @@ describe IntendedTripsController do
 
   context "new trip by logged in user" do
     before :each do
-      @bs1 = FactoryGirl.create(:bus_stop)
-      @bs2 = FactoryGirl.create(:bus_stop)
-      @request.env["devise.mapping"] = Devise.mappings[:user]
-      @u = FactoryGirl.create(:user)
-      @u2 = FactoryGirl.create(:user)
       sign_in @u
     end
 
