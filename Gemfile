@@ -25,7 +25,7 @@ gem 'dm-devise'
 gem 'dm-accepts_nested_attributes_for'
 gem 'cancan', :git => "https://github.com/ryanb/cancan.git", :branch => "2.0"
 
-
+gem 'formtastic'
 
 gem 'haml-rails'
 
