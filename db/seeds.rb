@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+#require File.join(Rails.root,'spec','factories.rb')
+
+DataMapper.auto_migrate!
+
+10.times do |i|
+  FactoryGirl.create(:bus_stop)
+end
