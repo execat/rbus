@@ -9,8 +9,9 @@
         %a.brand{:href => '/'} 
           rbus.in
       %ul.nav.nav-pills
-        %li
-          %a{:href => '/intended_trips/my'}My Trips
+        - if current_user
+          %li
+            %a{:href => '/intended_trips/my'}My Trips
         %li
           %a{:href => '/faq'}FAQ
         %li

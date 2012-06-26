@@ -1,3 +1,2 @@
 # Rbus
-
 a living, self-correcting public transport system built using a simple platform to advertise commuting intent

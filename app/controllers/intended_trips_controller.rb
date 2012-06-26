@@ -24,7 +24,7 @@ class IntendedTripsController < ApplicationController
   # GET /intended_trips/1.json
   def show
     @intended_trip = IntendedTrip.get(params[:id])
-
+    @intended_trips = @intended_trip.nearest_trips
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @intended_trip }

@@ -6,12 +6,14 @@
         - (@intended_trip.errors.full_messages + @intended_trip.user.errors.full_messages).each do |msg|
           %li= msg
   %label I live at
-  = f.select :from_stop_id, Hash[BusStop.all.map{|b| [b.name, b.id]}], {:prompt => "closest starting stop"}, :class => "chosen", :'data-placeholder' => "closest starting bus stop"
+  = f.select :from_stop_id, Hash[BusStop.all(:order => [:name]).map{|b| [b.name, b.id]}], {:prompt => "closest starting stop"}, :class => "chosen span4", :'data-placeholder' => "closest starting bus stop"
   %br
   %label and work at
-  = f.select :to_stop_id, Hash[BusStop.all.map{|b| [b.name, b.id]}], {:prompt => "closest destination stop"}, :class => "chosen"
+  = f.select :to_stop_id, Hash[BusStop.all(:order => [:name]).map{|b| [b.name, b.id]}], {:prompt => "closest destination stop"}, :class => "chosen span4"
+  %br
   %label on
   = f.select :on, ["weekdays", "weekdays and saturday", "all days"]
+  %br
   - unless current_user
     = f.fields_for :user do |u|
       %label Email
@@ -21,5 +23,5 @@
       %label Confirm Password
       = u.text_field :password_confirmation, :placeholder => "please type your password again"
   %br
-  = f.submit "Create", :class => "btn"
+  = f.submit "Register my Trip", :class => "btn btn-info"
   

@@ -1,19 +1,41 @@
-.row.clearfix{:style => "margin: 1em"}
+.row{:style => "margin-bottom: 20px"}
   .span5#headline
     %h1 Mumbai   
     %h2
       You can't fly to work, but we've got the next best thing.
     %h3
-      Simply leave us your commute details and we will arrange for you a
+      Simply leave us your commute details and we'll arrange for you a
       %span.highlight door-to-door 
       bus with
       %span.highlight guaranteed seating
       ,
       %span.highlight flexible timings
       &amp;
-      %span.highlight your level of luxury
-      %a{:href => "/moreinfo"}
-        more...
-  .span6
-    #new_form
+      %span.highlight your level of luxury.
+    %h3
+      %a{:href => "/faq"} get more info here
+  .span7{:style => "display: table"}
+    #new_form{:style => "display: table-cell; vertical-align: middle;"}
       = render 'intended_trips/form'
+.row
+  %ul.thumbnails
+    %li.span4
+      = image_tag 'gps.png'
+      %h2
+        GPS on every bus
+      Wait for your bus in the comfort of your home or office, and be alerted as it approaches
+    %li.span4
+      = image_tag 'qrcode.png'
+      %h2
+        Book your seat with your mobile
+      Running late? No problem. Just let us know that you'll need a seat on a later bus.
+    %li.span4
+      = image_tag 'bus-icon.png'
+      %h2
+        Enjoy stress free commutes
+      in a modern and safe environment. Save money, save the earth and stay dry!
+
+.row
+  %h1 plans and pricing
+    
+      

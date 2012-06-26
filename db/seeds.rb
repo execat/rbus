@@ -8,7 +8,7 @@
 
 #require File.join(Rails.root,'spec','factories.rb')
 
-DataMapper.auto_migrate!
+DataMapper.migrate!
 
 10.times do |i|
   FactoryGirl.create(:bus_stop)

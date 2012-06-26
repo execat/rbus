@@ -1,0 +1,36 @@
+  #headline
+  %h3
+    %span.highlight.bigger
+      = @intended_trips.count
+    trips nearby
+- if @intended_trips.count > 0
+  %table.table
+    %thead
+      %tr
+        %th
+          From
+        %th
+          To
+        %th
+          On
+        %th{:colspan => "3"}
+          Actions
+    - @intended_trips.each do |intended_trip|
+      %tr
+        %td
+          = intended_trip[:trip].from_stop.name
+        %td
+          = intended_trip[:trip].to_stop.name
+        %td
+          = intended_trip.on
+        %td
+          = intended_trip[:start_distance]
+          ms
+        %td
+          = intended_trip[:end_distance]
+          ms
+        %td= link_to 'Show', intended_trip
+        %td= link_to 'Edit', edit_intended_trip_path(intended_trip)
+        %td= link_to 'Destroy', intended_trip, :data => {:confirm => 'Are you sure?'}, :method => :delete
+  
+  

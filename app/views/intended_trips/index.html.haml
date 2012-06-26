@@ -1,17 +1,12 @@
-%h1 Listing intended_trips
+.row{:style => "vertical-align: bottom"}
+  .span6
+    #headline
+      %h1
+        %span.highlight.bigger
+          = @intended_trips.count
+        commutes registered
+  .span2{:style => "vertical-align: middle"}
+    %h1.btn.btn-success.button
+      = link_to '+', new_intended_trip_path
 
-%table
-  %tr
-    %th
-    %th
-    %th
-
-  - @intended_trips.each do |intended_trip|
-    %tr
-      %td= link_to 'Show', intended_trip
-      %td= link_to 'Edit', edit_intended_trip_path(intended_trip)
-      %td= link_to 'Destroy', intended_trip, :data => {:confirm => 'Are you sure?'}, :method => :delete
-
-%br
-
-= link_to 'New Intended trip', new_intended_trip_path
+= render 'intended_trips/list'

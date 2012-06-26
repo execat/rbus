@@ -88,11 +88,13 @@ describe IntendedTripsController do
     it "should show all trips" do
       get :index
       assigns(:intended_trips).should == [@my_trip, @other_trip]
+      response.should be_ok
     end
 
     it "should show only my trips if requested" do
       get :my
       assigns(:intended_trips).should == [@my_trip]
+      response.should be_ok
     end
   end
 
@@ -106,7 +108,8 @@ describe IntendedTripsController do
 
     it "should show nearest trips" do
       get :show, {:id => @my_trip.id}
-      assigns(:intended_trips).should == [@other_trip]
+      assigns(:intended_trips).should == assigns(:intended_trip).nearest_trips.map(&:stringify_keys)
+      response.should be_ok
     end
   end
 

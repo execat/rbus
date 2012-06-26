@@ -1,6 +1,11 @@
-%p#notice= notice
+%div{:style => "line-height: 1.2em"}
+  %h2
+    %span.bigger.highlight
+      = @intended_trip.from_stop.name
+    to
+    %span.bigger.highlight
+      = @intended_trip.to_stop.name
+  = link_to 'Edit', edit_intended_trip_path(@intended_trip), :class => "btn btn-info"
 
+= render 'intended_trips/nearest_list'
 
-= link_to 'Edit', edit_intended_trip_path(@intended_trip)
-\|
-= link_to 'Back', intended_trips_path
