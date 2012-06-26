@@ -14,7 +14,7 @@ feature "the first trip" do
       choose 'intended_trip_on_weekdays'
       fill_in 'intended_trip_user_email', :with => 'svs@svs.io'
     end
-    click_button('Create Intended trip')
+    click_button('Create')
     page.should have_content("success")
   end
 
