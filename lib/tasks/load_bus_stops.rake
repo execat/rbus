@@ -1,4 +1,3 @@
-require 'debugger'
 namespace :data do
   task :load_bus_stops => :environment do
     y = YAML::load_file(File.join(Rails.root, "db","bus_stops.yml"))
