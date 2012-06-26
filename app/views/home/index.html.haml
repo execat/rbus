@@ -1,1 +1,19 @@
-= render 'intended_trips/form'
+.row.clearfix{:style => "margin: 1em"}
+  .span5#headline
+    %h1 Mumbai   
+    %h2
+      You can't fly to work, but we've got the next best thing.
+    %h3
+      Simply leave us your commute details and we will arrange for you a
+      %span.highlight door-to-door 
+      bus with
+      %span.highlight guaranteed seating
+      ,
+      %span.highlight flexible timings
+      &amp;
+      %span.highlight your level of luxury
+      %a{:href => "/moreinfo"}
+        more...
+  .span6
+    #new_form
+      = render 'intended_trips/form'
