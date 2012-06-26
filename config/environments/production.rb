@@ -66,5 +66,14 @@ Rbus::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   config.action_mailer.default_url_options = { :host => 'rbus.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => 'rbus.in',
+    :user_name            => 'svs@rbus.in',
+    :password             => 's8s4a7m2',
+    :authentication       => 'plain',
+    :enable_starttls_auto => true  }
 
 end
