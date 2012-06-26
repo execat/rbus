@@ -1,6 +1,10 @@
 Rbus::Application.routes.draw do
 
-  resources :intended_trips
+  resources :intended_trips do 
+    collection do
+      get 'my'
+    end
+  end
   resources :bus_stops
 
   devise_for :users

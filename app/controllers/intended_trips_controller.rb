@@ -3,9 +3,19 @@ class IntendedTripsController < ApplicationController
   # GET /intended_trips.json
   def index
     @intended_trips = IntendedTrip.all
-
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render json: @intended_trips }
+    end
+  end
+
+  def my
+    unless current_user
+      redirect_to new_user_session_path  and return
+    end
+    @intended_trips = IntendedTrip.all(:user => current_user)
+    respond_to do |format|
+      format.html { render 'index'}
       format.json { render json: @intended_trips }
     end
   end

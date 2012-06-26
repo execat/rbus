@@ -8,6 +8,7 @@ describe IntendedTripsController do
     @bs2 = FactoryGirl.create(:bus_stop)
     @u = FactoryGirl.create(:user)
     @u2 = FactoryGirl.create(:user)
+    @u.confirm!
   end
 
   context "new trip by brand new user" do
@@ -78,8 +79,10 @@ describe IntendedTripsController do
 
   context "trips index" do
     before :each do
+      IntendedTrip.all.destroy!
       @my_trip = FactoryGirl.create(:intended_trip, :user => @u)
       @other_trip = FactoryGirl.create(:intended_trip, :user => @u2)
+      sign_in @u
     end
 
     it "should show all trips" do
@@ -90,8 +93,23 @@ describe IntendedTripsController do
     it "should show only my trips if requested" do
       get :my
       assigns(:intended_trips).should == [@my_trip]
+    end
   end
-      
+
+  context "trip show" do
+    before :each do
+      IntendedTrip.all.destroy!
+      @my_trip = FactoryGirl.create(:intended_trip, :user => @u)
+      @other_trip = FactoryGirl.create(:intended_trip, :user => @u2)
+      sign_in @u
+    end
+
+    it "should show nearest trips" do
+      get :show, {:id => @my_trip.id}
+      assigns(:intended_trips).should == [@other_trip]
+    end
+  end
+
       
 
 
