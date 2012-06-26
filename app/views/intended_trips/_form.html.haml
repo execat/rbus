@@ -18,8 +18,10 @@
     = f.fields_for :user do |u|
       %label Email
       = u.text_field :email
+      %br
       %label Password
       = u.text_field :password, :placeholder => "please choose a password", :type => "password"
+      %br
       %label Confirm Password
       = u.text_field :password_confirmation, :placeholder => "please type your password again"
   %br
