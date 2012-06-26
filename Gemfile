@@ -54,11 +54,9 @@ gem 'ruby_parser'
 # Deploy with Capistrano
 # gem 'capistrano', '~> 2.11.2'
 
-# To use debugger
-gem 'debugger'
-
 group :test, :development do
   # Pretty printed test output
+  gem 'debugger'
   gem 'turn', '~> 0.9.4', :require => false
   gem 'rspec'
   gem 'rspec-rails'
