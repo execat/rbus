@@ -40,12 +40,22 @@ class IntendedTripsController < ApplicationController
   # POST /intended_trips
   # POST /intended_trips.json
   def create
-    @intended_trip = IntendedTripCreator.new(params[:intended_trip]).intended_trip
+    if !current_user
+      @user = User.first(:email => params[:intended_trip][:user][:email]) if params[:intended_trip][:user] # and this email address does not exist in our database
+      if @user
+        redirect_to new_user_session_path, {alert: "Please give us your password"} and return
+      end
+      @new_user = true
+    else
+      params[:intended_trip][:user_id] ||= current_user.id
+    end
+    @intended_trip = IntendedTrip.new(params[:intended_trip])
     if (current_ability.can?(:manage, @intended_trip)) || !current_user
       respond_to do |format|
         if @intended_trip.save
-          sign_in(@intended_trip.user) unless current_user   # if we've just created a new user, sign him/her in
-          format.html { redirect_to @intended_trip, notice: 'Intended trip was successfully created.' }
+          msg =  'Thanks for registering your commute'
+          msg += "We've just sent you and email. Kindly confirm your email address by clicking on the confirm link in it." if @new_user
+          format.html { redirect_to @intended_trip, notice: msg }
           format.json { render json: @intended_trip, status: :created, location: @intended_trip }
         else
           format.html { render action: "new" }
