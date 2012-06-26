@@ -10,5 +10,4 @@ test:
   database: rbus_test
   <<: *defaults
 production:
-  database: db/rbus_production.db
-  <<: *defaults
+  url: <%= ENV['DATABASE_URL'] %>
