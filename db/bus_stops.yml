@@ -1,0 +1,5226 @@
+---
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1
+  lat: 18.907497
+  lng: 72.818374
+  name: Afghan Church Colaba
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 2
+  lat: 18.910889
+  lng: 72.825288
+  name: Colaba Bus Station Colaba
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 3
+  lat: 18.917259
+  lng: 72.8272
+  name: Sasoon Dock Colaba
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 4
+  lat: 18.919626
+  lng: 72.829454
+  name: Strand Cinema Colaba
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 5
+  lat: 18.922768
+  lng: 72.83177
+  name: Electric House/Colaba Depot Colaba
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 6
+  lat: 18.92632
+  lng: 72.832571
+  name: Dr.S.P.Mukherji Chowk Colaba
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 7
+  lat: 18.933215
+  lng: 72.836076
+  name: Hutatma Chowk Siddharth College Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 8
+  lat: 18.937165
+  lng: 72.834303
+  name: Khadi Bhandar Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 9
+  lat: 18.940579
+  lng: 72.834976
+  name: CST Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 10
+  lat: 18.94629
+  lng: 72.832396
+  name: G.T. Hospital Dhobitalao
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 11
+  lat: 18.947297
+  lng: 72.826822
+  name: Chira Bazar Girgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 12
+  lat: 18.948971
+  lng: 72.825488
+  name: Dabool Church Girgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 13
+  lat: 18.951261
+  lng: 72.823404
+  name: Thakurdwar Girgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 14
+  lat: 18.954539
+  lng: 72.826087
+  name: Kasturba Gandhi Chowk C.P.Tank
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 15
+  lat: 18.953523
+  lng: 72.808726
+  name: Sukh Sagar Opera House
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 16
+  lat: 18.950681
+  lng: 72.805008
+  name: Shital Baug Walkeshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 17
+  lat: 18.949643
+  lng: 72.803606
+  name: White House Walkeshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 18
+  lat: 18.946968
+  lng: 72.800836
+  name: Raj Bhavan Walkeshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 19
+  lat: 18.946277
+  lng: 72.799377
+  name: Teen Batti Walkeshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 20
+  lat: 18.946901
+  lng: 72.799105
+  name: Manav Mandir Walkeshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 21
+  lat: 19.112084
+  lng: 72.935015
+  name: Kannamwar Nagar No 1 Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 22
+  lat: 19.109684
+  lng: 72.931406
+  name: Vikhroli Station Road Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 23
+  lat: 19.111572
+  lng: 72.932472
+  name: R.Tagor Nagar Udyan/Vikhroli Bridge Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 24
+  lat: 19.112795
+  lng: 72.931383
+  name: Tagore Nagar Post Office Vidyavihar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 25
+  lat: 19.12254
+  lng: 72.929206
+  name: Tagore Nagar No.5 Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 26
+  lat: 19.122072
+  lng: 72.92578
+  name: Gandhi Nagar Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 27
+  lat: 19.126484
+  lng: 72.919775
+  name: IIT Market Powai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 28
+  lat: 19.124237
+  lng: 72.917459
+  name: IIT Main Gate Powai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 29
+  lat: 19.12214
+  lng: 72.909196
+  name: Punch Kutir Powai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 30
+  lat: 19.119792
+  lng: 72.892901
+  name: E.S.I.S.Local Office Powai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 31
+  lat: 19.109978
+  lng: 72.889349
+  name: Chandivli Village Chandivli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 32
+  lat: 19.104232
+  lng: 72.888263
+  name: State Bank Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 33
+  lat: 19.102299
+  lng: 72.88726
+  name: Saki Naka Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 34
+  lat: 19.106172
+  lng: 72.88376
+  name: Rationing Shop Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 35
+  lat: 19.106718
+  lng: 72.879489
+  name: Marol Naka Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 36
+  lat: 19.107895
+  lng: 72.875661
+  name: Rationing Office Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 37
+  lat: 19.108363
+  lng: 72.873394
+  name: Marol Pipe Lines Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 38
+  lat: 19.109677
+  lng: 72.869294
+  name: J.B.Nagar Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 39
+  lat: 19.110982
+  lng: 72.866332
+  name: Sangam Cinema Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 40
+  lat: 19.106257
+  lng: 72.856039
+  name: Chakala Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 41
+  lat: 19.116435
+  lng: 72.85325
+  name: Prakash Studio Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 42
+  lat: 19.118072
+  lng: 72.850252
+  name: Agarkar Chowk Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 43
+  lat: 19.122571
+  lng: 72.855196
+  name: Dhobi Ghat Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 44
+  lat: 19.119481
+  lng: 72.859311
+  name: Pump House Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 45
+  lat: 19.120354
+  lng: 72.860559
+  name: Aghadi Nagar Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 46
+  lat: 19.119851
+  lng: 72.862008
+  name: Sher E Punjab Colony Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 47
+  lat: 19.120173
+  lng: 72.865207
+  name: Gurudwar Chowk Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 48
+  lat: 19.120581
+  lng: 72.866459
+  name: Canossa School Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 49
+  lat: 19.123958
+  lng: 72.870663
+  name: Holy Spirit Hospital Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 50
+  lat: 19.127906
+  lng: 72.872527
+  name: Takshila Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 51
+  lat: 19.130478
+  lng: 72.87422
+  name: Model Town Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 52
+  lat: 19.132106
+  lng: 72.875439
+  name: Poonam Nagar Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 53
+  lat: 19.134512
+  lng: 72.875405
+  name: Ashirvad Medical Stores Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 54
+  lat: 19.136061
+  lng: 72.872039
+  name: Green Fields Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 55
+  lat: 19.04619
+  lng: 72.81837
+  name: Father Agnel Ashram Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 56
+  lat: 19.049388
+  lng: 72.819962
+  name: Municipal Garden Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 57
+  lat: 19.051127
+  lng: 72.821347
+  name: Sea Face Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 58
+  lat: 19.053922
+  lng: 72.822339
+  name: Prarthanalaya Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 59
+  lat: 19.055379
+  lng: 72.830979
+  name: St.Peter Church Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 60
+  lat: 19.055836
+  lng: 72.834193
+  name: Bandra Police Station/New Talkies Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 61
+  lat: 19.054207
+  lng: 72.837883
+  name: P.Mohd.Rafi Chowk Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 62
+  lat: 19.055047
+  lng: 72.8401
+  name: Bandra Bus Station West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 63
+  lat: 19.057774
+  lng: 72.838482
+  name: Bandra Talao Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 64
+  lat: 19.06077
+  lng: 72.836577
+  name: Bandra Talkies Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 65
+  lat: 19.06225
+  lng: 72.830399
+  name: Pali Hill Market Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 66
+  lat: 19.065829
+  lng: 72.830263
+  name: L.I.C.Colony Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 67
+  lat: 19.06795
+  lng: 72.830064
+  name: Dr.Ambedkar Road Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 68
+  lat: 19.069233
+  lng: 72.82591
+  name: Petit Girls School Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 69
+  lat: 19.070559
+  lng: 72.827553
+  name: Chuim Village Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 70
+  lat: 19.059406
+  lng: 72.834343
+  name: Moti Mahal Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 71
+  lat: 19.178335
+  lng: 72.95465
+  name: Mulund Sonapur Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 72
+  lat: 19.173126
+  lng: 72.955556
+  name: Mulund Station Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 73
+  lat: 19.174967
+  lng: 72.951132
+  name: Mulund Garden Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 74
+  lat: 19.173512
+  lng: 72.943889
+  name: Johnson And Johnson Co. Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 75
+  lat: 19.168431
+  lng: 72.941018
+  name: Ralli Wolf Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 76
+  lat: 19.151753
+  lng: 72.938599
+  name: Bhandup Police Station Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 77
+  lat: 19.144068
+  lng: 72.93503
+  name: Bhandup Station Road West Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 78
+  lat: 19.135559
+  lng: 72.930097
+  name: Mangatram Petrolpump Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 79
+  lat: 19.127582
+  lng: 72.926194
+  name: Dockyard Colony Kanjurmarg West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 80
+  lat: 19.124018
+  lng: 72.925574
+  name: Huma Talkies Kanjurmarg West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 81
+  lat: 19.11072
+  lng: 72.880089
+  name: Marol Village Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 82
+  lat: 19.122447
+  lng: 72.883599
+  name: Goregaon Check Naka No 2 Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 83
+  lat: 19.13255
+  lng: 72.88414
+  name: Maroshi Naka /Picnic Point Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 84
+  lat: 19.13929
+  lng: 72.880344
+  name: Modern Bakery/Reservior Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 85
+  lat: 19.145545
+  lng: 72.878057
+  name: Aarey Hospital/Municipal School Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 86
+  lat: 19.151524
+  lng: 72.876677
+  name: Unit No 6/Aareymarket Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 87
+  lat: 19.157883
+  lng: 72.874633
+  name: Unit No 2 and 3 Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 88
+  lat: 19.161371
+  lng: 72.871083
+  name: Fire Brigade/Agri.Indu Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 89
+  lat: 19.162326
+  lng: 72.861999
+  name: Goregaon Check Naka No 1 Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 90
+  lat: 19.165697
+  lng: 72.862851
+  name: Virwani Estate/Sarvodaya Nagar Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 91
+  lat: 19.167894
+  lng: 72.863544
+  name: General A.K.Vaidya Marg Naka Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 92
+  lat: 19.168097
+  lng: 72.865104
+  name: Mhada Colony (Dindoshi) Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 93
+  lat: 19.180202
+  lng: 72.864358
+  name: Kurar Village Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 94
+  lat: 19.181647
+  lng: 72.863505
+  name: Pushpa Park Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 95
+  lat: 19.192163
+  lng: 72.86647
+  name: Bandongri Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 96
+  lat: 19.204816
+  lng: 72.872589
+  name: B.H.A.D.Colony Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 97
+  lat: 19.208308
+  lng: 72.872297
+  name: Dattani Park Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 98
+  lat: 19.21852
+  lng: 72.871552
+  name: Magathane Tel.Exchange Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 99
+  lat: 19.217584
+  lng: 72.871144
+  name: Magathane Depot Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 100
+  lat: 19.222359
+  lng: 72.8709
+  name: Devipada Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 101
+  lat: 18.967613
+  lng: 72.824632
+  name: Mumbai Central Depot Mumbai Central East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 102
+  lat: 18.967232
+  lng: 72.826817
+  name: Alexandra Cinema Nagpada
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 103
+  lat: 18.969905
+  lng: 72.829912
+  name: Christ Church School Nagpada
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 104
+  lat: 18.971831
+  lng: 72.832611
+  name: A.H.Ansari Chowk Nagpada
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 105
+  lat: 18.978656
+  lng: 72.832176
+  name: Byculla Station West Byculla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 106
+  lat: 18.982047
+  lng: 72.831792
+  name: S Bridge/Mandlik Chowk Byculla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 107
+  lat: 18.995308
+  lng: 72.83168
+  name: Bawla Masjid Arthur Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 108
+  lat: 18.99662
+  lng: 72.831448
+  name: Lower Parel Station Lower Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 109
+  lat: 18.999742
+  lng: 72.837876
+  name: Lower Parel Workshop Lower Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 110
+  lat: 19.008485
+  lng: 72.833757
+  name: Sant Rohidas Chowk Elphistone Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 111
+  lat: 19.015073
+  lng: 72.837077
+  name: Dadar Police Station Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 112
+  lat: 19.017006
+  lng: 72.838406
+  name: Shardashram Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 113
+  lat: 19.018558
+  lng: 72.840526
+  name: Kabutarkhana Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 114
+  lat: 19.025238
+  lng: 72.840733
+  name: Ram Ganesh Gadkari Chowk Shivaji Park
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 115
+  lat: 19.030453
+  lng: 72.841448
+  name: Citylight Cinema Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 116
+  lat: 19.035596
+  lng: 72.842582
+  name: Shitaladevi Temple Mahim
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 117
+  lat: 19.045551
+  lng: 72.838996
+  name: Mahim
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 118
+  lat: 19.053082
+  lng: 72.845393
+  name: Kala Nagar Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 119
+  lat: 19.054101
+  lng: 72.848767
+  name: R.B.I.Bank Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 120
+  lat: 19.060694
+  lng: 72.858009
+  name: Tata Colony Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 121
+  lat: 19.064888
+  lng: 72.8609
+  name: Bharat Nagar Bandra Kurlacomplex
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 122
+  lat: 19.067789
+  lng: 72.864758
+  name: Diamond Market Bandra Kurla Complex
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 123
+  lat: 19.07148
+  lng: 72.87055
+  name: Kurla Telephone Stores Bandra Kurla Complex
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 124
+  lat: 19.075789
+  lng: 72.872887
+  name: Kapadia Nagar Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 125
+  lat: 19.075363
+  lng: 72.876928
+  name: Kurla Depot Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 126
+  lat: 19.073533
+  lng: 72.879749
+  name: Buddha Nagar Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 127
+  lat: 19.070912
+  lng: 72.879219
+  name: Mehtab Lane Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 128
+  lat: 19.087244
+  lng: 72.919179
+  name: Ghatkopar Bus Station Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 129
+  lat: 19.088488
+  lng: 72.918003
+  name: Laxmi Nagar Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 130
+  lat: 19.091764
+  lng: 72.911923
+  name: Nityanand Nagar Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 131
+  lat: 19.091171
+  lng: 72.910043
+  name: Gopal Bhuvan Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 132
+  lat: 19.088349
+  lng: 72.908085
+  name: Ghatkopar Station West Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 133
+  lat: 19.090262
+  lng: 72.908261
+  name: Sarvodaya Hospital Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 134
+  lat: 19.088348
+  lng: 72.903063
+  name: Ghatkopar Pipe Line Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 135
+  lat: 19.088079
+  lng: 72.901069
+  name: Ghatkopar Police Station Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 136
+  lat: 19.087248
+  lng: 72.898757
+  name: Chirag Nagar Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 137
+  lat: 19.086733
+  lng: 72.897204
+  name: Narayan Nagar Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 138
+  lat: 19.085225
+  lng: 72.891219
+  name: Mukund Co./ P.W.D.Office Vidyavihar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 139
+  lat: 19.084911
+  lng: 72.887286
+  name: Kamani Vidyavihar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 140
+  lat: 19.086484
+  lng: 72.881369
+  name: Bial Bazar Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 141
+  lat: 19.091644
+  lng: 72.88317
+  name: Jarimari Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 142
+  lat: 19.096987
+  lng: 72.884668
+  name: Safed Pool Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 143
+  lat: 19.100732
+  lng: 72.886256
+  name: Vijay Printing Press Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 144
+  lat: 19.112372
+  lng: 72.861292
+  name: Darpan Cinema/ Sai Service Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 145
+  lat: 19.124428
+  lng: 72.858059
+  name: Shankarwadi Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 146
+  lat: 19.131329
+  lng: 72.852832
+  name: Ismail Yusuf College Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 147
+  lat: 19.136027
+  lng: 72.854962
+  name: Jogeshwai Police Station Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 148
+  lat: 19.144175
+  lng: 72.858514
+  name: Jay Coach Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 149
+  lat: 19.147488
+  lng: 72.860117
+  name: Mahananda Dairy Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 150
+  lat: 19.152268
+  lng: 72.860709
+  name: Vanrai/ Mhada Colony Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 151
+  lat: 19.226457
+  lng: 72.871297
+  name: Omkareshwar Mandir Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 152
+  lat: 19.226111
+  lng: 72.865691
+  name: Borivli Station East Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 153
+  lat: 19.229991
+  lng: 72.866044
+  name: Daulat Nagar Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 154
+  lat: 19.246261
+  lng: 72.871461
+  name: Dahisar Station Road East Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 155
+  lat: 19.251774
+  lng: 72.874921
+  name: Novelty Silk Mill Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 156
+  lat: 19.25174
+  lng: 72.877714
+  name: Ketaki Pada Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 157
+  lat: 19.097078
+  lng: 72.84871
+  name: State Bank Vile Parle West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 158
+  lat: 19.112402
+  lng: 72.832222
+  name: Sukhmani Hsg.Soc Vile Parle West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 159
+  lat: 19.109982
+  lng: 72.839912
+  name: Gagandeep/Erla Masjid Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 160
+  lat: 19.112006
+  lng: 72.842027
+  name: New India Qtrs Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 161
+  lat: 19.113359
+  lng: 72.843966
+  name: Gulshan Bldg Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 162
+  lat: 19.112967
+  lng: 72.845823
+  name: Amber Oscar Cinema Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 163
+  lat: 19.116696
+  lng: 72.8487
+  name: Andheri Station Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 164
+  lat: 19.119569
+  lng: 72.849011
+  name: Andheri Market Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 165
+  lat: 19.124691
+  lng: 72.849996
+  name: Amboli Naka Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 166
+  lat: 19.130923
+  lng: 72.850916
+  name: Farookh Vidyalaya Jogeshwari West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 167
+  lat: 19.133722
+  lng: 72.85169
+  name: Jogeshwari Bus Station Jogeshwari West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 168
+  lat: 19.133799
+  lng: 72.832385
+  name: Jogeshwari Telephone Exchange Jogeshwari West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 169
+  lat: 19.144407
+  lng: 72.847041
+  name: Ajit Glass Factory Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 170
+  lat: 19.146578
+  lng: 72.847316
+  name: Oshiwara Bridge Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 171
+  lat: 19.149239
+  lng: 72.848389
+  name: Ram Mandir Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 172
+  lat: 19.148638
+  lng: 72.847257
+  name: Best Nagar Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 173
+  lat: 19.150054
+  lng: 72.840435
+  name: Goregaon Depot Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 174
+  lat: 19.157564
+  lng: 72.840053
+  name: Shastri Nagar (Linkroad Goregaon W)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 175
+  lat: 19.16344
+  lng: 72.840638
+  name: Bangur Ngr Police Chowky/Post Office Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 176
+  lat: 19.165777
+  lng: 72.84088
+  name: Bangur Nagar Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 177
+  lat: 19.176086
+  lng: 72.841558
+  name: Chincholi Bunder Road Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 178
+  lat: 19.180818
+  lng: 72.840717
+  name: Kachpada Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 179
+  lat: 19.184217
+  lng: 72.840134
+  name: Evershine Nagar /Grass Pals Hospital Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 180
+  lat: 19.191296
+  lng: 72.839924
+  name: Mith Chowky Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 181
+  lat: 19.191479
+  lng: 72.829054
+  name: Malwani Sonapur Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 182
+  lat: 19.192041
+  lng: 72.824733
+  name: Fire Brigade/Kharodi Colony Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 183
+  lat: 19.186493
+  lng: 72.826671
+  name: Malwani Block No 5/Police Stn. Malwani
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 184
+  lat: 19.182865
+  lng: 72.824813
+  name: Malwani Block No 6 Malwani
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 185
+  lat: 18.909797
+  lng: 72.818443
+  name: Backbay Depot Backbay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 186
+  lat: 18.910993
+  lng: 72.818985
+  name: Dhobi Ghat Backbay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 187
+  lat: 18.911883
+  lng: 72.817506
+  name: Administrative Office (Gad) Backbay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 188
+  lat: 18.913394
+  lng: 72.81755
+  name: G.D.Somani School Backbay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 189
+  lat: 18.912507
+  lng: 72.820369
+  name: President Hotel Backbay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 190
+  lat: 18.918214
+  lng: 72.825677
+  name: Badhwar Park Backbay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 191
+  lat: 18.920664
+  lng: 72.826795
+  name: State Bank / Lalit Bldg. Backbay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 192
+  lat: 18.925941
+  lng: 72.827425
+  name: Y.B.Chawan Pratishthan Mantralaya
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 193
+  lat: 18.933215
+  lng: 72.836076
+  name: Hutatma Chowk (Meyoroad) Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 194
+  lat: 18.953331
+  lng: 72.834388
+  name: Jackeria Masjid Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 195
+  lat: 18.962549
+  lng: 72.833326
+  name: Johar Chowk Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 196
+  lat: 18.961892
+  lng: 72.832153
+  name: Dr.M.Iqbal Chowk Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 197
+  lat: 18.96834
+  lng: 72.832669
+  name: A.H.Ansari Chowk/New Nagpada Byculla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 198
+  lat: 18.972925
+  lng: 72.836449
+  name: Byculla Station E Byculla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 199
+  lat: 18.980145
+  lng: 72.834688
+  name: Jijamata Udyan Byculla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 200
+  lat: 18.990951
+  lng: 72.836006
+  name: Sant Jagnade Chowk Lalbaug
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 201
+  lat: 19.005201
+  lng: 72.839624
+  name: Madkebuwa Chowk Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 202
+  lat: 19.009727
+  lng: 72.841752
+  name: Hindmata Cinema Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 203
+  lat: 19.025044
+  lng: 72.852804
+  name: Jagatdev.N.Varma Chowk/Kapole Niwas
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 204
+  lat: 19.027802
+  lng: 72.857113
+  name: Maheshwari Udyan Kings Circle
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 205
+  lat: 19.034312
+  lng: 72.858609
+  name: Gandhi Market Kings Circle
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 206
+  lat: 19.037483
+  lng: 72.859687
+  name: Lokmanya Tilak Hospital Sion East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 207
+  lat: 19.043788
+  lng: 72.862689
+  name: Rani Laxmibai Chowk/Sion Barrier Sion West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 208
+  lat: 19.064064
+  lng: 72.873231
+  name: Lion Park Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 209
+  lat: 19.070102
+  lng: 72.875027
+  name: Gol Building Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 210
+  lat: 19.072136
+  lng: 72.875273
+  name: Anjanabai Magar Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 211
+  lat: 19.078665
+  lng: 72.879187
+  name: Old Agra Road Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 212
+  lat: 19.082881
+  lng: 72.88297
+  name: Sheetal Cinema Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 213
+  lat: 19.094245
+  lng: 72.913823
+  name: Shreyas Cinema Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 214
+  lat: 19.099299
+  lng: 72.91796
+  name: Anacin Company Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 215
+  lat: 19.102918
+  lng: 72.920473
+  name: Vikhroli Depot Vidyavihar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 216
+  lat: 18.935001
+  lng: 72.842493
+  name: Ballard Pier Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 217
+  lat: 18.935309
+  lng: 72.839141
+  name: New Custom House Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 218
+  lat: 18.953374
+  lng: 72.820555
+  name: Gaiwadi Girgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 219
+  lat: 18.955357
+  lng: 72.816151
+  name: Pt.Paluskar Chowk Opera House
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 220
+  lat: 18.972029
+  lng: 72.822801
+  name: Nair Hospital Mumbai Central East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 221
+  lat: 18.979963
+  lng: 72.827683
+  name: Sant Gadge Maharaj Chowk Satrasta
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 222
+  lat: 18.984449
+  lng: 72.83083
+  name: Kasturba Gandhi Hospital Satrasta
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 223
+  lat: 18.989812
+  lng: 72.83519
+  name: Ganesh Talkies Lalbaug
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 224
+  lat: 18.9959151
+  lng: 72.836811
+  name: Bharatmata Cinema Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 225
+  lat: 18.999829
+  lng: 72.837825
+  name: Parel Workshop Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 226
+  lat: 19.011954
+  lng: 72.842111
+  name: Shindewadi Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 227
+  lat: 19.013725
+  lng: 72.844459
+  name: Chitra Cinema Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 228
+  lat: 19.018847
+  lng: 72.847109
+  name: Khodadad Circle Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 229
+  lat: 19.022281
+  lng: 72.850519
+  name: Ruia College Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 230
+  lat: 18.929606
+  lng: 72.829067
+  name: Ahilyabai Holkar Chowk Churchgate
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 231
+  lat: 18.939952
+  lng: 72.827568
+  name: Income Tax Office Marine Lines East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 232
+  lat: 18.943476
+  lng: 72.826409
+  name: Marine Lines Station(Kala Niketan)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 233
+  lat: 18.943476
+  lng: 72.826409
+  name: Marine Lines Station Marine Lines East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 234
+  lat: 18.948612
+  lng: 72.822533
+  name: S.K.Patil Garden Charni Road Stn. East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 235
+  lat: 18.981084
+  lng: 72.823805
+  name: Mahalaxmi Station Mahalaxmi West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 236
+  lat: 18.985352
+  lng: 72.824107
+  name: Famous Studio Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 237
+  lat: 18.994836
+  lng: 72.826259
+  name: Phoenix Mill Elphistone Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 238
+  lat: 18.997292
+  lng: 72.827451
+  name: K.V.Yadav Chowk Lower Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 239
+  lat: 18.999579
+  lng: 72.828479
+  name: Toddy Co/Empire Dyeing Elphistone Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 240
+  lat: 19.002612
+  lng: 72.829905
+  name: Kamla Mill Elphistone Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 241
+  lat: 19.012191
+  lng: 72.836386
+  name: Kamgar Stadium Elphistone Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 242
+  lat: 19.015737
+  lng: 72.839561
+  name: Mhatre Pen Company Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 243
+  lat: 19.019394
+  lng: 72.84146
+  name: Dadar Station W Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 244
+  lat: 19.02299
+  lng: 72.84475
+  name: Zarapkar Stores Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 245
+  lat: 19.025661
+  lng: 72.845622
+  name: Girls School Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 246
+  lat: 19.028163
+  lng: 72.846443
+  name: Ruparel College Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 247
+  lat: 19.03066
+  lng: 72.847119
+  name: Matunga Station West Mahim West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 248
+  lat: 19.035709
+  lng: 72.842524
+  name: Shitaladevi Temple Marg Mahim West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 249
+  lat: 19.040298
+  lng: 72.846913
+  name: Mahim Station
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 250
+  lat: 19.044622
+  lng: 72.848672
+  name: Mahim Phatak Mahim West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 251
+  lat: 19.045293
+  lng: 72.844246
+  name: Machhimar Nagar Mahim West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 252
+  lat: 19.047839
+  lng: 72.850783
+  name: Dharavi T Junction/Tapase Chowk Dharavi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 253
+  lat: 18.952381
+  lng: 72.79846
+  name: Darya Mahal Napean Sea Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 254
+  lat: 18.954124
+  lng: 72.799547
+  name: Petit Hall Napean Sea Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 255
+  lat: 18.962855
+  lng: 72.804654
+  name: Mukesh Chowk Napean Sea Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 256
+  lat: 18.962547
+  lng: 72.80787
+  name: Godrej Chowk Nana Chowk
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 257
+  lat: 18.960293
+  lng: 72.813701
+  name: August Kranti Maidan Nana Chowk
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 258
+  lat: 18.960887
+  lng: 72.814943
+  name: Grant Road Bridge Grant Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 259
+  lat: 18.960748
+  lng: 72.819603
+  name: Novelty Cinema/Dr Bhadkamkar Road Grant Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 260
+  lat: 18.960997
+  lng: 72.82332
+  name: Play House Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 261
+  lat: 18.957877
+  lng: 72.826465
+  name: Alankar Talkies Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 262
+  lat: 18.954
+  lng: 72.832473
+  name: Vijay Vallabh Chowk Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 263
+  lat: 18.957921
+  lng: 72.828635
+  name: Gol Mandir Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 264
+  lat: 18.929384
+  lng: 72.825533
+  name: Mantralaya Mantralaya
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 265
+  lat: 18.961657
+  lng: 72.817906
+  name: Dr.Bhadkamkar Road Grant Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 266
+  lat: 19.133295
+  lng: 72.929157
+  name: Birla Company Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 267
+  lat: 19.133115
+  lng: 72.897777
+  name: Jaibhim Nagar Powai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 268
+  lat: 19.133257
+  lng: 72.889792
+  name: Filter Pada Powai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 269
+  lat: 19.148392
+  lng: 72.879761
+  name: Central Dairy Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 270
+  lat: 19.150929
+  lng: 72.880032
+  name: Unit No 7(Aareycolony)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 271
+  lat: 19.184648
+  lng: 72.852923
+  name: Malad Station W(Sainath Road)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 272
+  lat: 19.189318
+  lng: 72.853119
+  name: N.L.Vidyalaya Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 273
+  lat: 19.191111
+  lng: 72.853116
+  name: Milap Talkies Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 274
+  lat: 19.193914
+  lng: 72.854135
+  name: Shankar Galli/Hitavardhak Hall Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 275
+  lat: 19.201124
+  lng: 72.855932
+  name: Dena Bank Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 276
+  lat: 19.202217
+  lng: 72.850266
+  name: Kandivli Village Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 277
+  lat: 19.206329
+  lng: 72.846764
+  name: Dahanukar Wadi Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 278
+  lat: 19.208961
+  lng: 72.830842
+  name: Hindustan Steel Company Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 279
+  lat: 19.216825
+  lng: 72.834946
+  name: Saibaba Mandir Charkop
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 280
+  lat: 19.229188
+  lng: 72.83628
+  name: Gorai Bridge Gorai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 281
+  lat: 19.227538
+  lng: 72.838779
+  name: Suvidhya School Gorai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 282
+  lat: 19.117548
+  lng: 72.848197
+  name: Andheri Station (Kumkum) Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 283
+  lat: 19.117053
+  lng: 72.831274
+  name: Juhu Prabhat Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 284
+  lat: 19.119604
+  lng: 72.826347
+  name: Versova Link Road Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 285
+  lat: 19.124816
+  lng: 72.822363
+  name: Seven Bungalows Garden Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 286
+  lat: 19.125863
+  lng: 72.819837
+  name: Picnic Cottage Versova
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 287
+  lat: 19.128551
+  lng: 72.817292
+  name: Machhalimar Versova
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 288
+  lat: 18.968143
+  lng: 72.815659
+  name: Vasantrao Naik Chowk Tardeo
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 289
+  lat: 18.971466
+  lng: 72.815123
+  name: Air Condition Market Tardeo
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 290
+  lat: 18.976675
+  lng: 72.811358
+  name: Vatsalabai Desai Chowk Hajiali
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 291
+  lat: 18.985689
+  lng: 72.814216
+  name: Nehru Planetarium Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 292
+  lat: 18.990143
+  lng: 72.814653
+  name: Poonam Chamber/Shivsagar Estate Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 293
+  lat: 18.993261
+  lng: 72.81566
+  name: S.T.Office /Lovegrove Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 294
+  lat: 18.997071
+  lng: 72.817675
+  name: Acharya Atre Chowk Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 295
+  lat: 19.000947
+  lng: 72.816085
+  name: Poddar Hospital Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 296
+  lat: 19.005407
+  lng: 72.818487
+  name: Doordarshan Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 297
+  lat: 19.012276
+  lng: 72.824366
+  name: Babasaheb Worlikar Chowk Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 298
+  lat: 19.015488
+  lng: 72.828504
+  name: Agar Bazar Prabhadevi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 299
+  lat: 19.018283
+  lng: 72.836034
+  name: P.Thakre Chowk Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 300
+  lat: 19.043787
+  lng: 72.862688
+  name: Rani Laxmibai Chowk Sion East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 301
+  lat: 19.050635
+  lng: 72.870553
+  name: Everard Nagar Chunabhatti
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 302
+  lat: 19.054581
+  lng: 72.880527
+  name: Priyadarshani(R.C.F.) Chunabhatti
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 303
+  lat: 19.055438
+  lng: 72.882515
+  name: Suman Nagar Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 304
+  lat: 19.058556
+  lng: 72.88634
+  name: S.G.Barve Marg Naka Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 305
+  lat: 19.062918
+  lng: 72.889788
+  name: Postal Colony Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 306
+  lat: 19.068263
+  lng: 72.899315
+  name: Amar Mahal Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 307
+  lat: 19.073968
+  lng: 72.901677
+  name: Glass Factory Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 308
+  lat: 19.083342
+  lng: 72.908896
+  name: Jain Mandir Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 309
+  lat: 19.081987
+  lng: 72.91399
+  name: Shivner Chowk/Ganesh Mandir Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 310
+  lat: 19.083769
+  lng: 72.916232
+  name: Pant Nagar Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 311
+  lat: 19.085943
+  lng: 72.917134
+  name: Police Station Pant Nagar Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 312
+  lat: 19.087038
+  lng: 72.917949
+  name: Marathi Vidyalaya Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 313
+  lat: 19.086049
+  lng: 72.920049
+  name: Ghatkopar Depot/Casuarina Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 314
+  lat: 19.092
+  lng: 72.924486
+  name: Godrej Soap Co. Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 315
+  lat: 19.091982
+  lng: 72.92456
+  name: Godrej Co. Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 316
+  lat: 19.103762
+  lng: 72.930046
+  name: Vikhroli Village Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 317
+  lat: 19.178327
+  lng: 72.947475
+  name: Govardhan Nagar/Gabriel Co. Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 318
+  lat: 19.176081
+  lng: 72.942449
+  name: Hindustan Chowk Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 319
+  lat: 19.175628
+  lng: 72.941632
+  name: Mulund Colony Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 320
+  lat: 19.175605
+  lng: 72.940878
+  name: Powai Chowk Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 321
+  lat: 19.175186
+  lng: 72.940437
+  name: Jay Shastri Nagar Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 322
+  lat: 19.158029
+  lng: 72.9387
+  name: Asian Paint Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 323
+  lat: 19.154263
+  lng: 72.938844
+  name: Shangrila Company Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 324
+  lat: 19.093465
+  lng: 72.874762
+  name: Sahar Police Station Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 325
+  lat: 19.099474
+  lng: 72.875763
+  name: Sahar Air India Hotel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 326
+  lat: 19.100861
+  lng: 72.870477
+  name: Warehouse Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 327
+  lat: 19.10252
+  lng: 72.862707
+  name: Sahar P and T Colony No 1 Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 328
+  lat: 19.105282
+  lng: 72.860723
+  name: Chakala Cigarette Factory Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 329
+  lat: 19.105951
+  lng: 72.858811
+  name: Parshiwada Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 330
+  lat: 19.106107
+  lng: 72.856754
+  name: Bahar Cinema Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 331
+  lat: 19.107548
+  lng: 72.853072
+  name: Garware Chowk/ Koldongri No.2 Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 332
+  lat: 19.108279
+  lng: 72.851394
+  name: Shivaji Chowk Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 333
+  lat: 19.111192
+  lng: 72.849858
+  name: Vijay Nagar Society Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 334
+  lat: 19.079652
+  lng: 72.847805
+  name: Vakola Police Station Santacruz East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 335
+  lat: 19.079897
+  lng: 72.852872
+  name: Vakola Pipe Lines Santacruz East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 336
+  lat: 19.08057
+  lng: 72.85853
+  name: Military Camp Santacruz East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 337
+  lat: 19.075682
+  lng: 72.862509
+  name: Kalina Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 338
+  lat: 19.072899
+  lng: 72.865711
+  name: Amar Brass And Steel Company Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 339
+  lat: 19.074455
+  lng: 72.870039
+  name: Metro Playing Cards Kalina
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 340
+  lat: 19.095853
+  lng: 72.915341
+  name: Dargah Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 341
+  lat: 19.104908
+  lng: 72.922116
+  name: Godrej Co Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 342
+  lat: 19.108591
+  lng: 72.924685
+  name: Asha And Usha Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 343
+  lat: 19.112339
+  lng: 72.926393
+  name: Vikhroli Station Road Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 344
+  lat: 19.115469
+  lng: 72.926515
+  name: Military Canteen/Cipla Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 345
+  lat: 19.120258
+  lng: 72.925992
+  name: Hindustan Company Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 346
+  lat: 19.130948
+  lng: 72.927839
+  name: Ciba Company Kanjurmarg West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 347
+  lat: 19.168129
+  lng: 72.941967
+  name: Post And Telegraphs Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 348
+  lat: 19.172828
+  lng: 72.951054
+  name: Kalidas Natyagruh Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 349
+  lat: 18.933215
+  lng: 72.836076
+  name: Hutatma Chowk (O.C.S.) Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 350
+  lat: 18.942042
+  lng: 72.830033
+  name: Azad Maidan Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 351
+  lat: 18.956708
+  lng: 72.809875
+  name: Babulnath Road Babulnath
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 352
+  lat: 18.971622
+  lng: 72.809728
+  name: Jaslok Hospital Peddar Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 353
+  lat: 19.001532
+  lng: 72.820216
+  name: Gandhi Maidan Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 354
+  lat: 19.005351
+  lng: 72.823469
+  name: Com.P.K.Kurne Chowk Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 355
+  lat: 19.024586
+  lng: 72.836634
+  name: Ranade Road Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 356
+  lat: 19.05353
+  lng: 72.831047
+  name: Mahim Koliwada Mahim
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 357
+  lat: 19.051912
+  lng: 72.826725
+  name: Hill Road Garden Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 358
+  lat: 19.048984
+  lng: 72.827949
+  name: Unit Trust Of India Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 359
+  lat: 19.202936
+  lng: 72.858137
+  name: Kandivli Station West Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 360
+  lat: 19.202463
+  lng: 72.851567
+  name: Umbrella Company Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 361
+  lat: 19.202436
+  lng: 72.847127
+  name: Vaishali Bhavan Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 362
+  lat: 19.207739
+  lng: 72.837379
+  name: Yadav Nagar Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 363
+  lat: 19.207086
+  lng: 72.849525
+  name: Datta Mandir(Dahanukar Wadi) Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 364
+  lat: 19.049815
+  lng: 72.859963
+  name: Dharavi Depot Dharavi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 365
+  lat: 19.04972
+  lng: 72.856265
+  name: Dharavi Pila Bungalow Dharavi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 366
+  lat: 19.052957
+  lng: 72.845495
+  name: Kala Nagar(Mhada Office) Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 367
+  lat: 19.055577
+  lng: 72.846634
+  name: M.I.G.Colony(Kala Nagar) Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 368
+  lat: 19.057591
+  lng: 72.846881
+  name: Gandhi Nagar Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 369
+  lat: 19.060353
+  lng: 72.848402
+  name: Kherwadi/ Chetna College Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 370
+  lat: 19.197326
+  lng: 72.860164
+  name: Kandivli Bus Station
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 371
+  lat: 19.199899
+  lng: 72.859678
+  name: E.S.I.S.Hospital Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 372
+  lat: 19.199738
+  lng: 72.864576
+  name: Grovel Company Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 373
+  lat: 19.200035
+  lng: 72.876713
+  name: Hanuman Nagar Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 374
+  lat: 19.198789
+  lng: 72.880495
+  name: Tractor Gate No 3/Vasahospital Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 375
+  lat: 19.197148
+  lng: 72.883258
+  name: Gautam Nagar Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 376
+  lat: 18.965717
+  lng: 72.816872
+  name: Grant Road Station West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 377
+  lat: 18.966018
+  lng: 72.817909
+  name: Sonawala Building Grant Road West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 378
+  lat: 19.148934
+  lng: 72.840493
+  name: Oshiwara Depot Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 379
+  lat: 19.145142
+  lng: 72.840729
+  name: Anand Nagar Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 380
+  lat: 19.141274
+  lng: 72.841283
+  name: Behram Baug Jogeshwari West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 381
+  lat: 19.141311
+  lng: 72.838806
+  name: Adarsh Nagar Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 382
+  lat: 19.137071
+  lng: 72.8373
+  name: Lokhandwala Complex Junction Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 383
+  lat: 19.134625
+  lng: 72.8363
+  name: Monginis Cake Company Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 384
+  lat: 19.131588
+  lng: 72.835023
+  name: Laxmi Industrial Estate Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 385
+  lat: 19.126951
+  lng: 72.83466
+  name: Jeevan Nagar Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 386
+  lat: 19.124938
+  lng: 72.833503
+  name: Indian Oil Nagar Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 387
+  lat: 19.124684
+  lng: 72.835985
+  name: Dhake Colony Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 388
+  lat: 19.12386
+  lng: 72.84013
+  name: Andheri Sports Complex Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 389
+  lat: 19.113274
+  lng: 72.848587
+  name: Gokhale Bridge Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 390
+  lat: 19.11252
+  lng: 72.855024
+  name: Jumbo Darshan Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 391
+  lat: 19.078881
+  lng: 72.912996
+  name: Ramabai Nagar Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 392
+  lat: 19.076703
+  lng: 72.910222
+  name: Nalanda Society Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 393
+  lat: 19.073857
+  lng: 72.906971
+  name: R T O Office Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 394
+  lat: 19.049826
+  lng: 72.82701
+  name: John Baptist Road Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 395
+  lat: 19.051201
+  lng: 72.826297
+  name: Mac Queens Hotel Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 396
+  lat: 19.06212
+  lng: 72.836169
+  name: National College Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 397
+  lat: 19.062593
+  lng: 72.835058
+  name: C.H.Vidyalaya Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 398
+  lat: 19.070579
+  lng: 72.827421
+  name: Chuim Village/Sheri Village Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 399
+  lat: 19.071073
+  lng: 72.822795
+  name: Amrut Housing Society Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 400
+  lat: 19.072647
+  lng: 72.823822
+  name: Khar Danda Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 401
+  lat: 19.073493
+  lng: 72.825516
+  name: Dandpada Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 402
+  lat: 19.079701
+  lng: 72.851255
+  name: Datta Mandir(Vakola) Santacruz East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 403
+  lat: 19.104858
+  lng: 72.83346
+  name: Mangal Building Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 404
+  lat: 19.105137
+  lng: 72.839947
+  name: Dr.Cooper Hospital Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 405
+  lat: 19.100449
+  lng: 72.839501
+  name: Mithibai College Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 406
+  lat: 19.1002
+  lng: 72.841342
+  name: Vile Parle Vile Parle West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 407
+  lat: 19.104727
+  lng: 72.842501
+  name: Golden Tobacco Vile Parle West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 408
+  lat: 19.106988
+  lng: 72.843208
+  name: Erla Vile Parle West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 409
+  lat: 19.109583
+  lng: 72.84424
+  name: Erla Bridge Vile Parle West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 410
+  lat: 19.112967
+  lng: 72.845823
+  name: Amber Oscar Cinema(2) Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 411
+  lat: 19.154526
+  lng: 72.842634
+  name: Motilal Nagar Block No 8(H.S.Rupwate Goregaon W)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 412
+  lat: 19.155183
+  lng: 72.844968
+  name: Motilal Nagar Post Office Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 413
+  lat: 19.155424
+  lng: 72.84843
+  name: Siddharth Nagar(Sabde Marg Goregaon W)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 414
+  lat: 19.156866
+  lng: 72.849547
+  name: Jawahar Nagar Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 415
+  lat: 19.157114
+  lng: 72.852379
+  name: Jain Mandir Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 416
+  lat: 19.25735
+  lng: 72.881431
+  name: Golden Chemicals Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 417
+  lat: 19.25546
+  lng: 72.881118
+  name: Dahisar Check Naka East Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 418
+  lat: 18.976727
+  lng: 72.83027
+  name: Sundar Galli Byculla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 419
+  lat: 18.979069
+  lng: 72.828472
+  name: Garlic Co. Byculla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 420
+  lat: 18.994453
+  lng: 72.81908
+  name: Jijamata Nagar Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 421
+  lat: 19.090909
+  lng: 72.873218
+  name: Chatrapati Shivaji Int.Airport(Nipt) Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 422
+  lat: 19.11483
+  lng: 72.865771
+  name: Nelco Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 423
+  lat: 19.166973
+  lng: 72.940084
+  name: Hoechst Co./Fedco Farmacy Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 424
+  lat: 19.130256
+  lng: 72.883418
+  name: Seepz Village Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 425
+  lat: 19.129953
+  lng: 72.879164
+  name: Mahakali Caves Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 426
+  lat: 19.132104
+  lng: 72.879695
+  name: Kamlistan Studio Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 427
+  lat: 19.133219
+  lng: 72.877637
+  name: Durga Nagar Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 428
+  lat: 19.137125
+  lng: 72.867584
+  name: Majas Depot/Shyam Nagar Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 429
+  lat: 19.139212
+  lng: 72.866739
+  name: Shyam Nagar Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 430
+  lat: 19.13959
+  lng: 72.864175
+  name: Datta Tekdi/Shiv Tekadi Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 431
+  lat: 19.14108
+  lng: 72.8612
+  name: Pratap Nagar(Majas)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 432
+  lat: 19.116901
+  lng: 72.926481
+  name: Paper Mill Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 433
+  lat: 19.113931
+  lng: 72.910247
+  name: Hiranandani Garden Powai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 434
+  lat: 19.12272
+  lng: 72.866555
+  name: Domnic School Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 435
+  lat: 19.125469
+  lng: 72.868824
+  name: Tolani College
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 436
+  lat: 18.965246
+  lng: 72.813593
+  name: Bhatia Hospital Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 437
+  lat: 19.056006
+  lng: 72.888437
+  name: Umarshi Bappa Chowk Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 438
+  lat: 19.056289
+  lng: 72.892135
+  name: Chembur Naka/Swami Vivekanand Chowk. Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 439
+  lat: 19.059515
+  lng: 72.894092
+  name: Shanti Baug Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 440
+  lat: 19.06283
+  lng: 72.896482
+  name: Krishna Baug/ Fine Arts Auditorium Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 441
+  lat: 19.062434
+  lng: 72.899007
+  name: Dr.Ambedkar Garden Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 442
+  lat: 19.059918
+  lng: 72.899329
+  name: 10th Road Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 443
+  lat: 19.051947
+  lng: 72.903579
+  name: Maitri Park Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 444
+  lat: 19.050448
+  lng: 72.905497
+  name: R.K.Studio Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 445
+  lat: 19.049695
+  lng: 72.909476
+  name: Deonar Depot Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 446
+  lat: 19.04951
+  lng: 72.913115
+  name: Punjab Wadi Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 447
+  lat: 19.048771
+  lng: 72.916179
+  name: Telecom Factory Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 448
+  lat: 19.121429
+  lng: 72.841746
+  name: Bhavans College Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 449
+  lat: 19.123274
+  lng: 72.833249
+  name: D.N.Nagar/Barfiwala Vidyalaya Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 450
+  lat: 19.120796
+  lng: 72.832788
+  name: Esic Nagar Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 451
+  lat: 19.014176
+  lng: 72.834232
+  name: Jakhadevi/ Dadar Police Station Prabhadevi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 452
+  lat: 19.06659
+  lng: 72.846581
+  name: Cardinal Gracious School Khar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 453
+  lat: 19.070771
+  lng: 72.846994
+  name: Maratha Colony Santacruz East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 454
+  lat: 19.072106
+  lng: 72.857846
+  name: Vidya Nagari Kalina
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 455
+  lat: 19.079088
+  lng: 72.87676
+  name: Shanti Nagar Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 456
+  lat: 19.079865
+  lng: 72.873196
+  name: New Air India Quarters Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 457
+  lat: 19.078388
+  lng: 72.860652
+  name: Military Outpost Kalina
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 458
+  lat: 19.079916
+  lng: 72.854295
+  name: Vakola Masjid Santacruz East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 459
+  lat: 19.085039
+  lng: 72.844858
+  name: New Agripada Santacruz East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 460
+  lat: 19.087183
+  lng: 72.844893
+  name: Milan Sub Way Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 461
+  lat: 19.090645
+  lng: 72.847579
+  name: Vile Parle Sub Way East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 462
+  lat: 19.090411
+  lng: 72.857729
+  name: Terminal Building Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 463
+  lat: 19.096089
+  lng: 72.853427
+  name: Dayaldas Rd/Gujarat Society Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 464
+  lat: 19.097148
+  lng: 72.847385
+  name: Vile Parle Station East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 465
+  lat: 19.09424
+  lng: 72.845986
+  name: Vile Parle Railway Crossing
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 466
+  lat: 19.091711
+  lng: 72.846163
+  name: Azad Nagar Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 467
+  lat: 19.086547
+  lng: 72.83964
+  name: Milan Talkies Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 468
+  lat: 19.084291
+  lng: 72.839185
+  name: Khira Nagar/Bombay Garage Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 469
+  lat: 19.082027
+  lng: 72.839085
+  name: Santacruz Stn.Road/Kashibai Hosp Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 470
+  lat: 19.082662
+  lng: 72.836652
+  name: Santacruz Police Station Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 471
+  lat: 19.072247
+  lng: 72.834916
+  name: Arya Samaj Mandir Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 472
+  lat: 19.072525
+  lng: 72.83447
+  name: Ramkrishna Mission Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 473
+  lat: 19.064037
+  lng: 72.835297
+  name: Khar Telephone Exchange Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 474
+  lat: 19.058694
+  lng: 72.919581
+  name: Municipal Colony Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 475
+  lat: 19.059758
+  lng: 72.914164
+  name: Govandi Stn.Road West Govandi East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 476
+  lat: 19.064557
+  lng: 72.9115
+  name: Gautam Nagar Govandi West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 477
+  lat: 19.058552
+  lng: 72.909428
+  name: Samrat Ashok Nagar Govandi East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 478
+  lat: 19.051825
+  lng: 72.908154
+  name: Dukes Company Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 479
+  lat: 19.053869
+  lng: 72.900942
+  name: Reserve Bank Colony Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 480
+  lat: 19.055388
+  lng: 72.895606
+  name: Sanduwadi Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 481
+  lat: 19.056032
+  lng: 72.893556
+  name: Kumbhar Wada Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 482
+  lat: 19.045293
+  lng: 72.844246
+  name: Machhimar Ngr/Raheja Hospital Mahim
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 483
+  lat: 19.076838
+  lng: 72.878098
+  name: Kalpana Talkies Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 484
+  lat: 19.088732
+  lng: 72.901094
+  name: Maneklal Mun.School Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 485
+  lat: 19.090382
+  lng: 72.9003
+  name: Jagruti Nagar/Buddha Nagar Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 486
+  lat: 19.094891
+  lng: 72.904194
+  name: Barve Nagar/Municipal School No 3 Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 487
+  lat: 19.093325
+  lng: 72.904133
+  name: Babu Genu Market Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 488
+  lat: 19.091192
+  lng: 72.904179
+  name: Ram Bhavan Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 489
+  lat: 19.161124
+  lng: 72.854687
+  name: Goregaon Station Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 490
+  lat: 19.162373
+  lng: 72.856748
+  name: Peru Baug Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 491
+  lat: 19.162168
+  lng: 72.860099
+  name: St.Pius Church Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 492
+  lat: 19.169049
+  lng: 72.870961
+  name: Gokuldham Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 493
+  lat: 19.169492
+  lng: 72.874884
+  name: Gokuldham Market Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 494
+  lat: 19.169636
+  lng: 72.882095
+  name: Wagheshwari Mandir Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 495
+  lat: 19.166733
+  lng: 72.882146
+  name: Hanuman Nagar Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 496
+  lat: 19.184566
+  lng: 72.853003
+  name: Malad Station W(Kasturba Road)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 497
+  lat: 19.183087
+  lng: 72.852319
+  name: Malad Station Road West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 498
+  lat: 19.18795
+  lng: 72.852808
+  name: Marve Road Naka/ Swami Shivanand Chowk Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 499
+  lat: 19.187976
+  lng: 72.851377
+  name: Choksi Hospital Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 500
+  lat: 19.187114
+  lng: 72.846171
+  name: Adarsh Dairy Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 501
+  lat: 19.189866
+  lng: 72.844516
+  name: Orlem Well Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 502
+  lat: 19.186572
+  lng: 72.839827
+  name: Orlem Church Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 503
+  lat: 19.192354
+  lng: 72.821777
+  name: Kharodi Village Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 504
+  lat: 19.192028
+  lng: 72.818698
+  name: Malwani Akashwani Malwani
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 505
+  lat: 19.191978
+  lng: 72.816055
+  name: Malwani Church Malwani
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 506
+  lat: 19.192182
+  lng: 72.814489
+  name: Marve Naka/Marve Village Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 507
+  lat: 19.064404
+  lng: 72.838101
+  name: Old Khar Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 508
+  lat: 19.069444
+  lng: 72.840568
+  name: Khar Station Road Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 509
+  lat: 19.072129
+  lng: 72.8386
+  name: Khar Police Stn/Sacred Heart School Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 510
+  lat: 19.07317
+  lng: 72.838654
+  name: St.Teresa Convent School Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 511
+  lat: 19.079521
+  lng: 72.838736
+  name: Santacruz Station Road Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 512
+  lat: 19.088295
+  lng: 72.8397
+  name: Santacruz Depot Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 513
+  lat: 19.091814
+  lng: 72.840793
+  name: Nanavati Hospital Vile Parle West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 514
+  lat: 19.117938
+  lng: 72.83234
+  name: New D.N.Nagar/ M.I.G.Colony (Juhu)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 515
+  lat: 19.141289
+  lng: 72.840222
+  name: Scout Camp Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 516
+  lat: 19.153259
+  lng: 72.846858
+  name: Vivek Vidhyalaya Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 517
+  lat: 19.217737
+  lng: 72.868804
+  name: Special Steel/Rajendra Nagar Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 518
+  lat: 19.217713
+  lng: 72.862957
+  name: Rajendra Nagar Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 519
+  lat: 19.219875
+  lng: 72.865497
+  name: Dattapada Phatak Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 520
+  lat: 19.230391
+  lng: 72.877837
+  name: Dhobi Ghat Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 521
+  lat: 19.232294
+  lng: 72.879115
+  name: Abhinav Nagar Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 522
+  lat: 18.987936
+  lng: 72.841417
+  name: Shrawan Yeshwante Chowk Kala Chowky
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 523
+  lat: 18.988107
+  lng: 72.8377
+  name: Hakoba Kala Chowky
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 524
+  lat: 18.987923
+  lng: 72.836174
+  name: Shantaram Pujare Chowk Kala Chowky
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 525
+  lat: 18.995915
+  lng: 72.83681
+  name: Bharatmata Cinema Curry Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 526
+  lat: 19.035709
+  lng: 72.842524
+  name: Shitaladevi Temple Marg Mahim
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 527
+  lat: 19.098935
+  lng: 72.856291
+  name: Sambhaji Nagar Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 528
+  lat: 19.101599
+  lng: 72.856408
+  name: Hanuman Road Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 529
+  lat: 19.233254
+  lng: 72.861938
+  name: Ram Mandir Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 530
+  lat: 19.234887
+  lng: 72.861671
+  name: Bhagwati Hospital Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 531
+  lat: 19.241937
+  lng: 72.862428
+  name: Shivaji Nagar Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 532
+  lat: 19.243607
+  lng: 72.862664
+  name: Mary Immaculate School Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 533
+  lat: 19.246415
+  lng: 72.863105
+  name: Nava Gaon Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 534
+  lat: 19.247287
+  lng: 72.863664
+  name: Kandar Pada Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 535
+  lat: 19.145306
+  lng: 72.838
+  name: Goregaon Police Stationn Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 536
+  lat: 19.161582
+  lng: 72.849749
+  name: Filmistan Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 537
+  lat: 19.166237
+  lng: 72.850011
+  name: Patkar College Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 538
+  lat: 19.168146
+  lng: 72.850083
+  name: Madina Manzil Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 539
+  lat: 19.17304
+  lng: 72.8515
+  name: Chincholi Phatak/Sarvodaya B.School Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 540
+  lat: 19.17873
+  lng: 72.852136
+  name: New Era Talkies Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 541
+  lat: 19.20317
+  lng: 72.857184
+  name: Kandivli Station Road West Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 542
+  lat: 19.216311
+  lng: 72.8576
+  name: Poisar Depot Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 543
+  lat: 19.219828
+  lng: 72.861359
+  name: Ram Baug/Shastri Nagar Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 544
+  lat: 19.217919
+  lng: 72.859971
+  name: Kora Kendra Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 545
+  lat: 19.222139
+  lng: 72.862402
+  name: Borivli Jail West Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 546
+  lat: 19.223952
+  lng: 72.863008
+  name: Dharamshi Hall Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 547
+  lat: 19.225745
+  lng: 72.863533
+  name: Borivli Station West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 548
+  lat: 19.231752
+  lng: 72.862121
+  name: Pai Nagar Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 549
+  lat: 18.949701
+  lng: 72.829173
+  name: Kalbadevi Bhuleshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 550
+  lat: 18.951746
+  lng: 72.829899
+  name: Bhuleshwar Bhuleshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 551
+  lat: 19.050434
+  lng: 72.865977
+  name: Central Labour Institute Sion East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 552
+  lat: 19.053887
+  lng: 72.867554
+  name: Vrindavan Chowk Sion East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 553
+  lat: 19.053124
+  lng: 72.867958
+  name: Chunabhatti Chunabhatti
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 554
+  lat: 19.054187
+  lng: 72.871468
+  name: Chunabhatti Garden Chunabhatti
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 555
+  lat: 19.054634
+  lng: 72.875436
+  name: Tata Colony Chunabhatti
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 556
+  lat: 19.055341
+  lng: 72.879001
+  name: Marathi Vidnyan Parishad Chunabhatti
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 557
+  lat: 19.056192
+  lng: 72.881107
+  name: Shivshrusti Kurla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 558
+  lat: 19.057401
+  lng: 72.883078
+  name: Kurla S.T.Depot Kurla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 559
+  lat: 19.061812
+  lng: 72.883708
+  name: Kamgar Nagar Kurla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 560
+  lat: 19.063304
+  lng: 72.881355
+  name: Nehru Nagar Kurla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 561
+  lat: 18.967581
+  lng: 72.804184
+  name: Parsi General Hospital Napean Sea Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 562
+  lat: 18.970262
+  lng: 72.805552
+  name: Breach Candy Hospital Napean Sea Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 563
+  lat: 18.972886
+  lng: 72.80675
+  name: Mafatlal Park Napean Sea Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 564
+  lat: 18.974626
+  lng: 72.808922
+  name: Mahalaxmi Temple Napean Sea Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 565
+  lat: 19.060401
+  lng: 72.845863
+  name: Kherwadi Junction Khar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 566
+  lat: 19.182738
+  lng: 72.855295
+  name: Malad Station E(Poddar Park) Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 567
+  lat: 19.183488
+  lng: 72.855428
+  name: Dr.Suchak Chowk Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 568
+  lat: 19.183328
+  lng: 72.859299
+  name: S.K.Patil Arogyadham(Malad E) Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 569
+  lat: 19.183145
+  lng: 72.869077
+  name: Hira Park Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 570
+  lat: 19.180827
+  lng: 72.8843
+  name: Jijamata Vidyalaya Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 571
+  lat: 19.066305
+  lng: 72.879996
+  name: Kurla Station
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 572
+  lat: 19.059939
+  lng: 72.88511
+  name: Thakkar Bappa Colony Kurla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 573
+  lat: 19.056112
+  lng: 72.888385
+  name: Umarshi Bappa Chowk/Swastik Chamber Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 574
+  lat: 19.054499
+  lng: 72.890018
+  name: Bhakti Bhavan Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 575
+  lat: 19.053241
+  lng: 72.891764
+  name: Basant Park/Sukhi Nivas Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 576
+  lat: 19.050639
+  lng: 72.891597
+  name: Navjeevan Society Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 577
+  lat: 19.047773
+  lng: 72.891246
+  name: Jhamamal Chowk Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 578
+  lat: 19.048688
+  lng: 72.898075
+  name: R.C.F.Colony/Golf Club Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 579
+  lat: 19.049097
+  lng: 72.903231
+  name: Basant Talkies Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 580
+  lat: 19.049296
+  lng: 72.905822
+  name: Panjarapol Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 581
+  lat: 18.94416
+  lng: 72.796877
+  name: Band Stand Walkeshwar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 582
+  lat: 18.978513
+  lng: 72.820085
+  name: Race Course/Zenith Company Satrasta
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 583
+  lat: 18.929708
+  lng: 72.834926
+  name: Old Custom House Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 584
+  lat: 19.058999
+  lng: 72.825466
+  name: D Monte Garden Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 585
+  lat: 19.059385
+  lng: 72.824465
+  name: Peri Cross Road Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 586
+  lat: 19.061487
+  lng: 72.82252
+  name: Police Superintendent. Office Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 587
+  lat: 19.069073
+  lng: 72.822706
+  name: Sherli Gaothan Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 588
+  lat: 19.074595
+  lng: 72.829629
+  name: 18th Road Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 589
+  lat: 19.074352
+  lng: 72.831794
+  name: 16th and 17th Road Khar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 590
+  lat: 19.084514
+  lng: 72.835431
+  name: Balkanji Bari School Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 591
+  lat: 19.083811
+  lng: 72.831343
+  name: Lido Cinema Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 592
+  lat: 19.083766
+  lng: 72.828894
+  name: Juhu Koliwada Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 593
+  lat: 19.089019
+  lng: 72.830418
+  name: Royal Hotel Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 594
+  lat: 19.094595
+  lng: 72.828973
+  name: Juhu Beach Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 595
+  lat: 19.098269
+  lng: 72.829826
+  name: Theosophical Society Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 596
+  lat: 19.107029
+  lng: 72.829777
+  name: Juhu Bus Station Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 597
+  lat: 19.11065
+  lng: 72.831706
+  name: Bharatiya Arogya Nidhi Hospital Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 598
+  lat: 19.123729
+  lng: 72.82858
+  name: Versova View J.V.P.D.
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 599
+  lat: 19.126102
+  lng: 72.827819
+  name: Four Bungalows Market Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 600
+  lat: 19.125959
+  lng: 72.828535
+  name: Four Bungalows Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 601
+  lat: 19.126761
+  lng: 72.822748
+  name: Seven Bungalows Bus Stn. Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 602
+  lat: 18.968443
+  lng: 72.845067
+  name: Dockyard Road Station Dockyard Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 603
+  lat: 18.968434
+  lng: 72.8451
+  name: Central Rly Goods Dockyard Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 604
+  lat: 18.956778
+  lng: 72.842586
+  name: Wadi Bunder
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 605
+  lat: 18.954975
+  lng: 72.842117
+  name: Princess Dock
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 606
+  lat: 18.952693
+  lng: 72.841617
+  name: Loha Bhavan Sandhurst Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 607
+  lat: 18.949608
+  lng: 72.840841
+  name: Carnac Bunder Sandhurst Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 608
+  lat: 18.949381
+  lng: 72.837134
+  name: Musafir Khana Mahatma Phule Market
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 609
+  lat: 18.987281
+  lng: 72.841756
+  name: Azad Flour Mill Kala Chowky
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 610
+  lat: 18.992696
+  lng: 72.842236
+  name: Saibaba Road Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 611
+  lat: 19.000145
+  lng: 72.846631
+  name: Parel Village/St.Gora Kumbhar Chk. Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 612
+  lat: 19.009134
+  lng: 72.847484
+  name: Naigaon Police Colony Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 613
+  lat: 19.011537
+  lng: 72.84844
+  name: Spring Mill Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 614
+  lat: 19.014901
+  lng: 72.842601
+  name: Swami Narayan Chowk Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 615
+  lat: 19.02143
+  lng: 72.84626
+  name: Hindu Colony Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 616
+  lat: 19.022949
+  lng: 72.848149
+  name: Raja Shivaji High School Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 617
+  lat: 19.02133
+  lng: 72.853157
+  name: Five Gardens Dadar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 618
+  lat: 19.024171
+  lng: 72.856898
+  name: Don Bosco Kings Circle
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 619
+  lat: 19.054306
+  lng: 72.866765
+  name: Maharashtra Weight Bridge Sion East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 620
+  lat: 19.057591
+  lng: 72.868852
+  name: Kurla Level Crossing Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 621
+  lat: 19.100571
+  lng: 72.888905
+  name: Lokmanya Tilak Nagar Asalpha Village
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 622
+  lat: 19.098156
+  lng: 72.892163
+  name: Mohili Village Asalpha Village
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 623
+  lat: 19.096718
+  lng: 72.896691
+  name: Asalpha Village Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 624
+  lat: 19.096018
+  lng: 72.898234
+  name: Jambhulpada Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 625
+  lat: 19.175854
+  lng: 72.863949
+  name: Noorani Masjid (Pathanwadi) Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 626
+  lat: 19.249248
+  lng: 72.875491
+  name: Garten Pada Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 627
+  lat: 19.24423
+  lng: 72.875641
+  name: Gawade Nagar Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 628
+  lat: 19.244103
+  lng: 72.877815
+  name: Fish Market Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 629
+  lat: 18.999127
+  lng: 72.850271
+  name: Sewree Naka Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 630
+  lat: 19.00317
+  lng: 72.842134
+  name: Haffkine Institute Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 631
+  lat: 19.050207
+  lng: 72.835992
+  name: Telephone Exchange Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 632
+  lat: 19.050795
+  lng: 72.835778
+  name: Akshaya Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 633
+  lat: 19.052045
+  lng: 72.832871
+  name: Parijat Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 634
+  lat: 19.050552
+  lng: 72.828773
+  name: Mount Carmel Church Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 635
+  lat: 19.159154
+  lng: 72.852634
+  name: Goregaon Bus Station Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 636
+  lat: 19.158837
+  lng: 72.847881
+  name: Ram Baug Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 637
+  lat: 19.158605
+  lng: 72.843989
+  name: Ganpati Stores Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 638
+  lat: 19.1587
+  lng: 72.837376
+  name: Hari Niketan Society Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 639
+  lat: 19.160083
+  lng: 72.836582
+  name: Ayyappa Mandir Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 640
+  lat: 19.129679
+  lng: 72.830807
+  name: R.T.O./New Vikas Housing Society Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 641
+  lat: 19.133746
+  lng: 72.832421
+  name: Telephone Exchange Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 642
+  lat: 19.136218
+  lng: 72.833401
+  name: Shree Swami Samarth Nagar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 643
+  lat: 19.103158
+  lng: 72.854028
+  name: Hanuman Society Bldg No.5 Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 644
+  lat: 19.104886
+  lng: 72.853584
+  name: Subhash Marg Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 645
+  lat: 19.140045
+  lng: 72.833558
+  name: Oriental Bank/S.Samarth Nagar Market Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 646
+  lat: 19.141747
+  lng: 72.833701
+  name: Shree Swami Samarth Nagar Extension
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 647
+  lat: 19.143452
+  lng: 72.833583
+  name: Bhutta Tower Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 648
+  lat: 19.199386
+  lng: 72.829452
+  name: Ekta Nagar Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 649
+  lat: 19.203199
+  lng: 72.830827
+  name: Kandivli Indu Estate/Ganesh Nagar Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 650
+  lat: 19.21358
+  lng: 72.832511
+  name: Bank Of Maharasthra Charkop
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 651
+  lat: 18.974394
+  lng: 72.840005
+  name: Anjeerwadi Mazgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 652
+  lat: 18.976529
+  lng: 72.839587
+  name: Mustafa Bazar/Savlya Tandel Chowk Mazgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 653
+  lat: 18.985627
+  lng: 72.841991
+  name: Ghodpdeo Kala Chowky
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 654
+  lat: 18.989885
+  lng: 72.844192
+  name: Kalachowky Police Station Kala Chowky
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 655
+  lat: 18.989883
+  lng: 72.846329
+  name: Tank Bunder Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 656
+  lat: 18.99184
+  lng: 72.848035
+  name: Jackeria Bunder Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 657
+  lat: 18.996072
+  lng: 72.848035
+  name: Jubilee Mills Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 658
+  lat: 19.001525
+  lng: 72.853169
+  name: Shivaji Nagar Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 659
+  lat: 19.005897
+  lng: 72.852492
+  name: Dnyaneshwar Nagar Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 660
+  lat: 19.009597
+  lng: 72.853601
+  name: Kidwai Nagar Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 661
+  lat: 19.013269
+  lng: 72.850511
+  name: Sahakar Nagar Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 662
+  lat: 19.014772
+  lng: 72.846079
+  name: Sharda Cinema Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 663
+  lat: 19.045436
+  lng: 72.839128
+  name: Mahim Bus Station Mahim
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 664
+  lat: 19.209486
+  lng: 72.858171
+  name: Kandivli Telephone Exchange Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 665
+  lat: 19.21324
+  lng: 72.847997
+  name: Mahavir Nagar Extension Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 666
+  lat: 19.201306
+  lng: 72.830276
+  name: Ganesh Chowk Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 667
+  lat: 19.214664
+  lng: 72.829476
+  name: Indian Education School Charkop
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 668
+  lat: 19.213228
+  lng: 72.828587
+  name: Hanuman Mandir Charkop
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 669
+  lat: 19.227864
+  lng: 72.840948
+  name: Gorai Depot Gorai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 670
+  lat: 19.22715
+  lng: 72.844064
+  name: Gorai Radio Centre Gorai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 671
+  lat: 19.226374
+  lng: 72.847146
+  name: M.H.B.Colony Gorai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 672
+  lat: 19.225702
+  lng: 72.849877
+  name: Don Bosco Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 673
+  lat: 19.225122
+  lng: 72.852468
+  name: Vazira Naka Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 674
+  lat: 19.225072
+  lng: 72.854602
+  name: Babhai Naka Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 675
+  lat: 19.226176
+  lng: 72.860915
+  name: Maharashtra Nagar Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 676
+  lat: 19.224819
+  lng: 72.861629
+  name: Diamond Cinema Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 677
+  lat: 19.112357
+  lng: 72.936905
+  name: Kannamwar Nagar Hospital Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 678
+  lat: 19.11302
+  lng: 72.937876
+  name: Kannamwar Nagar Building No 150 Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 679
+  lat: 19.11356
+  lng: 72.938917
+  name: Kannamwar Nagar Building 175 Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 680
+  lat: 19.116016
+  lng: 72.936756
+  name: Kannamwar Nagar No 2 Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 681
+  lat: 18.9978
+  lng: 72.840987
+  name: Mahatma Gandhi Hospital Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 682
+  lat: 19.001543
+  lng: 72.841196
+  name: K.E.M.Hospital Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 683
+  lat: 19.004222
+  lng: 72.842562
+  name: Tata Hospital Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 684
+  lat: 19.013539
+  lng: 72.854895
+  name: Madhav Nagar Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 685
+  lat: 19.014538
+  lng: 72.855415
+  name: Azad Nagar Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 686
+  lat: 19.027837
+  lng: 72.859774
+  name: Wadala Gate No 4 Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 687
+  lat: 19.030115
+  lng: 72.8587
+  name: Amulakh High School Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 688
+  lat: 19.032248
+  lng: 72.857186
+  name: Matunga Police Station Kings Circle
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 689
+  lat: 19.039413
+  lng: 72.864078
+  name: Sardar Nagar No 2 Antop Hill
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 690
+  lat: 19.033615
+  lng: 72.866432
+  name: Antop Hill Church Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 691
+  lat: 19.032183
+  lng: 72.862942
+  name: C.G.S.Dispensary Antop Hill
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 692
+  lat: 19.0313
+  lng: 72.864652
+  name: Kane Nagar Antop Hill
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 693
+  lat: 19.028058
+  lng: 72.865748
+  name: Antop Hill Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 694
+  lat: 19.022907
+  lng: 72.86302
+  name: Indian Oil Depot Antop Hill
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 695
+  lat: 19.019938
+  lng: 72.863591
+  name: Wadala Fly Over Bridge Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 696
+  lat: 19.016397
+  lng: 72.862984
+  name: Nadkarni Park Police Station Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 697
+  lat: 19.086268
+  lng: 72.829139
+  name: Juhu Tara Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 698
+  lat: 19.113215
+  lng: 72.831104
+  name: Utpal Sanghavi School Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 699
+  lat: 19.099811
+  lng: 72.910669
+  name: Kaju Pada/Ganesh Maidan Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 700
+  lat: 19.115144
+  lng: 72.86797
+  name: Marol Depot Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 701
+  lat: 19.219556
+  lng: 72.867618
+  name: Datta Pada Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 702
+  lat: 19.155311
+  lng: 72.934117
+  name: Milind Nagar Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 703
+  lat: 19.14393
+  lng: 72.937147
+  name: Hanuman Mandir Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 704
+  lat: 19.1507
+  lng: 72.937446
+  name: Khot Road Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 705
+  lat: 19.169331
+  lng: 72.850132
+  name: Sunder Nagar Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 706
+  lat: 19.175312
+  lng: 72.844409
+  name: Madhur Colony Goregaon West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 707
+  lat: 19.204697
+  lng: 72.876383
+  name: Samata Nagar Bus Stn. Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 708
+  lat: 19.205616
+  lng: 72.876087
+  name: Samata Nagar Building No 3and5 Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 709
+  lat: 19.254508
+  lng: 72.872091
+  name: Anand Nagar No.1 Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 710
+  lat: 19.254508
+  lng: 72.872091
+  name: Anand Nagar Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 711
+  lat: 19.254982
+  lng: 72.870271
+  name: Sudhindra Nagar Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 712
+  lat: 19.253611
+  lng: 72.869341
+  name: Anand Hospital Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 713
+  lat: 19.109223
+  lng: 72.867614
+  name: Charatsingh Colony Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 714
+  lat: 19.10922
+  lng: 72.864947
+  name: R.B.I.Colony Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 715
+  lat: 19.112249
+  lng: 72.863213
+  name: Chakala (Satamwadi) Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 716
+  lat: 19.169993
+  lng: 72.965685
+  name: Mhada Bus Station Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 717
+  lat: 19.168083
+  lng: 72.964898
+  name: Mhada Office (Mulund E)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 718
+  lat: 19.169816
+  lng: 72.962682
+  name: Arunodaya Nagar Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 719
+  lat: 19.170444
+  lng: 72.962754
+  name: I.E.S.Vidyalaya Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 720
+  lat: 19.171007
+  lng: 72.963339
+  name: Holy Angle Vidyalaya Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 721
+  lat: 19.171344
+  lng: 72.96251
+  name: Gawan Pada Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 722
+  lat: 19.171942
+  lng: 72.960235
+  name: Municipal Hospital Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 723
+  lat: 19.170973
+  lng: 72.957376
+  name: Mulund Station Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 724
+  lat: 19.169643
+  lng: 72.956674
+  name: Ganesh Talkies Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 725
+  lat: 19.16865
+  lng: 72.956046
+  name: Vrudhi Siddhi Soc.(Mulund E)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 726
+  lat: 19.16785
+  lng: 72.955197
+  name: Chitragan Society Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 727
+  lat: 19.088108
+  lng: 72.894523
+  name: Employment Exchange Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 728
+  lat: 19.080126
+  lng: 72.903551
+  name: Rajawadi Hospital Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 729
+  lat: 19.078449
+  lng: 72.902991
+  name: Income Tax Office Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 730
+  lat: 19.069681
+  lng: 72.901375
+  name: Chheda Nagar Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 731
+  lat: 19.239196
+  lng: 72.872391
+  name: Ganesh Nagar Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 732
+  lat: 19.238696
+  lng: 72.874344
+  name: Anurag Society Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 733
+  lat: 19.237743
+  lng: 72.877135
+  name: Ashok Van Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 734
+  lat: 19.24014
+  lng: 72.8784
+  name: Dongre Wadi Borivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 735
+  lat: 19.018847
+  lng: 72.847109
+  name: Khodadad Circle (Dadarworkshop) Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 736
+  lat: 19.015019
+  lng: 72.85342
+  name: Wadala Depot Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 737
+  lat: 18.996517
+  lng: 72.812341
+  name: Worli Dairy Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 738
+  lat: 19.004043
+  lng: 72.81374
+  name: Worli Sea Face (S) Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 739
+  lat: 19.000808
+  lng: 72.814856
+  name: Flora Hotel Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 740
+  lat: 18.995107
+  lng: 72.823053
+  name: Gandhi Nagar Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 741
+  lat: 18.997168
+  lng: 72.822691
+  name: Shree Ram Mill Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 742
+  lat: 18.997162
+  lng: 72.824791
+  name: Gopikrishna Piramal Hospital Lower Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 743
+  lat: 18.997382
+  lng: 72.82937
+  name: Dawn Mill Lower Parel
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 744
+  lat: 19.00576
+  lng: 72.847423
+  name: Best Colony Bhoiwada
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 745
+  lat: 19.005902
+  lng: 72.851317
+  name: T.B.Hospital Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 746
+  lat: 19.018847
+  lng: 72.847109
+  name: Khodadad Circle (Pritamhotel) Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 747
+  lat: 19.024311
+  lng: 72.849172
+  name: Poddar College Dadar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 748
+  lat: 19.027245
+  lng: 72.85009
+  name: Matunga Station East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 749
+  lat: 19.029788
+  lng: 72.85434
+  name: Post Office Matunga East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 750
+  lat: 19.029445
+  lng: 72.852719
+  name: Pioneer High School Matunga East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 751
+  lat: 19.032121
+  lng: 72.853884
+  name: Matunga Rly Phatak East Matunga East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 752
+  lat: 19.039734
+  lng: 72.850169
+  name: Estrella Battery/Shahu Nagar Dharavi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 753
+  lat: 19.044622
+  lng: 72.848672
+  name: Mahim Phatak Dharavi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 754
+  lat: 19.046765
+  lng: 72.848763
+  name: Dharavi Fly Over Bridge Dharavi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 755
+  lat: 19.043787
+  lng: 72.862688
+  name: Rani Laxmibai Chowk/Roopam Cinema Sion East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 756
+  lat: 19.124809
+  lng: 72.847383
+  name: Filmalaya Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 757
+  lat: 19.124803
+  lng: 72.843203
+  name: Amboli Village Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 758
+  lat: 19.125345
+  lng: 72.840489
+  name: Pallavi Building Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 759
+  lat: 19.12859
+  lng: 72.840356
+  name: Azad Nagar Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 760
+  lat: 19.12928
+  lng: 72.83736
+  name: Ju Chandra Housing Society Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 761
+  lat: 19.129838
+  lng: 72.834934
+  name: Bele Villa Hospital Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 762
+  lat: 19.137579
+  lng: 72.835023
+  name: Lokhandwala Complex Oshiwara
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 763
+  lat: 19.197423
+  lng: 72.880426
+  name: Alika Nagar Junction Kandivli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 764
+  lat: 18.92572
+  lng: 72.825796
+  name: Vidhan Bhawan Mantralaya
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 765
+  lat: 18.925045
+  lng: 72.820079
+  name: N.C.P.A. Mantralaya
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 766
+  lat: 18.956133
+  lng: 72.828535
+  name: Gulal Wadi/Yadnik Chowk C.P.Tank
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 767
+  lat: 18.961422
+  lng: 72.828749
+  name: Two Tanks Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 768
+  lat: 18.966664
+  lng: 72.828879
+  name: Hasrat Mohani Chowk Nagpada
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 769
+  lat: 18.97592
+  lng: 72.824117
+  name: Agripada Nagpada
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 770
+  lat: 19.009786
+  lng: 72.821312
+  name: Passport Office Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 771
+  lat: 19.012787
+  lng: 72.831309
+  name: Khedgalli Prabhadevi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 772
+  lat: 19.02488
+  lng: 72.896937
+  name: Polychem Company Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 773
+  lat: 19.02744
+  lng: 72.89584
+  name: Bhikaji Damaji Patil Marg Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 774
+  lat: 19.031996
+  lng: 72.895915
+  name: Calico Mills Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 775
+  lat: 19.035207
+  lng: 72.894315
+  name: Shankar Mandir Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 776
+  lat: 19.037515
+  lng: 72.893515
+  name: Vasi Naka(Chembur) Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 777
+  lat: 19.042524
+  lng: 72.89227
+  name: Aziz Baug Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 778
+  lat: 19.046611
+  lng: 72.891286
+  name: Marawali Church Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 779
+  lat: 19.062559
+  lng: 72.898962
+  name: Dr.Ambedkar Garden/Chembur Station West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 780
+  lat: 19.063426
+  lng: 72.902436
+  name: Subhash Nagar Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 781
+  lat: 19.062396
+  lng: 72.904405
+  name: Acharya Marathe College Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 782
+  lat: 19.184832
+  lng: 72.947652
+  name: Vaishali Nagar Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 783
+  lat: 19.184079
+  lng: 72.948709
+  name: Keva Fragranes/Model Town Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 784
+  lat: 19.166901
+  lng: 72.950326
+  name: Urban Co.Op.Bank Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 785
+  lat: 19.167225
+  lng: 72.952186
+  name: Ambika Nagar Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 786
+  lat: 19.166214
+  lng: 72.951282
+  name: Nahur Village/Mehul Cinema Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 787
+  lat: 19.162717
+  lng: 72.94785
+  name: Sarvodaya Parshwanath Nagar Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 788
+  lat: 19.146672
+  lng: 72.930534
+  name: Sarvodaya Nagar(Bhandup W)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 789
+  lat: 19.143137
+  lng: 72.928219
+  name: Kokan Nagar Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 790
+  lat: 19.137637
+  lng: 72.926894
+  name: Maharashtra Nagar Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 791
+  lat: 19.225745
+  lng: 72.863533
+  name: Borivli Station West Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 792
+  lat: 19.229462
+  lng: 72.834308
+  name: Gorai Creek Gorai
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 793
+  lat: 19.140385
+  lng: 72.846351
+  name: Sindhi Colony Jogeshwari West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 794
+  lat: 19.140563
+  lng: 72.844752
+  name: Mehrabad Baug Jogeshwari West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 795
+  lat: 19.113674
+  lng: 72.882038
+  name: Borosil Glass Factory Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 796
+  lat: 19.1142
+  lng: 72.885682
+  name: Modern Paper Mills Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 797
+  lat: 19.12564
+  lng: 72.834298
+  name: Jivan Nagar Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 798
+  lat: 19.145659
+  lng: 72.932753
+  name: Miniland Society Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 799
+  lat: 19.04862
+  lng: 72.89444
+  name: Gandhi Market Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 800
+  lat: 19.049174
+  lng: 72.900781
+  name: Wadavli Village/Borla Society Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 801
+  lat: 19.069601
+  lng: 72.901396
+  name: Amar Mahal/Chheda Nagar Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 802
+  lat: 19.116447
+  lng: 72.939183
+  name: Kannamwar Nagar 1 Vikhroli East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 803
+  lat: 19.125472
+  lng: 72.940236
+  name: Kanjur Marg Village Kanjurmarg East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 804
+  lat: 19.148247
+  lng: 72.943541
+  name: Bhandup Village Bhandup East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 805
+  lat: 19.148749
+  lng: 72.953157
+  name: Bhandup Pumping Centre Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 806
+  lat: 19.16356
+  lng: 72.957153
+  name: Mithaghar Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 807
+  lat: 18.954824
+  lng: 72.818188
+  name: Prarthana Samaj/Harkishandas Hospital Tardeo
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 808
+  lat: 18.959548
+  lng: 72.820252
+  name: Railway Hotel /Charni Road Jun. Tardeo
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 809
+  lat: 18.963818
+  lng: 72.820995
+  name: Tardeo Bus Station/Rushi Mehta Chk. Tardeo
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 810
+  lat: 19.180978
+  lng: 72.850685
+  name: Anand Marg Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 811
+  lat: 19.180039
+  lng: 72.850619
+  name: Lokmanya Tilak Chowk Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 812
+  lat: 19.179798
+  lng: 72.847743
+  name: Sardar Chowk Malad W
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 813
+  lat: 19.180304
+  lng: 72.846167
+  name: Industrial Estate Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 814
+  lat: 19.180008
+  lng: 72.845499
+  name: Krishna Bldg Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 815
+  lat: 19.179139
+  lng: 72.845611
+  name: Navy Nagar Malad
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 816
+  lat: 19.103704
+  lng: 72.843672
+  name: Laxmi Talkies Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 817
+  lat: 19.105604
+  lng: 72.849734
+  name: Bhutta College Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 818
+  lat: 19.108329
+  lng: 72.851378
+  name: Shivaji Chowk Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 819
+  lat: 19.101462
+  lng: 72.833033
+  name: Sahakari Bhandar(Juhu Hotel)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 820
+  lat: 19.042027
+  lng: 72.943397
+  name: Dhobi Ghat Trombay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 821
+  lat: 19.044325
+  lng: 72.941501
+  name: Cheeta Camp(Trombay) Trombay
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 822
+  lat: 19.047134
+  lng: 72.933935
+  name: Mandala Mankhurd (N)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 823
+  lat: 19.047882
+  lng: 72.923848
+  name: Anushakti Nagar Deonar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 824
+  lat: 19.078377
+  lng: 72.908139
+  name: Odeon Cinema Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 825
+  lat: 19.012141
+  lng: 72.819282
+  name: Worli Depot Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 826
+  lat: 19.01043
+  lng: 72.819666
+  name: Municipal Colony Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 827
+  lat: 19.140329
+  lng: 72.932503
+  name: Janata Market Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 828
+  lat: 19.166288
+  lng: 72.951191
+  name: Nahur Village Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 829
+  lat: 19.165723
+  lng: 72.946096
+  name: St.Pius School Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 830
+  lat: 19.167271
+  lng: 72.945858
+  name: Saidham Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 831
+  lat: 19.180741
+  lng: 72.949394
+  name: Santoshi Mata Mandir Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 832
+  lat: 18.965476
+  lng: 72.824612
+  name: Shuklaji Street Tardeo
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 833
+  lat: 19.075566
+  lng: 72.862592
+  name: Air India Quarters Kalina
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 834
+  lat: 19.068263
+  lng: 72.899315
+  name: Amar Mahal(2) Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 835
+  lat: 19.124121
+  lng: 72.852295
+  name: Sat Bhakti Mandir
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 836
+  lat: 19.127606
+  lng: 72.852662
+  name: Gandhir Vidyalaya Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 837
+  lat: 19.135346
+  lng: 72.853061
+  name: Jogeshwari Station E/ Barr.Nath Pai Chowk
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 838
+  lat: 19.135622
+  lng: 72.854943
+  name: Jogeshwari Police Station Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 839
+  lat: 19.184079
+  lng: 72.948709
+  name: Swapna Nagari(Model Town) Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 840
+  lat: 19.012111
+  lng: 72.902146
+  name: Tata Power House Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 841
+  lat: 19.014383
+  lng: 72.897462
+  name: Lube India Company Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 842
+  lat: 19.017338
+  lng: 72.895509
+  name: Refineries Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 843
+  lat: 19.022175
+  lng: 72.895696
+  name: Bharat Petroleum Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 844
+  lat: 18.954736
+  lng: 72.808657
+  name: Babulnath Babulnath
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 845
+  lat: 18.965687
+  lng: 72.84689
+  name: Mazgaon Dock Mahul
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 846
+  lat: 19.038774
+  lng: 72.886272
+  name: Jawahar School Mahul
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 847
+  lat: 19.04211
+  lng: 72.888037
+  name: Jijamata Nagar Mahul
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 848
+  lat: 19.064584
+  lng: 72.89758
+  name: Chembur Level Crossing/Shell Bridg Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 849
+  lat: 19.08589
+  lng: 72.894111
+  name: Guru Nanak Nagar Vidyavihar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 850
+  lat: 19.176455
+  lng: 72.94629
+  name: Agarwal Municipal Hospital Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 851
+  lat: 19.202553
+  lng: 72.830488
+  name: Ganesh Society Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 852
+  lat: 18.93686
+  lng: 72.839703
+  name: Caltex Petrol Pump Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 853
+  lat: 18.938898
+  lng: 72.840056
+  name: Indira Dock Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 854
+  lat: 18.968989
+  lng: 72.837407
+  name: Mazgaon Court Mazgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 855
+  lat: 18.975975
+  lng: 72.837236
+  name: Masiana Hospital/Rustom Baug Byculla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 856
+  lat: 18.979722
+  lng: 72.84916
+  name: I.C.I. Reay Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 857
+  lat: 18.982387
+  lng: 72.858986
+  name: Tata Oil Mill/ Hindustan Lever Reay Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 858
+  lat: 18.986159
+  lng: 72.857482
+  name: Hay Bunder Reay Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 859
+  lat: 18.989741
+  lng: 72.855832
+  name: Hindustan Lever Reay Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 860
+  lat: 18.993343
+  lng: 72.854344
+  name: Coal Bunder Cotton Green East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 861
+  lat: 18.994703
+  lng: 72.853518
+  name: Gadi Adda Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 862
+  lat: 19.002048
+  lng: 72.859387
+  name: Bharat Petroleum Colony Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 863
+  lat: 19.004562
+  lng: 72.860175
+  name: Bharat Petroleum Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 864
+  lat: 19.011666
+  lng: 72.861077
+  name: B.P.T.Colony Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 865
+  lat: 19.014554
+  lng: 72.862194
+  name: B.P.T.Hospital Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 866
+  lat: 19.046826
+  lng: 72.876597
+  name: Shanti Nagar(Truck Terminal) Anik
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 867
+  lat: 19.047215
+  lng: 72.879171
+  name: Truck Terminal Main Gate Anik
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 868
+  lat: 19.050789
+  lng: 72.881798
+  name: Anik Depot Wadala East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 869
+  lat: 19.126452
+  lng: 72.880272
+  name: Seepz Bus Station Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 870
+  lat: 19.086263
+  lng: 72.836811
+  name: Shastri Nagar Santacruz West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 871
+  lat: 19.136385
+  lng: 72.81072
+  name: Gangabhuwan Versova
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 872
+  lat: 19.04795
+  lng: 72.927246
+  name: Mankhurd Station Road Mankhurd (N)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 873
+  lat: 19.018832
+  lng: 72.849724
+  name: Parsi Colony Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 874
+  lat: 19.026252
+  lng: 72.857184
+  name: V.J.T.I.College Kings Circle
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 875
+  lat: 19.020167
+  lng: 72.856757
+  name: Wadala Church Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 876
+  lat: 19.055911
+  lng: 72.91186
+  name: Govandi Bus Station Govandi East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 877
+  lat: 19.05677
+  lng: 72.915496
+  name: Govandi Stn.Rd East /Patwardhan School Govandi East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 878
+  lat: 19.031774
+  lng: 72.841935
+  name: Dhairyavan Chowk Matunga West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 879
+  lat: 19.030591
+  lng: 72.847142
+  name: Matunga Station West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 880
+  lat: 19.104332
+  lng: 72.830403
+  name: Saraswat Bank(Parulekar Rd Juhu)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 881
+  lat: 19.229529
+  lng: 72.862314
+  name: Borivli Telephone Exchange Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 882
+  lat: 19.047794
+  lng: 72.925544
+  name: Childrens Home Anushakti Nagar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 883
+  lat: 19.054871
+  lng: 72.843582
+  name: Bhaskar Court Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 884
+  lat: 19.055896
+  lng: 72.84305
+  name: Bandra Station East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 885
+  lat: 19.184566
+  lng: 72.853003
+  name: Malad Station W(Anand Marg) Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 886
+  lat: 19.188135
+  lng: 72.814428
+  name: Hamala Main Gate/N.I.S/Family Gate Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 887
+  lat: 19.185002
+  lng: 72.812668
+  name: Hamala K.V.School/F Colony Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 888
+  lat: 19.18268
+  lng: 72.80835
+  name: J.J.Hosp.Nursing Society Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 889
+  lat: 19.18103
+  lng: 72.805168
+  name: Marshal Wadi/Vihir(Aksa) Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 890
+  lat: 19.176111
+  lng: 72.804702
+  name: Aksa Village Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 891
+  lat: 19.171104
+  lng: 72.803695
+  name: Aksa Beach Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 892
+  lat: 19.163253
+  lng: 72.796914
+  name: Malati Cottage(Erangal) Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 893
+  lat: 19.159668
+  lng: 72.795456
+  name: Erangal Beach/I.N.S.Hamla Malad West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 894
+  lat: 19.157882
+  lng: 72.792796
+  name: Bhati Village Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 895
+  lat: 19.154647
+  lng: 72.794069
+  name: Master Wadi Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 896
+  lat: 19.151457
+  lng: 72.794912
+  name: Madh Beach/Madh Church Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 897
+  lat: 19.148822
+  lng: 72.796566
+  name: Madh Market Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 898
+  lat: 19.144726
+  lng: 72.796944
+  name: Madh Temple Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 899
+  lat: 19.027837
+  lng: 72.859774
+  name: Wadala Gate No 4/Siwsschool
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 900
+  lat: 19.025276
+  lng: 72.86026
+  name: Wadala Gate No 2U
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 901
+  lat: 18.962648
+  lng: 72.834776
+  name: Umerkhadi Dongri
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 902
+  lat: 18.963019
+  lng: 72.837509
+  name: Noorbaug Dongri
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 903
+  lat: 18.967601
+  lng: 72.839722
+  name: Tadwadi Dongri
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 904
+  lat: 18.969839
+  lng: 72.836054
+  name: Byculla Police Station Byculla East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 905
+  lat: 19.060031
+  lng: 72.844664
+  name: Kherwadi Police Station Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 906
+  lat: 18.930099
+  lng: 72.822761
+  name: International Hotel Churchgate
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 907
+  lat: 18.9314
+  lng: 72.823389
+  name: Government College Churchgate
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 908
+  lat: 18.938567
+  lng: 72.824786
+  name: Zaveri Mahal Marine Lines East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 909
+  lat: 18.943327
+  lng: 72.823761
+  name: Successeria Bldg. Churchgate
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 910
+  lat: 18.945785
+  lng: 72.822224
+  name: Gymkhana Marine Lines East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 911
+  lat: 18.948278
+  lng: 72.819669
+  name: Taraporewala Aquarium Marine Lines East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 912
+  lat: 18.94921
+  lng: 72.819544
+  name: Swimming Pool Marine Lines East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 913
+  lat: 19.083597
+  lng: 72.897603
+  name: Navsena Gate/Kirol Village(Vidyavihar)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 914
+  lat: 19.083478
+  lng: 72.895448
+  name: Indira Nagar/Khalai Village Vidyavihar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 915
+  lat: 19.126148
+  lng: 72.863122
+  name: Income Tax Colony Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 916
+  lat: 19.1261
+  lng: 72.863194
+  name: Datta Mandir(Income Tax Colony) Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 917
+  lat: 19.125564
+  lng: 72.868693
+  name: Tolani College Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 918
+  lat: 19.148335
+  lng: 72.859139
+  name: Nirlon Industrial Estate Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 919
+  lat: 19.154973
+  lng: 72.859747
+  name: Cama Industrial Estate Jogeshwari East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 920
+  lat: 19.15538
+  lng: 72.85862
+  name: Dani Iron Steel Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 921
+  lat: 19.157299
+  lng: 72.856003
+  name: Ishwarbhai Patel Road Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 922
+  lat: 19.159144
+  lng: 72.855859
+  name: Swati Studio Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 923
+  lat: 19.161238
+  lng: 72.854605
+  name: Goregaon Station East Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 924
+  lat: 19.168096
+  lng: 72.856341
+  name: Pandurang Wadi Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 925
+  lat: 19.157882
+  lng: 72.87471
+  name: Unit No 10
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 926
+  lat: 19.149178
+  lng: 72.86976
+  name: Dairy Research Institute Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 927
+  lat: 19.148004
+  lng: 72.870875
+  name: Karim Bungalows Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 928
+  lat: 19.065524
+  lng: 72.842772
+  name: Bandra Rly.Terminal Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 929
+  lat: 19.068687
+  lng: 72.842528
+  name: Khar Station E Khar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 930
+  lat: 19.018988
+  lng: 72.832117
+  name: Kirti College/India United Mill
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 931
+  lat: 19.032839
+  lng: 72.838634
+  name: National(Hinduja) Hospital Mahim
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 932
+  lat: 19.116696
+  lng: 72.8487
+  name: Andheri Station West Andheri West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 933
+  lat: 19.12809
+  lng: 72.92855
+  name: Kanjurmarg Station West Kanjurmarg West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 934
+  lat: 19.09206
+  lng: 72.851231
+  name: Centaur Hotel/Airport Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 935
+  lat: 18.956958
+  lng: 72.827554
+  name: Moti Cinema Bhendi Bazaar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 936
+  lat: 18.957691
+  lng: 72.825015
+  name: Khetwadi Dongri
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 937
+  lat: 19.171785
+  lng: 72.943016
+  name: Bombay Oxygen Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 938
+  lat: 19.154526
+  lng: 72.876046
+  name: Chotha Kashmir/Observatory Point Goregaon East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 939
+  lat: 19.213759
+  lng: 72.824129
+  name: Charkop Village Charkop
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 940
+  lat: 19.214036
+  lng: 72.82741
+  name: Jivan Sandeep Bldg. Charkop
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 941
+  lat: 19.215227
+  lng: 72.828194
+  name: Ekveera Vidyalaya Charkop
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 942
+  lat: 19.100861
+  lng: 72.870477
+  name: Om Nagar(Ware House) Andheri East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 943
+  lat: 18.969188
+  lng: 72.840417
+  name: Maharana Pratap Chowk Mazgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 944
+  lat: 18.961251
+  lng: 72.838758
+  name: Sandhurst Stn. Road Sandhurst Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 945
+  lat: 18.959664
+  lng: 72.8385
+  name: Chinch Bunder Mazgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 946
+  lat: 18.957701
+  lng: 72.833313
+  name: Khambekar Street Dongri
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 947
+  lat: 19.122447
+  lng: 72.883599
+  name: Goregaon Check Naka No.2 Marol
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 948
+  lat: 19.140944
+  lng: 72.794977
+  name: Pascal Wadi Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 949
+  lat: 19.156345
+  lng: 72.793175
+  name: Kamal Baug/14Th Bungalows Madh
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 950
+  lat: 19.247281
+  lng: 72.865247
+  name: Dahisar Bridge Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 951
+  lat: 19.249862
+  lng: 72.866029
+  name: Dahisar Market Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 952
+  lat: 18.968892
+  lng: 72.84406
+  name: B.P.T.Colony Mazgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 953
+  lat: 18.970381
+  lng: 72.845568
+  name: Best Power House(Kussara) Mazgaon
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 954
+  lat: 18.975696
+  lng: 72.845012
+  name: Darukhana Dockyard Road
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 955
+  lat: 19.18157
+  lng: 72.863551
+  name: Old Pushpa Park
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 956
+  lat: 19.182008
+  lng: 72.855079
+  name: Malad Station E Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 957
+  lat: 19.210809
+  lng: 72.826777
+  name: Associated Capsule Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 958
+  lat: 19.110248
+  lng: 72.829554
+  name: Hare Ram Hare Krishna Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 959
+  lat: 19.111549
+  lng: 72.828267
+  name: Brahmakund/Sumati School Juhu
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 960
+  lat: 19.00539
+  lng: 72.82782
+  name: Bombay Dyeing Worli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 961
+  lat: 18.961769
+  lng: 72.830665
+  name: Cafe Paradise Grant Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 962
+  lat: 18.961234
+  lng: 72.825225
+  name: Anjuman College Grant Road East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 963
+  lat: 19.165079
+  lng: 72.948947
+  name: Goshala Road Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 964
+  lat: 19.164841
+  lng: 72.946763
+  name: Ashirvad Building Mulund West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 965
+  lat: 19.170443
+  lng: 72.959582
+  name: Hanuman Chowk Mulund East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 966
+  lat: 19.016891
+  lng: 72.852018
+  name: Vitthal Mandir/Wadala Market Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 967
+  lat: 19.061493
+  lng: 72.887435
+  name: Everest Co.Op.Society Kurla West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 968
+  lat: 19.065028
+  lng: 72.895282
+  name: Shell Colony /Samaj Mandir Hall Chembur East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 969
+  lat: 19.064743
+  lng: 72.893249
+  name: Sahakar Nagar(Chembur)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 970
+  lat: 19.065287
+  lng: 72.902557
+  name: Chembur Station Road No 1 Chembur West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 971
+  lat: 19.099453
+  lng: 72.915647
+  name: Industrial Estate Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 972
+  lat: 18.940579
+  lng: 72.834976
+  name: CST (Bhatia Baug) Fort
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 973
+  lat: 19.164013
+  lng: 72.882549
+  name: Santosh Nagar Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 974
+  lat: 19.100521
+  lng: 72.913712
+  name: Amrut Nagar Vikhroli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 975
+  lat: 19.127397
+  lng: 72.929682
+  name: Mansukh Dyeing Company Kanjurmarg East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 976
+  lat: 19.128577
+  lng: 72.932245
+  name: Ankur Hospital Bhandup East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 977
+  lat: 19.130297
+  lng: 72.932113
+  name: Paras Chemist Bhandup East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 978
+  lat: 19.133304
+  lng: 72.932329
+  name: Datar Colony Bhandup East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 979
+  lat: 19.135652
+  lng: 72.934174
+  name: Adarsh Vidyalaya Bhandup East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 980
+  lat: 19.14077
+  lng: 72.939
+  name: Bhandup Station Bhandup East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 981
+  lat: 19.173203
+  lng: 72.859788
+  name: Geetanjai Bldg. Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 982
+  lat: 19.175956
+  lng: 72.857349
+  name: Ashok Hospital Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 983
+  lat: 19.174059
+  lng: 72.855534
+  name: Desai Municipal Hospital Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 984
+  lat: 19.176119
+  lng: 72.854778
+  name: Jitendra Marg Malad East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 985
+  lat: 19.112003
+  lng: 72.892786
+  name: Kamani Oil Industries Chandivli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 986
+  lat: 19.018024
+  lng: 72.858646
+  name: Wadala Station West Wadala West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 987
+  lat: 19.246838
+  lng: 72.866347
+  name: Kanjur Village Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 988
+  lat: 19.245589
+  lng: 72.866411
+  name: Municipal Hospital Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 989
+  lat: 19.243741
+  lng: 72.86642
+  name: Dahisar Station West Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 990
+  lat: 19.241189
+  lng: 72.866309
+  name: Gomant Nagar Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 991
+  lat: 19.229794
+  lng: 72.863172
+  name: Borivli Bus Station West Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 992
+  lat: 19.167494
+  lng: 72.874879
+  name: Hindustan Petrolum Colony Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 993
+  lat: 19.166468
+  lng: 72.873399
+  name: Housing Colony Dindoshi
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 994
+  lat: 19.167061
+  lng: 72.872544
+  name: Yashashri Building (Dindoshi)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 995
+  lat: 19.177445
+  lng: 72.821062
+  name: Malwani Block No 7 Malwani
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 996
+  lat: 19.048384
+  lng: 72.827464
+  name: Bandra Reclamation Bus Station Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 997
+  lat: 19.064223
+  lng: 72.853113
+  name: Bharat Nagar Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 998
+  lat: 19.063178
+  lng: 72.849137
+  name: M.Gandhi Vidya Mandir Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 999
+  lat: 19.062042
+  lng: 72.846051
+  name: Bluilding 46 Bandra East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1000
+  lat: 18.931634
+  lng: 72.835963
+  name: Mumbai Central Station/Reserve Bank
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1001
+  lat: 19.054207
+  lng: 72.837883
+  name: ''
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1002
+  lat: 19.032647
+  lng: 72.893257
+  name: H.P.Nagar Mahul
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1003
+  lat: 19.079323
+  lng: 72.904598
+  name: Zulelal Chowk Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1004
+  lat: 19.079004
+  lng: 72.905731
+  name: Maheshwari Dham Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1005
+  lat: 19.079621
+  lng: 72.90678
+  name: Bank Of Maharasthra/Odeon Cinema Ghatkopar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1006
+  lat: 19.081486
+  lng: 72.910256
+  name: R.B.Mehta Road/Chartered Bank(Ghatkopar E)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1007
+  lat: 19.248933
+  lng: 72.87743
+  name: Suhasini Pawaskar Marg Dahisar East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1008
+  lat: 19.099061
+  lng: 72.911211
+  name: Jagdusha Nagar Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1009
+  lat: 19.097658
+  lng: 72.909444
+  name: Gelda Nagar Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1010
+  lat: 19.092259
+  lng: 72.908126
+  name: Krupa Bldg Ghatkopar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1011
+  lat: 18.954612
+  lng: 72.812222
+  name: Wilson College Nana Chowk
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1012
+  lat: 19.059158
+  lng: 72.827362
+  name: Master Vinayak Road Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1013
+  lat: 19.235241
+  lng: 72.854011
+  name: Shanti Ashram
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1014
+  lat: 19.233581
+  lng: 72.853187
+  name: Eksar Koliwada Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1015
+  lat: 19.23192
+  lng: 72.852457
+  name: Eksar Village Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1016
+  lat: 19.226729
+  lng: 72.854029
+  name: C.K.P.Colony Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1017
+  lat: 19.239875
+  lng: 72.85704
+  name: Citizen Bank Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1018
+  lat: 19.244892
+  lng: 72.857749
+  name: Holy Cross Road Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1019
+  lat: 19.246176
+  lng: 72.857329
+  name: Rushi Complex Dahisar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1020
+  lat: 19.22674
+  lng: 72.857454
+  name: Prasanna Soc.(Chandavarkar Marg Borivali W)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1021
+  lat: 19.138147
+  lng: 72.926217
+  name: Ekta Nagar Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1022
+  lat: 19.138628
+  lng: 72.924742
+  name: Bhandup Peoples School Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1023
+  lat: 19.139113
+  lng: 72.922241
+  name: Pratap Nagar(Bhandup W)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1024
+  lat: 19.097394
+  lng: 72.851898
+  name: Mahant Road Vile Parle East
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1025
+  lat: 19.029341
+  lng: 72.837986
+  name: Gandhi Swimming Pool Shivaji Park
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1026
+  lat: 19.081336
+  lng: 72.889058
+  name: St.Joseph Tech.School Vidyavihar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1027
+  lat: 19.082626
+  lng: 72.885952
+  name: Holy Cross Rd/Premier Vidyavihar West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1028
+  lat: 19.150749
+  lng: 72.942533
+  name: Kasturi Vidyalaya Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1029
+  lat: 19.150315
+  lng: 72.943773
+  name: Usha Nagar Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1030
+  lat: 19.158148
+  lng: 72.944319
+  name: Subhash Nagar Bhandup West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1031
+  lat: 19.21847
+  lng: 72.857741
+  name: Gokhale Vidyalaya Shimpoli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1032
+  lat: 19.219528
+  lng: 72.851774
+  name: Ganesh Mandir/Kastur Park Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1033
+  lat: 19.218902
+  lng: 72.849451
+  name: Shimpoli Village Shimpoli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1034
+  lat: 19.216772
+  lng: 72.845995
+  name: Prapti Society Shimpoli
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1035
+  lat: 19.216939
+  lng: 72.847118
+  name: Yashkripa Building (Shimpoli)
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1036
+  lat: 19.229723
+  lng: 72.852113
+  name: Yogi Nagar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1037
+  lat: 19.228924
+  lng: 72.850148
+  name: Jayraj Nagar Borivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1038
+  lat: 19.214669
+  lng: 72.848397
+  name: Satya Nagar Poisar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1039
+  lat: 19.215039
+  lng: 72.850121
+  name: Mahavir Dham Poisar
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1040
+  lat: 19.21621
+  lng: 72.851021
+  name: Saibaba Nagar Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1041
+  lat: 19.216408
+  lng: 72.853891
+  name: Saibaba Mandir Kandivli West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1042
+  lat: 19.056756
+  lng: 72.833941
+  name: Municipal Office/Bhabha Hospital Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1043
+  lat: 19.060996
+  lng: 72.834556
+  name: Patkar Road Bandra West
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1044
+  lat: 19.000294
+  lng: 72.853174
+  name: Sewree Station West Sewree
+- !ruby/DataMapper,1.2.0.rc1:BusStop
+  id: 1045
+  lat: 19.047996
+  lng: 72.922132
+  name: Indraprasta Anushakti Nagar
