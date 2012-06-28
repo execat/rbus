@@ -11,4 +11,19 @@ describe HomeController do
     end
   end
 
+  context "logged in" do
+    before :each do
+      @request.env["devise.mapping"] = Devise.mappings[:admin]
+      @u = FactoryGirl.create(:user)
+      @u.confirm!
+      sign_in @u
+    end
+    
+    it "should redirect to my trips" do
+      get :index
+      response.should redirect_to("/intended_trips/my")
+    end
+  end
+
+
 end
