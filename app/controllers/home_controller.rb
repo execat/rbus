@@ -7,4 +7,7 @@ class HomeController < ApplicationController
       @intended_trip = IntendedTrip.new
     end
   end
+
+  def faq
+  end
 end
