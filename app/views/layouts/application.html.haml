@@ -23,6 +23,7 @@
       })();
   %body
     %form#feedback{:style => "position: absolute; right: 0px; top: 50px;background: #efefef; width: 300px; padding: 20px; border-radius: 10px; z-index: 100; display: none;", :action => feedback_path, :method => "post"}
+      = csrf_meta_tag
       %label your email
       %input{:type => "text", :name => "email"}
       %label your feedback
