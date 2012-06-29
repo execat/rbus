@@ -26,4 +26,18 @@ describe HomeController do
   end
 
 
+  describe "feedback" do
+    before :each do
+      post :feedback, {:body => "feedback mail"}
+      @mail = ActionMailer::Base.deliveries.last
+    end
+
+    it "should send feedback mail properly" do
+      @mail.encoded.should match("feedback mail")
+      response.should redirect_to root_path
+    end
+    
+    
+    
+  end
 end

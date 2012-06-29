@@ -19,3 +19,5 @@
           = link_to "Logout",destroy_user_session_path, :method => "delete", :confirm => "Are you sure you want to log out?"
         - else 
           = link_to "Login", new_user_session_path, :class => "btn btn-info"
+        %a.btn{:href => "#", :onclick => "javascript:$('#feedback').toggle()"}
+          feedback

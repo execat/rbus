@@ -8,6 +8,10 @@ class HomeController < ApplicationController
     end
   end
 
-  def faq
+  # posts feedback to svs@svs.io
+  def feedback
+    FeedbackMailer.feedback(params[:email], params[:body]).deliver
+    redirect_to root_path, {success: "Thanks for the feedback. We'll be in touch shortly."}
   end
+
 end

@@ -22,6 +22,13 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   %body
+    %form#feedback{:style => "position: absolute; right: 0px; top: 50px;background: #efefef; width: 300px; padding: 20px; border-radius: 10px; z-index: 100; display: none;", :action => feedback_path, :method => "post"}
+      %label your email
+      %input{:type => "text", :name => "email"}
+      %label your feedback
+      %textarea{:name => "feedback"}
+      %input{:type => "submit", :value => "submit feedback"}
+
     %header.navbar.navbar-fixed-top
       %nav.navbar-inner
         .container
