@@ -1,3 +1,14 @@
+:plain
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=73675367324";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
 .row{:style => "margin-bottom: 20px"}
   .span5#headline
     %h1 Mumbai   
@@ -12,8 +23,13 @@
       %span.highlight flexible timings
       &amp;
       %span.highlight your level of luxury.
-    %h3
-      %a{:href => "#pricing"} get more info here
+    %div{:style => "font-family: Helvetica, Sans"}
+      %h2 Not a commuter?
+      Help us spread the word on
+      %a{:href => "http://clicktotweet.com/tc83f"}
+        twitter
+      and facebook.
+      <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="450" data-show-faces="true"></div>
   .span7{:style => "display: table"}
     #new_form{:style => "display: table-cell; vertical-align: middle;"}
       = render 'intended_trips/form'

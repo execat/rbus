@@ -12,10 +12,6 @@
         - if current_user
           %li
             %a{:href => '/intended_trips/my'}My Trips
-        %li
-          %a{:href => '/faq'}FAQ
-        %li
-          %a{:href => '/about'}About
       %p.navbar-text.pull-right
         - if current_user
           %a{:href => "/user/" << current_user.email.to_s << "/dashboard"} #{current_user.email} 
