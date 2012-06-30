@@ -1,6 +1,8 @@
 /*
  * Load Bootstrap first so we can override it
  *= require bootstrap_loader
+ *= require jquery.ui.core
+ *= require jquery.ui.theme
 
  * Application-level styles next
 

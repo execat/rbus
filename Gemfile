@@ -27,7 +27,6 @@ gem 'dm-accepts_nested_attributes_for'
 gem 'cancan', :git => "https://github.com/ryanb/cancan.git", :branch => "2.0"
 
 gem 'formtastic'
-
 gem 'haml-rails'
 
 
@@ -41,7 +40,8 @@ group :assets do
   gem 'uglifier',     '~> 1.2.4'
 end
 
-gem 'jquery-rails', '~> 2.0.1'
+gem 'jquery-rails', '~> 2.0.0'
+gem 'jquery-ui-rails'
 gem 'hpricot'
 gem 'ruby_parser'
 

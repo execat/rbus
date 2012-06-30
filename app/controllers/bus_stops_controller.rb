@@ -2,7 +2,11 @@ class BusStopsController < ApplicationController
   # GET /bus_stops
   # GET /bus_stops.json
   def index
-    @bus_stops = BusStop.all
+    if params[:term]
+      @bus_stops = BusStop.all(:conditions => ["name ilike ?","%#{params[:term]}%"])
+    else
+      @bus_stops = BusStop.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
