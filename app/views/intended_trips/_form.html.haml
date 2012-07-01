@@ -1,14 +1,16 @@
+- @bus_stops = BusStop.all(:order => [:name]).map{|b| "{label: '#{b.name}', value: #{b.id}}"}.join(",\n")
 :javascript
+  var bus_stops = [#{@bus_stops}]
   function do_autocomplete(id) {
     $('#' + id).autocomplete({
-      source: '/bus_stops.json',
+      source: bus_stops,
       focus: function( event, ui ) {
-        $( "#" + id ).val( ui.item.name );
+        $( "#" + id ).val( ui.item.label );
         return false;
       },
       select: function(event, ui) {
-        $('#' + id).val(ui.item.name);
-        $('#intended_trip_' + id + '_stop_id').val(ui.item.id);
+        $('#' + id).val(ui.item.label);
+        $('#intended_trip_' + id + '_stop_id').val(ui.item.value);
         return false;
       },
       change: function(event, ui) {
@@ -20,7 +22,7 @@
     .data( "autocomplete" )._renderItem = function( ul, item ) {
       return $( "<li></li>" )
       .data( "item.autocomplete", item )
-      .append( "<a>" + item.name  + "</a>" )
+      .append( "<a>" + item.label  + "</a>" )
       .appendTo( ul );
     };
   }
@@ -39,11 +41,11 @@
         - (@intended_trip.errors.full_messages + @intended_trip.user.errors.full_messages).each do |msg|
           %li= msg
   %label I live at
-  = text_field_tag :from, params[:from], :class => "span4", :placeholder => "i.e. Malad West or Bandra"
+  = text_field_tag :from, params[:from], :class => "span4", :placeholder => "i.e. Malad West"
   = f.hidden_field :from_stop_id
   %br
   %label and work at
-  = text_field_tag :to, params[:to], :class => "span4", :placeholder => "i.e. Malad West or Bandra"
+  = text_field_tag :to, params[:to], :class => "span4", :placeholder => "i.e. Bandra"
   = f.hidden_field :to_stop_id
   %br
   %label on

@@ -3,6 +3,10 @@
 @import url(http://fonts.googleapis.com/css?family=Play);
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
+html, body {
+  height: 100%;
+}
+
 h1 {
   margin-bottom: 5px;
   font-family: 'Play', Helvetica;
@@ -33,9 +37,6 @@ html {
 body {
   background: #7bc7df url(/assets/sky_bg.jpg) no-repeat left top;
   background-size: 100%;
-  min-height: 100%;
-  height:auto !important;
-  height:100%;
 
 }
   
@@ -156,4 +157,22 @@ ul.thumbnails {
 
 ul.ui-autocomplete {
   list-style: none;
+  width: 370px;
 }
+
+#wrap {
+  min-height:100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  color:#fff;
+} 
