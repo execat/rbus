@@ -4,6 +4,8 @@
   function do_autocomplete(id) {
     $('#' + id).autocomplete({
       source: bus_stops,
+      mustMatch: true,
+      matchContains: true,
       focus: function( event, ui ) {
         $( "#" + id ).val( ui.item.label );
         return false;
@@ -15,6 +17,7 @@
       },
       change: function(event, ui) {
         if (!(ui.item)) {
+          $(this).val('');
           $('#intended_trip_' + id + '_stop_id').val('');
         }
       }
