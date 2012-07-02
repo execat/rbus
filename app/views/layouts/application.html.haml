@@ -7,6 +7,7 @@
     %title= content_for?(:title) ? yield(:title) : "rBus"
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
+    <meta property="fb:app_id" content="73675367324" />
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
