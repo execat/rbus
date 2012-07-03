@@ -19,8 +19,9 @@
           = intended_trip.to_stop.name
         %td
           = intended_trip.on
-        %td= link_to 'Show', intended_trip
-        %td= link_to 'Edit', edit_intended_trip_path(intended_trip)
-        %td= link_to 'Destroy', intended_trip, :data => {:confirm => 'Are you sure?'}, :method => :delete
+        - if intended_trip.user == current_user
+          %td= link_to 'Show', intended_trip
+          %td= link_to 'Edit', edit_intended_trip_path(intended_trip)
+          %td= link_to 'Destroy', intended_trip, :data => {:confirm => 'Are you sure?'}, :method => :delete
   
   
