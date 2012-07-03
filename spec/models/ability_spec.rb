@@ -7,17 +7,17 @@ describe Ability do
       @ability = Ability.new(nil)
     end
 
-    it "cannot manage users" do
-      @ability.should_not be_able_to(:manage, :users)
+    it "cannot access users" do
+      @ability.should_not be_able_to(:access, :users)
     end
-    it "cannot manage trips" do
-      @ability.should_not be_able_to(:manage, :intended_trips)
+    it "cannot access trips" do
+      @ability.should_not be_able_to(:access, :intended_trips)
     end
     it "can read trips" do
       @ability.should be_able_to(:read, :intended_trips)
     end
-    it "cannot manage bus_stops" do
-      @ability.should_not be_able_to(:manage, :bus_stops)
+    it "cannot access bus_stops" do
+      @ability.should_not be_able_to(:access, :bus_stops)
     end
   end
 
@@ -27,14 +27,14 @@ describe Ability do
       @ability = Ability.new(@admin)
     end
     
-    it "can manage users" do
-      @ability.should be_able_to(:manage, :users)
+    it "can access users" do
+      @ability.should be_able_to(:access, :users)
     end
-    it "can manage trips" do
-      @ability.should be_able_to(:manage, :intended_trips)
+    it "can access trips" do
+      @ability.should be_able_to(:access, :intended_trips)
     end
-    it "can manage bus stops" do
-      @ability.should be_able_to(:manage, :bus_stops)
+    it "can access bus stops" do
+      @ability.should be_able_to(:access, :bus_stops)
     end
   end
 
@@ -48,28 +48,28 @@ describe Ability do
     end
     
     describe "users" do
-      it "can manage itself" do
-        @ability.should be_able_to(:manage, @user)
+      it "can access itself" do
+        @ability.should be_able_to(:access, @user)
       end
-      it "cannot manage other user" do
-        @ability.should_not be_able_to :manage, @other_user
+      it "cannot access other user" do
+        @ability.should_not be_able_to :access, @other_user
       end
     end
 
     describe "trips" do
-      it "can manage own trips" do
-        @ability.should be_able_to(:manage, @my_trip)
+      it "can access own trips" do
+        @ability.should be_able_to(:access, @my_trip)
       end
-      it "cannot manage other user's trips" do
-        @ability.should_not be_able_to :manage, @other_trip
+      it "cannot access other user's trips" do
+        @ability.should_not be_able_to :access, @other_trip
       end
       it "can read other user's trips" do
         @ability.should be_able_to :read, @other_trip
       end        
     end
 
-    it "cannot manage bus stops" do
-      @ability.should_not be_able_to(:manage, :bus_stops)
+    it "cannot access bus stops" do
+      @ability.should_not be_able_to(:access, :bus_stops)
     end
   end
 

@@ -7,8 +7,8 @@ class Ability
         can :access, :all
       else
         can :access, :users, :id => user.id
-        can [:create, :read], :intended_trips
         can :access, :intended_trips, :user_id => user.id
+        can :read, :intended_trips
       end
     else
       can [:read, :create], :intended_trips
