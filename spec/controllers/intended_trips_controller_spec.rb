@@ -160,4 +160,34 @@ describe IntendedTripsController do
 
   end
 
+  context "trip update" do
+    before :each do
+      IntendedTrip.all.destroy!
+      @my_trip = FactoryGirl.create(:intended_trip, :user => @u)
+      @other_trip = FactoryGirl.create(:intended_trip, :user => @u2)
+      sign_in @u
+    end
+    
+    describe "own trip" do
+      it "should assign data correctly" do
+        IntendedTrip.any_instance.should_receive(:update).with("from_stop_id" => "1")
+        post :update, {:id => @my_trip.id, :intended_trip => {:from_stop_id => 1}}
+      end
+
+      it "should assign data correctly" do
+        post :update, {:id => @my_trip.id, :intended_trip => {}}
+        assigns(:intended_trip).should == @my_trip
+      end
+    end
+
+    describe "other's trip" do
+      it "should raise error for unauthorised" do
+        expect {post :update, {:id => @other_trip.id}}.to raise_error(CanCan::Unauthorized)
+      end
+    end
+
+  end
+
+
+
 end
