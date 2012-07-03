@@ -26,7 +26,7 @@ class IntendedTrip
   # params     ->  a Hash with keys for limit and offset. Defaults to {:limit => 20, :offset => 0}
   # sort_order -> one of :from, :to or :total, specifying whether to sort on distance at start, distance at end or total distance. Defaults to :total
   def nearest_trips(params = {}, sort_order = :total)
-    params = {:limit => 20, :offset => 0}.merge(params)
+    params = {:limit => 100, :offset => 0}.merge(params)
     sql = %Q{
       SELECT * FROM 
         (SELECT it.id, bs1.name, bs2.name, bs1.lat AS flat, bs1.lng AS flng, bs2.lat AS tlat, bs2.lng AS tlng, 
