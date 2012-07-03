@@ -62,14 +62,14 @@ class IntendedTripsController < ApplicationController
     else
       params[:intended_trip][:user_id] ||= current_user.id
     end
-    @intended_trip = IntendedTrip.new(params[:intended_trip])
+    @intended_trip = IntendedTripCreator.new(params[:intended_trip])
     if (current_ability.can?(:manage, @intended_trip)) || !current_user
       respond_to do |format|
         if @intended_trip.save
           msg =  'Thanks for registering your commute'
           msg += "We've just sent you and email. Kindly confirm your email address by clicking on the confirm link in it." if @new_user
-          format.html { redirect_to @intended_trip, notice: msg }
-          format.json { render json: @intended_trip, status: :created, location: @intended_trip }
+          format.html { redirect_to @intended_trip.trip, notice: msg }
+          format.json { render json: @intended_trip.trip, status: :created, location: @intended_trip }
         else
           if (@intended_trip.errors.keys - [:from_stop_id, :to_stop_id]).count < @intended_trip.errors.keys.count # we have problem with the bus stops
             @map = true
@@ -103,6 +103,7 @@ class IntendedTripsController < ApplicationController
   # DELETE /intended_trips/1.json
   def destroy
     @intended_trip = IntendedTrip.get(params[:id])
+    raise unless @intended_trip.user == current_user
     @intended_trip.destroy
 
     respond_to do |format|
