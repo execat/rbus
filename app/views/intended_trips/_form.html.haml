@@ -51,6 +51,14 @@
   = text_field_tag :to, params[:to], :class => "span4", :placeholder => "i.e. Bandra"
   = f.hidden_field :to_stop_id
   %br
+  .row
+    .span2
+      &nbsp;
+    .span3
+      - if params[:action] == "index"
+        %a{:style => "font-size: 1em", :href => "#not_on_list"}
+          My bus stop is not listed
+  %br
   %label on
   = f.select :on, ["weekdays", "weekdays and saturday", "all days"]
   %br
