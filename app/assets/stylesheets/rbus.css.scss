@@ -153,6 +153,10 @@ ul.thumbnails {
   font-size: 1.5em;
   line-height: 1.1em;
   margin: 20px;
+  ul {
+    font-size: 0.9em;
+    line-height: 1.1em;
+  }		
 }
 
 ul.ui-autocomplete {
