@@ -4,14 +4,14 @@ class Ability
   def initialize(user)
     if user
       if user.admin?
-        can :manage, :all
+        can :access, :all
       else
-        can :manage, :users, :id => user.id
-        can :manage, :intended_trips, :user_id => user.id
-        can :read, :intended_trips
+        can :access, :users, :id => user.id
+        can [:create, :read], :intended_trips
+        can :access, :intended_trips, :user_id => user.id
       end
     else
-      can :read, :intended_trips
+      can [:read, :create], :intended_trips
     end
     # Define abilities for the passed in (current) user. For example:
     #

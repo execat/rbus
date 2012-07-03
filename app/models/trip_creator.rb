@@ -1,32 +1,57 @@
 class IntendedTripCreator
 
   # Given some params, this class creates an IntendedTrip and handles all the complications surrounding brand new users
-
-  # Public (naturally)
-  # given a datamapper hash of attributes, this massages the attributes to make valid objects if it can
-  # specifically, when presented with an email address that does not exist, it adds password and password confirmation to the user part of the attributes
-  # so as to dynamically create a new user
   def initialize(params)
-    if params[:user].is_a? Hash                                            # we have something like :user => {:email => foo@bar.com}
-      @user = User.first(:email => params[:user][:email]) if params[:user] # and this email address does not exist in our database
-      unless @user
-        generated_password = Devise.friendly_token.first(6)                # populate the params with data for the new user
-        params[:user].merge!(:password =>  generated_password, :password_confirmation => generated_password)
-      end
-    end
     @params = params
   end
 
-  # Public: The intended trip implied by the params
-  def intended_trip
-    @it ||= IntendedTrip.new(@params)
-  end
 
   # Public: Actually creates the intended trip and the user if required.
   # returns the trip created
-  def create
-    intended_trip ? (intended_trip.save ? intended_trip : nil) : nil
+  def save
+    valid? ? (trip.save ? trip : nil) : nil
   end
-      
+     
+  # Private: The intended trip implied by the params
+  def trip
+    @it ||= IntendedTrip.new(@params)
+  end
+
+  def user
+    trip.user
+  end
+
+  def errors
+    trip_errors && user_errors
+  end
+
+  # Private: checks if both the trip and the user (if new) are valid
+  def valid?
+    user_valid? and trip_valid?
+  end
+
+
+
+  private
+  #Private: returns the errors dictionary on the trip
+  def trip_errors
+    trip.valid?
+    trip.errors
+  end
+
+  def user_errors
+    user.valid?
+    user.errors
+  end
+
+  def user_valid?
+    user.valid?
+  end
+
+  def trip_valid?
+    # ignore errors related to the user. when trip has not been saved, the user_id validation fails even if the rest of the trip is valid
+    (trip_errors.keys - [:user_id]).blank?
+  end
+
 
 end

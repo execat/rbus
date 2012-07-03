@@ -44,11 +44,11 @@
         - (@intended_trip.errors.full_messages + @intended_trip.user.errors.full_messages).each do |msg|
           %li= msg
   %label I live at
-  = text_field_tag :from, params[:from], :class => "span4", :placeholder => "i.e. Malad West"
+  = text_field_tag :from, params[:from], :class => "span4", :placeholder => "i.e. Malad West", :value => params[:from]
   = f.hidden_field :from_stop_id
   %br
   %label and work at
-  = text_field_tag :to, params[:to], :class => "span4", :placeholder => "i.e. Bandra"
+  = text_field_tag :to, params[:to], :class => "span4", :placeholder => "i.e. Bandra", :value => params[:to]
   = f.hidden_field :to_stop_id
   %br
   .row
@@ -65,13 +65,13 @@
   - unless current_user
     = f.fields_for :user do |u|
       %label Email
-      = u.text_field :email
+      = u.text_field :email, :value => (params[:intended_trip][:user][:email] rescue nil)
       %br
       %label Password
-      = u.text_field :password, :placeholder => "please choose a password", :type => "password"
+      = u.text_field :password, :placeholder => "please choose a password", :type => "password", :value => (params[:intended_trip][:user][:password] rescue nil)
       %br
       %label Confirm Password
-      = u.text_field :password_confirmation, :placeholder => "please type your password again", :type => "password"
+      = u.text_field :password_confirmation, :placeholder => "please type your password again", :type => "password", :value => (params[:intended_trip][:user][:password_confirmation] rescue nil)
   %br
   = f.submit "Register my Trip", :class => "btn btn-info"
   

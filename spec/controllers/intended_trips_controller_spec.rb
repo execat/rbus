@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe IntendedTripsController do
   before :each do
-    @request.env["devise.mapping"] = Devise.mappings[:admin]
+    @request.env["devise.mapping"] = Devise.mappings[:user]
     @bs1 = FactoryGirl.create(:bus_stop)
     @bs2 = FactoryGirl.create(:bus_stop)
     @u = FactoryGirl.create(:user)
@@ -19,8 +19,9 @@ describe IntendedTripsController do
       end
       it "should assign @trip properly" do
         post :create, @valid_user_params
-        assigns[:intended_trip].should  be_instance_of(IntendedTrip).with(:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => "weekdays")
-        response.should redirect_to assigns(:intended_trip)
+        assigns[:intended_trip_creator].trip.should  be_instance_of(IntendedTrip).with(:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => "weekdays")
+        assigns(:map).should be_nil
+        response.should redirect_to assigns(:intended_trip_creator).trip
       end
       it "should add a new trip" do
         expect {         
@@ -37,10 +38,28 @@ describe IntendedTripsController do
     describe "user with invalid email" do
       it "should not create new trip and account" do
         post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user => {:email => "abc", :password => "abcdef", :password_confirmation => "abcdef"}}}
-        assigns(:intended_trip).user.errors.keys.should == [:email]
+        assigns(:intended_trip_creator).errors.keys.should include(:email)
         response.should render_template(:new)
       end
     end      
+
+    describe "with invalid bus_stops" do
+      before :each do
+        @u = FactoryGirl.build(:user)
+        @valid_params = {:intended_trip => {:from_stop_id => nil, :to_stop_id => nil, :on => :weekdays, :user => {:email => @u.email, :password => "abcdef", :password_confirmation => "abcdef"}}}
+      end
+
+      it "should show the map" do
+        post :create, @valid_params
+        assigns(:map).should be_true
+        response.should render_template(:new)
+      end
+
+      it "should not save the user" do
+        expect { post :create, @valid_params}.to change(User, :count).by(0)
+      end
+    end
+    
   end
 
   context "new trip by unloggedin user with existing email" do
@@ -66,14 +85,14 @@ describe IntendedTripsController do
 
     it "should create new trip" do
       expect {
-        post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user_id => @u.id}}
+        post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays}}
       }.to change(IntendedTrip, :count).by(1)
     end
     
     it "should not create a trip if user id is for other user" do
       expect {
         post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user_id => @u2.id}}
-      }.to change(IntendedTrip, :count).by(0)
+      }.to raise_error(CanCan::Unauthorized)
     end
   end
 
@@ -113,7 +132,32 @@ describe IntendedTripsController do
     end
   end
 
-      
+  context "trip edit" do
+    before :each do
+      IntendedTrip.all.destroy!
+      @my_trip = FactoryGirl.create(:intended_trip, :user => @u)
+      @other_trip = FactoryGirl.create(:intended_trip, :user => @u2)
+      sign_in @u
+    end
+    
+    describe "own trip" do
+      it "should assign data correctly" do
+        get :edit, {:id => @my_trip.id}
+        response.should render_template(:edit)
+      end
 
+      it "should assign data correctly" do
+        get :edit, {:id => @my_trip.id}
+        assigns(:intended_trip).should == @my_trip
+      end
+    end
+
+    describe "other's trip" do
+      it "should raise error for unauthorised" do
+        expect {get :edit, {:id => @other_trip.id}}.to raise_error(CanCan::Unauthorized)
+      end
+    end
+
+  end
 
 end

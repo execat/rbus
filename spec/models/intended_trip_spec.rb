@@ -43,4 +43,5 @@ describe IntendedTrip do
 
   end
 
+
 end

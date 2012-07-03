@@ -9,6 +9,10 @@ class IntendedTrip
   belongs_to :to_stop, :model => BusStop
   belongs_to :user
 
+  property :created_at, DateTime
+  property :updated_at, DateTime
+  property :deleted_at, ParanoidDateTime
+
   # accepts_nested_attributes_for :user
 
   # Public: finds all the trips starting and ending within a particular radius of this trip

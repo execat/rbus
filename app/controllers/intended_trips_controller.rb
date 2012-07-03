@@ -1,8 +1,9 @@
 class IntendedTripsController < ApplicationController
   # GET /intended_trips
   # GET /intended_trips.json
-
-
+  
+  load_and_authorize_resource
+  
   def index
     @intended_trips = IntendedTrip.all
     respond_to do |format|
@@ -62,16 +63,17 @@ class IntendedTripsController < ApplicationController
     else
       params[:intended_trip][:user_id] ||= current_user.id
     end
-    @intended_trip = IntendedTripCreator.new(params[:intended_trip])
-    if (current_ability.can?(:manage, @intended_trip)) || !current_user
+    @intended_trip_creator = IntendedTripCreator.new(params[:intended_trip])
+    @intended_trip = @intended_trip_creator.trip
+    if (current_ability.can?(:manage, @intended_trip_creator.trip)) || !current_user
       respond_to do |format|
-        if @intended_trip.save
+        if @intended_trip_creator.save
           msg =  'Thanks for registering your commute'
           msg += "We've just sent you and email. Kindly confirm your email address by clicking on the confirm link in it." if @new_user
-          format.html { redirect_to @intended_trip.trip, notice: msg }
-          format.json { render json: @intended_trip.trip, status: :created, location: @intended_trip }
+          format.html { redirect_to @intended_trip_creator.trip, notice: msg }
+          format.json { render json: @intended_trip_creator.trip, status: :created, location: @intended_trip }
         else
-          if (@intended_trip.errors.keys - [:from_stop_id, :to_stop_id]).count < @intended_trip.errors.keys.count # we have problem with the bus stops
+          if !(@intended_trip_creator.trip.errors.keys && [:from_stop_id, :to_stop_id]).empty?
             @map = true
           end
           format.html { render action: "new" }

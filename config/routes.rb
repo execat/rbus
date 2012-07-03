@@ -7,7 +7,8 @@ Rbus::Application.routes.draw do
   end
   resources :bus_stops
 
-  devise_for :users
+  devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
+
 
   match '/feedback' => 'home#feedback', :via => :post
 

@@ -14,7 +14,7 @@
             %a{:href => '/intended_trips/my'}My Trips
       %p.navbar-text.pull-right
         - if current_user
-          %a{:href => "/user/" << current_user.email.to_s << "/dashboard"} #{current_user.email} 
+          #{current_user.email} 
           |
           = link_to "Logout",destroy_user_session_path, :method => "delete", :confirm => "Are you sure you want to log out?"
         - else 
