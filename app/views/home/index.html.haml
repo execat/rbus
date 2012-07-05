@@ -31,8 +31,14 @@
       and facebook.
       <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="true"></div>
   .span7{:style => "display: table"}
-    #new_form{:style => "display: table-cell; vertical-align: middle;"}
-      = render 'intended_trips/form'
+    .row
+      %h1{:style => "margin-bottom:10px; margin-left: 20px;"}
+        %span.highlight
+          = IntendedTrip.all.count
+        commutes registered
+    .row
+      #new_form{:style => "display: table-cell; vertical-align: middle;"}
+        = render 'intended_trips/form'
 .row
   %ul.thumbnails
     %li.span4
