@@ -41,7 +41,7 @@ class IntendedTrip
       ORDER BY fdist + tdist LIMIT #{params[:limit]} OFFSET #{params[:offset]}; 
       }
     sorted_trips = repository.adapter.select(sql)
-    sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact
+    sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact.select{|x| x[:trip]}
   end
   
 end

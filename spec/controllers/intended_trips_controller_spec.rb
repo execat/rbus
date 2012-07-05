@@ -130,6 +130,18 @@ describe IntendedTripsController do
       assigns(:intended_trips).should == assigns(:intended_trip).nearest_trips.map(&:stringify_keys)
       response.should be_ok
     end
+
+    context "deleted trips in the db" do
+      before :each do
+        @deleted_trip = FactoryGirl.create(:intended_trip)
+        @deleted_trip.destroy
+      end
+      
+      it "should render template ok" do
+        get :show, {:id => @my_trip.id}
+        response.should render_template(:show)
+      end
+    end
   end
 
   context "trip edit" do

@@ -2,7 +2,11 @@ require 'spec_helper'
 
 describe "intended_trips/show" do
   before(:each) do
-    @intended_trip = assign(:intended_trip, stub_model(IntendedTrip))
+    @t1 = Factory.create(:intended_trip)
+    @t2 = Factory.create(:intended_trip)
+    @t2.destroy
+    @intended_trip = @t1
+    @intended_trips = @t1.nearest_trips
   end
 
   it "renders attributes in <p>" do
