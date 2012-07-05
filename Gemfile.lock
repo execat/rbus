@@ -130,6 +130,8 @@ GEM
     do_postgres (0.10.8)
       data_objects (= 0.10.8)
     erubis (2.7.0)
+    exceptional (2.0.32)
+      rack
     execjs (1.4.0)
       multi_json (~> 1.0)
     factory_girl (3.5.0)
@@ -263,6 +265,7 @@ DEPENDENCIES
   dm-transactions (~> 1.2.0)
   dm-types (~> 1.2.0)
   dm-validations (~> 1.2.0)
+  exceptional
   factory_girl_rails
   formtastic
   haml-rails

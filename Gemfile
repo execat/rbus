@@ -28,7 +28,7 @@ gem 'cancan', :git => "https://github.com/ryanb/cancan.git", :branch => "2.0"
 
 gem 'formtastic'
 gem 'haml-rails'
-
+gem 'exceptional'
 
 
 # Gems used only for assets and not required
