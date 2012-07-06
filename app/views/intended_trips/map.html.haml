@@ -6,10 +6,43 @@
       zoom: 11,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    var map = new google.maps.Map(document.getElementById("map"),
-      myOptions);
-    }
+    map = new google.maps.Map(document.getElementById("map"),
+    myOptions);
+  }
 
-  $(document).ready(function() { initialize()});
+  function load_trips() {
+    $.get('/intended_trips.json', function(data) {
+      $.each(data, function() { 
+        // draw the line
+        lat1 = parseFloat(this.intended_trip.from_stop.lat);
+        lng1 = parseFloat(this.intended_trip.from_stop.lng);
+        lat2 = parseFloat(this.intended_trip.to_stop.lat);
+        lng2 = parseFloat(this.intended_trip.to_stop.lng);
+        p = new google.maps.Polyline( {
+          path: [ new google.maps.LatLng(lat1,lng1), 
+                  new google.maps.LatLng(lat2, lng2)],
+          strokeColor: "#ff0000",
+          strokeWeight: 1
+        });
+        p.setMap(map);
+        new google.maps.Marker({
+          map: map,
+          position: new google.maps.LatLng(lat1, lng1),
+          icon: '/images/mm_20_green.png'
+        })
+        new google.maps.Marker({
+          map: map,
+          position: new google.maps.LatLng(lat2, lng2),
+          icon: '/images/mm_20_red.png'
+        })
+
+      });
+    });
+  }
+
+  $(document).ready(function() { 
+    initialize();
+    load_trips();
+  });
 
 #map{:style => "width:800px; height: 500px"}
