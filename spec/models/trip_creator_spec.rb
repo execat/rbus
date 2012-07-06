@@ -3,7 +3,7 @@ require 'spec_helper'
 describe IntendedTripCreator do
 
   before :each do
-    IntendedTrip.all.destroy!
+    repository.adapter.execute("truncate table intended_trips")
     User.all.destroy!
     @bs1 = FactoryGirl.create(:bus_stop)
     @bs2 = FactoryGirl.create(:bus_stop)
