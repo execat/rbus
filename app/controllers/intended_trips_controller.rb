@@ -7,8 +7,14 @@ class IntendedTripsController < ApplicationController
   def index
     @intended_trips = IntendedTrip.all
     respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @intended_trips }
+      format.html {
+        if params[:map]
+          render :map
+        else
+          render
+        end
+      }
+      format.json { }
     end
   end
 

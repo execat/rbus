@@ -1,0 +1,11 @@
+defaults: &defaults
+  maps: AIzaSyAua_bhuj4kOzFFX1UtgpqpvrO-ntx9czA
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+test:
+  <<: *defaults

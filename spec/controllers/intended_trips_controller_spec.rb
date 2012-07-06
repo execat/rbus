@@ -107,7 +107,13 @@ describe IntendedTripsController do
     it "should show all trips" do
       get :index
       assigns(:intended_trips).should == [@my_trip, @other_trip]
+      response.should render_template(:index)
       response.should be_ok
+    end
+
+    it "should show map when requested" do
+      get :index, {:map => true}
+      response.should render_template(:map)
     end
 
     it "should show only my trips if requested" do

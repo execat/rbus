@@ -1,0 +1,15 @@
+%script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
+:javascript
+  function initialize() {
+    var myOptions = {
+      center: new google.maps.LatLng(19.1, 72.9),
+      zoom: 11,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"),
+      myOptions);
+    }
+
+  $(document).ready(function() { initialize()});
+
+#map{:style => "width:800px; height: 500px"}
