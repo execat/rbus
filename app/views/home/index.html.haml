@@ -32,10 +32,11 @@
       <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="true"></div>
   .span7{:style => "display: table"}
     .row
-      %h1{:style => "margin-bottom:10px; margin-left: 20px;"}
-        %span.highlight
-          = IntendedTrip.all.count
-        commutes registered
+      %a{:href => intended_trips_path(:map => true)}
+        %h1{:style => "margin-bottom:10px; margin-left: 20px;"}
+          %span.highlight
+            = IntendedTrip.all.count
+          commutes registered
     .row
       #new_form{:style => "display: table-cell; vertical-align: middle;"}
         = render 'intended_trips/form'
@@ -72,14 +73,13 @@
     per month for
     %span.highlight
       non a/c
-  for trips less than 80 kms round trip. We are working on our routing algorithms that will allow us to offer cheaper trips based on the distance, but for
-  the moment, kindly bear with us as we refine our pricing.
+  for trips less than 80 kms round trip. 
+  %span{:style => "font-size: 0.8em"}
+    More people sign up, cheaper it gets!
+
 
   %p 
     %h2 See how our pricing compares with other modes of transport
-  %p
-    0  = perfectly unsafe/uncomfortable
-    10 = perfect safety/comfort
     %table.table
       %thead
         %tr
@@ -90,43 +90,43 @@
       %tr
         %td BEST
         %td 600
-        %td 1
-        %td 9
+        %td very bad
+        %td very good
       %tr
         %td train + rickshaw
         %td 1000
-        %td 1
-        %td 3
+        %td very bad        
+        %td bad
       %tr
         %td motorcycle
         %td 1500
-        %td 3
-        %td 1
+        %td bad
+        %td very bad
       %tr
         %td rickshaw
         %td 3000
-        %td 2
-        %td 2
+        %td bad
+        %td bad
       %tr{:style => "background: lightgreen"}
         %td rBus non-a/c
         %td 3000
-        %td 6
-        %td 9
+        %td good
+        %td very good
       %tr{:style => "background: lightgreen"}
         %td rBus a/c
         %td 5000
-        %td 9
-        %td 9
+        %td good
+        %td very good
       %tr
         %td self driven car
         %td 12000
-        %td 6
-        %td 7
+        %td very good
+        %td good
       %tr
         %td chauffeur-driven car
         %td 20000
-        %td 9
-        %td 7
+        %td very good
+        %td good
   
   
 .row
