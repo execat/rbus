@@ -1,0 +1,41 @@
+%script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
+= javascript_include_tag 'ui.geo_autocomplete'
+:javascript
+  function demo2() {
+    var map = new google.maps.Map(document.getElementById("demo2_map"), { mapTypeId: google.maps.MapTypeId.ROADMAP });
+    $('#bus_stop_name').geo_autocomplete({
+      select: function(_event, _ui) {
+        if (_ui.item.viewport) map.fitBounds(_ui.item.viewport);
+        $('#bus_stop_lat').attr('value',_ui.item.lat);
+        $('#bus_stop_lng').attr('value',_ui.item.lng);
+      }
+    });
+  }
+  $(document).ready(function() { demo2(); })
+
+= form_for(@bus_stop) do |f|
+  - if @bus_stop.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@bus_stop.errors.count, "error")
+        prohibited this bus_stop from being saved
+
+      %ul
+        - @bus_stop.errors.full_messages.each do |msg|
+          %li
+            = msg
+  %label Name
+  = f.text_field :name
+
+  
+
+  %br
+  %label Lat
+  = f.text_field :lat
+  %br
+  %label Lng
+  = f.text_field :lng
+  = f.submit
+
+#demo2_map{:style => "width: 400px; height: 400px;"}
+  

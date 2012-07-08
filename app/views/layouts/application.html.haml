@@ -45,32 +45,3 @@
                 = yield
   %footer.footer{:style => "background: #A5DFEF"}
     .container{:style => "padding: 10px"}
-      :plain
-        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-        <script>
-        new TWTR.Widget({
-        version: 2,
-        type: 'profile',
-        rpp: 1,
-        interval: 30000,
-        width: 300,
-        height: 300,
-        theme: {
-        shell: {
-        background: '#d8f1f6',
-        color: '#030303'
-        },
-        tweets: {
-        background: '#bce7f5',
-        color: '#0f0e0f',
-        links: '#1e1ee6'
-        }
-        },
-        features: {
-        scrollbar: false,
-        loop: false,
-        live: false,
-        behavior: 'all'
-        }
-        }).render().setUser('rbus_in').start();
-        </script>
