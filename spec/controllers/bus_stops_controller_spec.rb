@@ -17,5 +17,32 @@ describe BusStopsController do
     end
       
   end
+
+  describe "new" do
+    before :each do
+      @request.env["devise.mapping"] = Devise.mappings[:user]
+      @u = FactoryGirl.create(:user)
+      @u.confirm!
+    end
+
+    describe "not logged in" do
+      it "should raise CanCan::Unauthorized" do
+        expect { get :new }.to raise_error CanCan::Unauthorized
+      end
+    end
+
+    describe "logged in" do
+      before :each do
+        sign_in @u
+        get :new
+      end
+
+      it "should render new template" do
+        response.should render_template(:new)
+      end
+    end
+
+  end
+      
     
 end

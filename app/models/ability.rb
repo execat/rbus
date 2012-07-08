@@ -9,6 +9,8 @@ class Ability
         can :access, :users, :id => user.id
         can :access, :intended_trips, :user_id => user.id
         can :read, :intended_trips
+        can :create, :bus_stops
+        can :read, :bus_stops
       end
     else
       can [:read, :create], :intended_trips

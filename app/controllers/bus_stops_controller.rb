@@ -1,6 +1,9 @@
 class BusStopsController < ApplicationController
   # GET /bus_stops
   # GET /bus_stops.json
+
+  load_and_authorize_resource
+
   def index
     if params[:term]
       @bus_stops = BusStop.all(:conditions => ["name ilike ?","%#{params[:term]}%"])
