@@ -11,6 +11,7 @@ class Ability
         can :read, :intended_trips
         can :create, :bus_stops
         can :read, :bus_stops
+        can :edit, :bus_stops, :user_id => user.id
       end
     else
       can [:read, :create], :intended_trips

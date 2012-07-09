@@ -14,6 +14,8 @@ class BusStop
   has n, :trip_starts, :model => IntendedTrip, :child_key => [:from_stop_id]
   has n, :trip_ends,   :model => IntendedTrip, :child_key => [:to_stop_id]
 
+  belongs_to :user
+
   # Public: all the trips for this stop
   # conditions -> a Hash of datamapper query conditions
   #

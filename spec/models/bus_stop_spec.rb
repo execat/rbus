@@ -12,6 +12,8 @@ describe BusStop do
   it { should have_many(:trip_starts) }
   it { should have_many(:trip_ends) }
 
+  it { should belong_to(:user)}
+
   describe "latitude and lng" do
     before :all do
       @stop = FactoryGirl.create(:bus_stop)

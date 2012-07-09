@@ -7,6 +7,7 @@ FactoryGirl.define do
     lat   0
     lng   0
     name  { generate(:bus_stop_name) }
+    association :user
 
     factory :from_stop do
     end

@@ -1,23 +1,17 @@
 require 'spec_helper'
 
 describe IntendedTripCreator do
-
-  before :each do
-    repository.adapter.execute("truncate table intended_trips")
-    User.all.destroy!
-    @bs1 = FactoryGirl.create(:bus_stop)
-    @bs2 = FactoryGirl.create(:bus_stop)
+  before :all do
+    @admin = FactoryGirl.create(:user)
+    @bs1 = FactoryGirl.create(:bus_stop, :user => @admin)
+    @bs2 = FactoryGirl.create(:bus_stop, :user => @admin)
   end
 
   context "brand new user" do
-    before :all do
-    end
-
     describe "valid trip" do
       before :each do
-        IntendedTrip.all.destroy!
-        User.all.destroy!
-        @valid_trip = {:from_stop => @bs1, :to_stop => @bs2, :on => "weekdays", :user => {:email => "abc@def.co.in", :password => "abcdef", :password_confirmation => "abcdef"}}
+        email = FactoryGirl.generate(:email)
+        @valid_trip = {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => "weekdays", :user => {:email => email, :password => "abcdef", :password_confirmation => "abcdef"}}
         @t = IntendedTripCreator.new(@valid_trip)
       end
 
@@ -26,22 +20,17 @@ describe IntendedTripCreator do
       end
       
       it "should save a user"  do
-        @t.save
-        User.all.count.should == 1
-        User.last.email.should == "abc@def.co.in"
+        expect {@t.save}.to change(User, :count).by(1)
       end
 
       it "should save a trip"  do
-        @t.save
-        IntendedTrip.all.count.should == 1
-        IntendedTrip.last.from_stop.should == @bs1
+        puts "-----------------------"
+        expect {@t.save}.to change(IntendedTrip, :count).by(1)
       end
     end
 
     describe "valid trip invalid user" do
       before :each do
-        IntendedTrip.all.destroy!
-        User.all.destroy!
         @invalid_user_trip = {:from_stop => @bs1, :to_stop => @bs2, :on => "weekdays", :user => {:email => "abc@def.co.in"}}
         @t = IntendedTripCreator.new(@invalid_user_trip)
       end
@@ -51,22 +40,18 @@ describe IntendedTripCreator do
         @t.user.should_not be_valid
       end
       
-      it "should save a user"  do
-        @t.save
-        User.all.count.should == 0
+      it "should not save a user"  do
+        expect {@t.save}.to change(User,:count).by(0)
       end
 
-      it "should save a trip"  do
-        @t.save
-        IntendedTrip.all.count.should == 0
+      it "should not save a trip"  do
+        expect {@t.save}.to change(IntendedTrip,:count).by(0)
       end
     end
 
     describe "invalid trip valid user" do
       before :each do
-        IntendedTrip.all.destroy!
-        User.all.destroy!
-        @invalid_trip = {:from_stop => nil, :to_stop => @bs2, :on => "weekdays", :user => {:email => "abc@def.co.in", :password => "abcdef", :password_confirmation => "abcdef"}}
+        @invalid_trip = {:from_stop => nil, :to_stop => @bs2, :on => "weekdays", :user => {:email => "abcd@def.co.in", :password => "abcdef", :password_confirmation => "abcdef"}}
         @t = IntendedTripCreator.new(@invalid_trip)
       end
 
@@ -75,14 +60,12 @@ describe IntendedTripCreator do
         @t.trip.should_not be_valid
       end
       
-      it "should save a user"  do
-        @t.save
-        User.all.count.should == 0
+      it "should not save a user"  do
+        expect {@t.save}.to change(User,:count).by(0)
       end
 
-      it "should save a trip"  do
-        @t.save
-        IntendedTrip.all.count.should == 0
+      it "should not save a trip"  do
+        expect {@t.save}.to change(IntendedTrip,:count).by(0)
       end
     end
 

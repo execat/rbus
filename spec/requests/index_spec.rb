@@ -7,6 +7,7 @@ feature "the first trip", :js => true do
   end
 
   scenario "creating an intended trip without having a user account" do
+    puts "---------------------"
     visit "/"
     within "#new_intended_trip" do
       selector = ".ui-menu-item a:contains(\"#{@bus_stop1.name}\")"

@@ -1,6 +1,8 @@
 class IntendedTripCreator
 
   # Given some params, this class creates an IntendedTrip and handles all the complications surrounding brand new users
+  # It also does things like posting to twitter, etc.
+  # params: a Hash containing a valid IntendedTrip
   def initialize(params)
     @params = params
   end
@@ -25,7 +27,7 @@ class IntendedTripCreator
     trip_errors && user_errors
   end
 
-  # Private: checks if both the trip and the user (if new) are valid
+  # Public: checks if both the trip and the user (if new) are valid
   def valid?
     user_valid? and trip_valid?
   end

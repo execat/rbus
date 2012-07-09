@@ -47,6 +47,7 @@ class BusStopsController < ApplicationController
   # POST /bus_stops
   # POST /bus_stops.json
   def create
+    params[:bus_stop][:user_id] = current_user.id
     @bus_stop = BusStop.new(params[:bus_stop])
 
     respond_to do |format|

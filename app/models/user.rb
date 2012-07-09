@@ -48,6 +48,9 @@ class User
   property :id, Serial
   property :role, String
 
+  has n, :intended_trips
+  has n, :bus_stops
+
   # Public: returns true if user is an admin
   def admin?
     role == "admin"

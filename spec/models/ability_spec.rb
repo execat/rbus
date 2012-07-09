@@ -68,8 +68,23 @@ describe Ability do
       end        
     end
 
-    it "cannot access bus stops" do
-      @ability.should_not be_able_to(:access, :bus_stops)
+    describe "bus stops" do
+      before :all do
+        @bus_stop = FactoryGirl.create(:bus_stop, :user => @user)
+        @other_stop = FactoryGirl.create(:bus_stop, :user => @other_user)
+      end
+
+      it "cannot access bus stops" do
+        @ability.should_not be_able_to(:access, :bus_stops)
+      end
+
+      it "can edit own bus stops" do
+        @ability.should be_able_to(:edit, @bus_stop)
+      end
+
+      it "cannot edit others' bus stop" do
+        @ability.should_not be_able_to(:edit, @other_stop)
+      end
     end
   end
 
