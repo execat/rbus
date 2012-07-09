@@ -67,3 +67,5 @@ group :test, :development do
   gem 'capybara'
   gem 'capybara-webkit'
 end
+
+gem 'newrelic_rpm'

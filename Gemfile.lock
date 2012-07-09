@@ -169,6 +169,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.0.4)
+    newrelic_rpm (3.4.0.1)
     nokogiri (1.5.4)
     orm_adapter (0.3.0)
     polyglot (0.3.3)
@@ -277,6 +278,7 @@ DEPENDENCIES
   jquery-rails (~> 2.0.0)
   jquery-ui-rails
   json
+  newrelic_rpm
   rabl
   railties (~> 3.2.6)
   rspec
