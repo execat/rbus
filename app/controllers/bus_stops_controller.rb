@@ -7,6 +7,8 @@ class BusStopsController < ApplicationController
   def index
     if params[:term]
       @bus_stops = BusStop.all(:conditions => ["name ilike ?","%#{params[:term]}%"])
+    elsif params[:x1] and params[:y1] and params[:x2] and params[:y1]
+      @bus_stops = BusStop.all(:conditions => ["lat BETWEEN ? AND ? AND lng BETWEEN ? AND ?",params[:y1].to_f,params[:y2].to_f, params[:x1].to_f,params[:x2].to_f])
     else
       @bus_stops = BusStop.all
     end

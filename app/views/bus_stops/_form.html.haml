@@ -1,41 +1,84 @@
 %script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
 = javascript_include_tag 'ui.geo_autocomplete'
 :javascript
+  function addInfoWindow(marker, message) {
+    var info = message;
+    var infoWindow = new google.maps.InfoWindow({
+      content: message
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+      infoWindow.close();
+      infoWindow.open(map, marker);
+    });
+  }
+
+  function load_bus_stops(viewport) {
+    y2 = viewport.getNorthEast().lat();
+    x2 = viewport.getNorthEast().lng();
+    y1 = viewport.getSouthWest().lat();
+    x1 = viewport.getSouthWest().lng();
+    $.get('/bus_stops.json?x1=' + x1 + '&y1=' + y1 + '&x2=' + x2 + '&y2=' + y2, function(data) {
+      $.each(data, function() {
+        marker = new google.maps.Marker({
+          map: map,
+          position: new google.maps.LatLng(parseFloat(this.lat), parseFloat(this.lng)),
+          icon: '/images/mm_20_green.png'
+        });
+        addInfoWindow(marker, this.name);
+      })
+
+    })
+  }
+  
   function demo2() {
-    var map = new google.maps.Map(document.getElementById("demo2_map"), { mapTypeId: google.maps.MapTypeId.ROADMAP });
+    map = new google.maps.Map(document.getElementById("demo2_map"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
+    var m;
+    google.maps.event.addListener(map, 'click', function(event) {
+      $('#bus_stop_lat').val(event.latLng.lat());
+      $('#bus_stop_lng').val(event.latLng.lng());
+      if (m) {
+        m.setPosition(event.latLng); 
+      } else {
+        m = new google.maps.Marker({map: map, position: event.latLng});
+      }
+    });
     $('#bus_stop_name').geo_autocomplete({
       select: function(_event, _ui) {
         if (_ui.item.viewport) map.fitBounds(_ui.item.viewport);
         $('#bus_stop_lat').attr('value',_ui.item.lat);
         $('#bus_stop_lng').attr('value',_ui.item.lng);
+        load_bus_stops(_ui.item.viewport)
       }
     });
   }
   $(document).ready(function() { demo2(); })
 
-= form_for(@bus_stop) do |f|
-  - if @bus_stop.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(@bus_stop.errors.count, "error")
-        prohibited this bus_stop from being saved
-
-      %ul
-        - @bus_stop.errors.full_messages.each do |msg|
-          %li
-            = msg
-  %label Name
-  = f.text_field :name
-
-  
-
-  %br
-  %label Lat
-  = f.text_field :lat
-  %br
-  %label Lng
-  = f.text_field :lng
-  = f.submit
-
-#demo2_map{:style => "width: 400px; height: 400px;"}
-  
+.row
+  .span3
+    = form_for(@bus_stop) do |f|
+      - if @bus_stop.errors.any?
+        #error_explanation
+          %h2
+            = pluralize(@bus_stop.errors.count, "error")
+            prohibited this bus_stop from being saved
+    
+          %ul
+            - @bus_stop.errors.full_messages.each do |msg|
+              %li
+                = msg
+      %label Name
+      = f.text_field :name
+    
+      
+    
+      %br
+      %label Lat
+      = f.text_field :lat
+      %br
+      %label Lng
+      = f.text_field :lng
+      = f.submit
+  .span8
+    #demo2_map{:style => "width: 100%; height: 500px;"}
+      

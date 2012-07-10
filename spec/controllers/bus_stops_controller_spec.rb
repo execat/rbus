@@ -15,6 +15,15 @@ describe BusStopsController do
       get :index, {:term => "foo"}
       assigns(:bus_stops).should == [@bs1, @bs3]
     end
+
+    it "should filter by lat/lng" do
+      @bs4 = FactoryGirl.create(:bus_stop, :name => "aaa", :lat => 1, :lng => 1)
+      @bs5 = FactoryGirl.create(:bus_stop, :name => "bbb", :lat => 0, :lng => 2)
+      @bs6 = FactoryGirl.create(:bus_stop, :name => "ccc", :lat => 0.8, :lng => 1.3)
+      get :index, {:x1 => 0.5, :y1 => 0.5, :x2 => 1.5, :y2 => 1.5}
+      assigns(:bus_stops).should == [@bs4, @bs6]
+    end
+      
       
   end
 
