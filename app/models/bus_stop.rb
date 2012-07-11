@@ -9,7 +9,7 @@ class BusStop
   
   property :lat, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
   property :lng, Decimal, :precision => 18, :scale => 15, :required => true, :max => 180, :min => -180
-  property :name, String, :required => true, :length => 200
+  property :name, String, :required => true, :length => 200, :unique => true
 
   has n, :trip_starts, :model => IntendedTrip, :child_key => [:from_stop_id]
   has n, :trip_ends,   :model => IntendedTrip, :child_key => [:to_stop_id]

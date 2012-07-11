@@ -1,3 +1,5 @@
+// requests JSON information for all the bus stops in the given viewport from the server
+// viewport is a google.maps.Bounds() object
 function loadBusStops(viewport) {
   y2 = viewport.getNorthEast().lat();
   x2 = viewport.getNorthEast().lng();
@@ -5,17 +7,24 @@ function loadBusStops(viewport) {
   x1 = viewport.getSouthWest().lng();
   $.get('/bus_stops.json?x1=' + x1 + '&y1=' + y1 + '&x2=' + x2 + '&y2=' + y2, function(data) {
     $.each(data, function() {
-      marker = new google.maps.Marker({
-        map: map,
-	position: new google.maps.LatLng(parseFloat(this.lat), parseFloat(this.lng)),
-	icon: '/images/mm_20_green.png'
-      });
-      addInfoWindow(marker, this.name);
+      marker = getMarker(parseFloat(this.lat), parseFloat(this.lng), '/images/mm_20_green.png', this.name);
+      marker.setMap(map);
     });
 
   });
 }
 
+
+function getMarker(lat, lng, icon, infoWindowText) {
+  m = new google.maps.Marker({
+    position: new google.maps.LatLng(lat, lng),
+    icon: icon
+  });
+  if (infoWindowText) {
+    addInfoWindow(m, infoWindowText);
+  }
+  return m;
+}
 
 function addInfoWindow(marker, message) {
   var info = message;

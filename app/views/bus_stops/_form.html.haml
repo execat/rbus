@@ -2,8 +2,7 @@
 = javascript_include_tag 'map_functions'
 = javascript_include_tag 'ui.geo_autocomplete'
 :javascript
-
-  
+  tMarker = null;
   function loadGeoAutocomplete() {
     map = new google.maps.Map(document.getElementById("demo2_map"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
     showBusStops = false;
@@ -30,6 +29,12 @@
         $('#bus_stop_lat').attr('value',_ui.item.lat);
         $('#bus_stop_lng').attr('value',_ui.item.lng);
         loadBusStops(map.getBounds());
+        if (tMarker) { 
+          tMarker.setPosition(new google.maps.LatLng(parseFloat(_ui.item.lat), parseFloat(_ui.item.lng)));
+        } else {
+          tMarker = getMarker(_ui.item.lat, _ui.item.lng, null, _ui.item.label);
+          tMarker.setMap(map);
+        }
       }
     });
   }
