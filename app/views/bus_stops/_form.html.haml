@@ -1,38 +1,12 @@
 %script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
+= javascript_include_tag 'map_functions'
 = javascript_include_tag 'ui.geo_autocomplete'
 :javascript
-  function addInfoWindow(marker, message) {
-    var info = message;
-    var infoWindow = new google.maps.InfoWindow({
-      content: message
-    });
 
-    google.maps.event.addListener(marker, 'click', function () {
-      infoWindow.close();
-      infoWindow.open(map, marker);
-    });
-  }
-
-  function load_bus_stops(viewport) {
-    y2 = viewport.getNorthEast().lat();
-    x2 = viewport.getNorthEast().lng();
-    y1 = viewport.getSouthWest().lat();
-    x1 = viewport.getSouthWest().lng();
-    $.get('/bus_stops.json?x1=' + x1 + '&y1=' + y1 + '&x2=' + x2 + '&y2=' + y2, function(data) {
-      $.each(data, function() {
-        marker = new google.maps.Marker({
-          map: map,
-          position: new google.maps.LatLng(parseFloat(this.lat), parseFloat(this.lng)),
-          icon: '/images/mm_20_green.png'
-        });
-        addInfoWindow(marker, this.name);
-      })
-
-    })
-  }
   
-  function demo2() {
+  function loadGeoAutocomplete() {
     map = new google.maps.Map(document.getElementById("demo2_map"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
+    showBusStops = false;
     var m;
     google.maps.event.addListener(map, 'click', function(event) {
       $('#bus_stop_lat').val(event.latLng.lat());
@@ -43,16 +17,23 @@
         m = new google.maps.Marker({map: map, position: event.latLng});
       }
     });
+    google.maps.event.addListener(map, 'moveend', function() {
+      loadBusStops(map.getBounds());
+    });
+    google.maps.event.addListener(map, 'dragend', function() {
+      loadBusStops(map.getBounds());
+    });
+
     $('#bus_stop_name').geo_autocomplete({
       select: function(_event, _ui) {
         if (_ui.item.viewport) map.fitBounds(_ui.item.viewport);
         $('#bus_stop_lat').attr('value',_ui.item.lat);
         $('#bus_stop_lng').attr('value',_ui.item.lng);
-        load_bus_stops(_ui.item.viewport)
+        loadBusStops(map.getBounds());
       }
     });
   }
-  $(document).ready(function() { demo2(); })
+  $(document).ready(function() { loadGeoAutocomplete(); showBusStops = true})
 
 .row
   .span3
