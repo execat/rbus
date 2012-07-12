@@ -47,6 +47,7 @@ class User
 
   property :id, Serial
   property :role, String
+  property :created_at, DateTime
 
   has n, :intended_trips
   has n, :bus_stops
