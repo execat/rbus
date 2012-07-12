@@ -81,8 +81,8 @@
       &nbsp;
     .span3
       - if params[:action] == "index"
-        %a{:style => "font-size: 1em", :href => "#not_on_list"}
-          My bus stop is not listed
+        = link_to 'My bus stop is not listed', new_intended_trip_path
+          
   %br
   %label on
   = f.select :on, ["weekdays", "weekdays and saturday", "all days"]
