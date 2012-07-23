@@ -12,7 +12,6 @@ function markBusStops(data)
 {
   $.each(data, function() {
     setBusStopMarker(this);
-    console.log(this);
   });
 }
 

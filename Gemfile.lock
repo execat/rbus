@@ -32,6 +32,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.8)
     ansi (1.4.2)
+    awesome_print (1.0.2)
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.0.3.1)
     builder (3.0.0)
@@ -251,6 +252,7 @@ DEPENDENCIES
   actionpack (~> 3.2.6)
   activeresource (~> 3.2.6)
   activesupport (~> 3.2.6)
+  awesome_print
   bootstrap-sass (~> 2.0.3)
   cancan!
   capybara

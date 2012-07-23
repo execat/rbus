@@ -43,5 +43,22 @@ class IntendedTrip
     sorted_trips = repository.adapter.select(sql)
     sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact.select{|x| x[:trip]}
   end
+
+  # Public: return trips that match the given lat/lng filters
+  # options  -> a Hash with the following keys
+  #     from ->  a Hash with keys lat1, lng1, lat2, lng2 representing the coordinates within which the trip must start
+  #     to   ->  a Hash with keys lat1, lng1, lat2, lng2 representing the coordinates within which the trip must start
+  # returns a DataMapper::Collection of IntendedTrips
+  # example: Trip.filter(:from => {:lat1 => 19, :lng1 => 72, :lat2 => 20, :lng2 => 73})
+  def self.filter(options)
+    q = {}
+    if f = options[:from]
+      q[:from_stop] = {:conditions => ["lat BETWEEN ? AND ? AND lng BETWEEN ? AND ?", f[:lat1], f[:lat2], f[:lng1], f[:lng2]]} 
+    end
+    if t = options[:to]
+      q[:to_stop]   = {:conditions => ["lat BETWEEN ? AND ? AND lng BETWEEN ? AND ?", t[:lat1], t[:lat2], t[:lng1], t[:lng2]]}
+    end
+    self.all(q)
+  end
   
 end

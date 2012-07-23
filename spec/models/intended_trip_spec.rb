@@ -41,7 +41,26 @@ describe IntendedTrip do
                                    ]
     end
 
-  end
 
+    describe "#filter" do
+      before :all do
+        @from_coordinates = {:lng1 => 0, :lat1 => 0, :lng2 => 0.01, :lat2 => 0.01}
+        @to_coordinates = {:lng1 => 0.0, :lat1 => 0.008, :lng2 => 0.1, :lat2 => 0.108}
+      end
+
+      it "should filter from correctly" do
+        IntendedTrip.filter(:from => @from_coordinates).should == [@t1, @t2]
+      end
+
+      it "should filter to correctly" do
+        IntendedTrip.filter(:to => @to_coordinates).should == [@t1,@t2, @t3]
+      end
+      
+      it "should filter both correctly" do
+        IntendedTrip.filter(:from => @from_coordinates, :to => @to_coordinates).should == [@t1, @t2]
+      end
+    end
+
+  end
 
 end

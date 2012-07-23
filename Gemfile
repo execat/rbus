@@ -59,6 +59,7 @@ gem 'ruby_parser'
 group :test, :development do
   # Pretty printed test output
   gem 'debugger'
+  gem 'awesome_print'
   gem 'turn', '~> 0.9.4', :require => false
   gem 'rspec'
   gem 'rspec-rails'
