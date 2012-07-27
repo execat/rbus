@@ -5,14 +5,12 @@ class IntendedTripsController < ApplicationController
   load_and_authorize_resource
   
   def index
-    @intended_trips = IntendedTrip.all
+    @intended_trips = IntendedTrip.filter(params)
     respond_to do |format|
       format.html {
-        if params[:map]
-          render :map
-        else
-          render
-        end
+        (render :map and return) if params[:map]
+        (render :filter and return) if (params[:from] || params[:to] || params[:filter])
+        render
       }
       format.json { }
     end

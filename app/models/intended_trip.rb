@@ -50,7 +50,8 @@ class IntendedTrip
   #     to   ->  a Hash with keys lat1, lng1, lat2, lng2 representing the coordinates within which the trip must start
   # returns a DataMapper::Collection of IntendedTrips
   # example: Trip.filter(:from => {:lat1 => 19, :lng1 => 72, :lat2 => 20, :lng2 => 73})
-  def self.filter(options)
+  def self.filter(options = nil)
+    return self.all unless options
     q = {}
     if f = options[:from]
       q[:from_stop] = {:conditions => ["lat BETWEEN ? AND ? AND lng BETWEEN ? AND ?", f[:lat1], f[:lat2], f[:lng1], f[:lng2]]} 
@@ -59,6 +60,10 @@ class IntendedTrip
       q[:to_stop]   = {:conditions => ["lat BETWEEN ? AND ? AND lng BETWEEN ? AND ?", t[:lat1], t[:lat2], t[:lng1], t[:lng2]]}
     end
     self.all(q)
+  end
+
+  def inspect
+    "[#{id}: from #{from_stop.name}(#{from_stop.lat},#{from_stop.lng}) to #{to_stop.name}(#{to_stop.lat},#{to_stop.lng}) on #{on}]"
   end
   
 end

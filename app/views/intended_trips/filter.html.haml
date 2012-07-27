@@ -1,0 +1,26 @@
+%script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
+= javascript_include_tag 'map_functions'
+
+:javascript
+  $(document).ready(function() {
+    map1 = new google.maps.Map(document.getElementById("map1"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
+    map2 = new google.maps.Map(document.getElementById("map2"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
+    google.maps.event.addListener(map1, 'bounds_changed', function() {
+      loadTrips(map1,map2);
+    });
+    google.maps.event.addListener(map2, 'bounds_changed', function() {
+      loadTrips(map1,map2);
+    });
+    loadTrips(map1,map2);
+    loadTrips(map1,map2);
+  });
+
+%h1
+  %span.tripcount
+    = @intended_trips.count
+  = pluralize(@intended_trips.count, "trip").split(" ")[-1] 
+.row
+  .span5
+    #map1.map{:style => "width: 450px; height: 400px"}
+  .span5
+    #map2.map{:style => "width: 450px; height: 400px"}
