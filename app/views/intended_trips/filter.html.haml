@@ -2,17 +2,46 @@
 = javascript_include_tag 'map_functions'
 
 :javascript
+  var map1_loaded = false, map2_loaded = false;
+  function map_loaded(which) {
+    if (which == 1) {
+      alert('map 1 loaded');
+      map1_loaded = true;
+    }
+    if (which == 2) {
+      alert('map 2 loaded');
+      map2_loaded = true;
+    }
+    if (map1_loaded && map2_loaded) {
+      alert('loading trips');
+      loadTrips(map1,map2);
+      loadTrips(map1,map2);
+    }
+  }      
+  
   $(document).ready(function() {
     map1 = new google.maps.Map(document.getElementById("map1"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
     map2 = new google.maps.Map(document.getElementById("map2"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
-    google.maps.event.addListener(map1, 'bounds_changed', function() {
+    google.maps.event.addListenerOnce(map1, 'idle', function(){
+      map_loaded(1);
+    });    
+    google.maps.event.addListenerOnce(map2, 'idle', function(){
+      map_loaded(2);
+    });    
+
+    google.maps.event.addListener(map1, 'dragend', function() {
       loadTrips(map1,map2);
     });
-    google.maps.event.addListener(map2, 'bounds_changed', function() {
+    google.maps.event.addListener(map1, 'zoomend', function() {
       loadTrips(map1,map2);
     });
-    loadTrips(map1,map2);
-    loadTrips(map1,map2);
+
+    google.maps.event.addListener(map2, 'dragend', function() {
+      loadTrips(map1,map2);
+    });
+    google.maps.event.addListener(map2, 'zoomend', function() {
+      loadTrips(map1,map2);
+    });
   });
 
 %h1
