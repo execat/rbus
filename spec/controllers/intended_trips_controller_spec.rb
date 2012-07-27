@@ -134,7 +134,6 @@ describe IntendedTripsController do
       it "should filter properly" do
         get :index, :from => {:lat1 => 0, :lng1 => 0, :lat2 => 0.1, :lng2 => 0.1}, :to => {:lat1 => 0, :lng1 => 0, :lat2 => 1, :lng2 => 1}
         assigns(:intended_trips).should == [@t1, @t2]
-        assigns[:filter].should be true
         response.should render_template(:filter)
       end
       
