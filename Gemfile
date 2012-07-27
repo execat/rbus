@@ -69,4 +69,9 @@ group :test, :development do
   gem 'capybara-webkit'
 end
 
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+end
+
 gem 'newrelic_rpm'

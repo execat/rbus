@@ -6,8 +6,10 @@ development:
   database: rbus_dev
   <<: *defaults
 
-test:
+test: &test
   database: rbus_test
   <<: *defaults
 production:
   <<: *defaults
+cucumber:
+  <<: *test

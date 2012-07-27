@@ -5,7 +5,7 @@ class IntendedTripsController < ApplicationController
   load_and_authorize_resource
   
   def index
-    @intended_trips = IntendedTrip.all
+    @intended_trips = IntendedTrip.filter(params)
     respond_to do |format|
       format.html {
         if params[:map]

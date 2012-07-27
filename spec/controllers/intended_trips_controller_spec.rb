@@ -121,6 +121,24 @@ describe IntendedTripsController do
       assigns(:intended_trips).should == [@my_trip]
       response.should be_ok
     end
+
+    describe "filter" do
+      before :each do
+        IntendedTrip.all.destroy!
+        @t1 = create_trip_by_latlng(0,0,1,1) 
+        @t2 = create_trip_by_latlng(0,0,0.5,0.5) 
+        @t3 = create_trip_by_latlng(1,1,1,1) 
+        @t4 = create_trip_by_latlng(1,1,2,2) 
+      end
+
+      it "should filter properly" do
+        get :index, :from => {:lat1 => 0, :lng1 => 0, :lat2 => 0.1, :lng2 => 0.1}, :to => {:lat1 => 0, :lng1 => 0, :lat2 => 1, :lng2 => 1}
+        assigns(:intended_trips).should == [@t1, @t2]
+        assigns[:filter].should be true
+        response.should render_template(:filter)
+      end
+      
+    end
   end
 
   context "trip show" do

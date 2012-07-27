@@ -48,6 +48,10 @@ describe IntendedTrip do
         @to_coordinates = {:lng1 => 0.0, :lat1 => 0.008, :lng2 => 0.1, :lat2 => 0.108}
       end
 
+      it "should return all with no trips" do
+        IntendedTrip.filter.should == IntendedTrip.all
+      end
+
       it "should filter from correctly" do
         IntendedTrip.filter(:from => @from_coordinates).should == [@t1, @t2]
       end
