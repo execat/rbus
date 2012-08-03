@@ -14,4 +14,8 @@ class HomeController < ApplicationController
     redirect_to root_path, {success: "Thanks for the feedback. We'll be in touch shortly."}
   end
 
+  def demo
+    render
+  end
+
 end

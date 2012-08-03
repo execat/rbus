@@ -11,7 +11,7 @@ Rbus::Application.routes.draw do
 
 
   match '/feedback' => 'home#feedback', :via => :post
-
+  match '/demo'     => 'home#demo', :via => :get
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
