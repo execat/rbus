@@ -11,7 +11,7 @@ Feature: Filtering trips based on latitude/longitude at start/end
       When I visit the filter page with start box from "0,0|1,1" -> "2,2|2.5,2.5"
       Then I should see "1 trip"
       And I should see element "#map1"
-      And I should see element "#map1"
+      And I should see element "#map2"
 
     Scenario: Filtering some other trips
       When I visit the filter page with start box from "0,0|1,1" -> "2.5,2.5|3.5,3.5"

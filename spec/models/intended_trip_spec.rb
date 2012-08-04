@@ -3,8 +3,9 @@ require 'debugger'
 describe IntendedTrip do
 
   it {should have_property(:on) }
-  it {should belong_to(:to_stop) }
-  it {should belong_to(:from_stop) }
+  [:from_name, :from_lat, :from_lng, :to_name, :to_lat, :to_lng].each do |p|
+    it {should have_property(p)}
+  end
 
   it { should validate_presence_of(:on)}
   it { should validate_inclusion_of(:on).within(["weekdays", "weekdays and saturday", "all days"])}
@@ -21,18 +22,11 @@ describe IntendedTrip do
       @t2t = FactoryGirl.create(:bus_stop, :lat => 0.008, :lng => 0.1)
       @t3t = FactoryGirl.create(:bus_stop, :lat => 0.108, :lng => 0.0)
 
-      @t1 = FactoryGirl.create(:intended_trip, :from_stop => @t1f, :to_stop => @t1t)
-      @t2 = FactoryGirl.create(:intended_trip, :from_stop => @t2f, :to_stop => @t2t)
-      @t3 = FactoryGirl.create(:intended_trip, :from_stop => @t3f, :to_stop => @t3t)
+      @t1 = FactoryGirl.create(:intended_trip, :to_lat => 0.1)
+      @t2 = FactoryGirl.create(:intended_trip, :from_lat => 0.008, :to_lat => 0.008, :to_lng => 0.1)
+      @t3 = FactoryGirl.create(:intended_trip, :from_lat => 0.1, :to_lat => 0.108, :to_lng => 0.0)
     end
 
-    it "should find correct nearby starting trips" do
-      @t1.trips_within(1000).should == [@t2]
-    end
-
-    it "should find correct nearby ending trips" do
-      @t1.trips_within(nil,1000).should == [@t3]
-    end
 
     it "should sort trips properly" do
       @t1.nearest_trips.should == [

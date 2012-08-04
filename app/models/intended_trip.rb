@@ -5,8 +5,15 @@ class IntendedTrip
 
   property :on, Enum["weekdays", "weekdays and saturday", "all days"], :required => true
 
-  belongs_to :from_stop, :model => BusStop
-  belongs_to :to_stop, :model => BusStop
+  property :from_name, String, :required => true
+  property :from_lat, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
+  property :from_lng, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
+
+  property :to_name, String, :required => true
+  property :to_lat, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
+  property :to_lng, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
+
+
   belongs_to :user
 
   property :created_at, DateTime
@@ -32,14 +39,16 @@ class IntendedTrip
   def nearest_trips(params = {}, sort_order = :total)
     params = {:limit => 100, :offset => 0}.merge(params)
     sql = %Q{
-      SELECT * FROM 
-        (SELECT it.id, bs1.name, bs2.name, bs1.lat AS flat, bs1.lng AS flng, bs2.lat AS tlat, bs2.lng AS tlng, 
-                 earth_distance(ll_to_earth(#{self.from_stop.lat},#{self.from_stop.lng}), ll_to_earth(bs1.lat, bs1.lng)) AS fdist, 
-                 earth_distance(ll_to_earth(#{self.to_stop.lat},#{self.to_stop.lng}), ll_to_earth(bs2.lat, bs2.lng)) AS tdist 
-         FROM intended_trips it LEFT JOIN bus_stops bs1 on it.from_stop_id = bs1.id 
-                                LEFT JOIN bus_stops bs2 on it.to_stop_id = bs2.id) AS trip_distances 
-      ORDER BY fdist + tdist LIMIT #{params[:limit]} OFFSET #{params[:offset]}; 
+        SELECT * FROM 
+          (SELECT id, from_name, to_name, from_lat AS flat, from_lng AS flng, to_lat AS tlat, to_lng AS tlng, 
+               earth_distance(ll_to_earth(#{self.from_lat},#{self.from_lng}), ll_to_earth(from_lat, from_lng)) AS fdist, 
+               earth_distance(ll_to_earth(#{self.to_lat},#{self.to_lng}), ll_to_earth(to_lat, to_lng)) AS tdist 
+           FROM intended_trips) AS trips 
+         ORDER BY fdist + tdist 
+         LIMIT #{params[:limit]} 
+         OFFSET #{params[:offset]}
       }
+    puts sql
     sorted_trips = repository.adapter.select(sql)
     sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact.select{|x| x[:trip]}
   end
@@ -52,18 +61,19 @@ class IntendedTrip
   # example: Trip.filter(:from => {:lat1 => 19, :lng1 => 72, :lat2 => 20, :lng2 => 73})
   def self.filter(options = nil)
     return self.all unless options
-    q = {}
+    q = {:conditions => []}
     if f = options[:from]
-      q[:from_stop] = {:conditions => ["lat BETWEEN ? AND ? AND lng BETWEEN ? AND ?", f[:lat1], f[:lat2], f[:lng1], f[:lng2]]} 
+      q[:conditions].push(*["from_lat BETWEEN ? AND ? AND from_lng BETWEEN ? AND ?", f[:lat1], f[:lat2], f[:lng1], f[:lng2]])
     end
     if t = options[:to]
-      q[:to_stop]   = {:conditions => ["lat BETWEEN ? AND ? AND lng BETWEEN ? AND ?", t[:lat1], t[:lat2], t[:lng1], t[:lng2]]}
+      q[:conditions].push(*["to_lat BETWEEN ? AND ? AND to_lng BETWEEN ? AND ?", t[:lat1], t[:lat2], t[:lng1], t[:lng2]])
     end
+    debugger
     self.all(q)
   end
 
   def inspect
-    "[#{id}: from #{from_stop.name}(#{from_stop.lat},#{from_stop.lng}) to #{to_stop.name}(#{to_stop.lat},#{to_stop.lng}) on #{on}]"
+    "[#{id}: from #{from_name}(#{from_lat},#{from_lng}) to #{to_name}(#{to_lat},#{to_lng}) on #{on}]"
   end
   
 end

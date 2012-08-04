@@ -3,18 +3,22 @@ require './spec/requests/request_helpers.rb'
 
 include RequestHelpers
 
+def login_as(user, password)
+  visit new_user_session_path
+  within "form" do
+    fill_in "user_email", :with => user
+    fill_in "user_password", :with => password
+  end
+  click_button "Sign in"
+end
+
 feature "adding a bus stop", :js => true do
   background do
     @user = FactoryGirl.create(:user)
     @user.confirm!
   end
   scenario "as logged in user" do
-    visit new_user_session_path
-    within "form" do
-      fill_in "user_email", :with => @user.email
-      fill_in "user_password", :with => "s3cr3t"
-    end
-    click_button "Sign in"
+    login_as @user.email, "s3cr3t"
     visit new_bus_stop_path
     page.should have_selector('form#new_bus_stop')
     page.should have_selector('#bus_stop_name')

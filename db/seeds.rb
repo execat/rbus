@@ -8,8 +8,9 @@
 
 #require File.join(Rails.root,'spec','factories.rb')
 
-DataMapper.migrate!
 
-10.times do |i|
-  FactoryGirl.create(:bus_stop)
-end
+
+@t1 = FactoryGirl.create(:intended_trip, :to_lat => 0.1)
+debugger
+@t2 = FactoryGirl.create(:intended_trip, :from_lat => 0.008, :to_lat => 0.008, :to_lng => 0.1)
+@t3 = FactoryGirl.create(:intended_trip, :from_lat => 0.1, :to_lat => 0.108)

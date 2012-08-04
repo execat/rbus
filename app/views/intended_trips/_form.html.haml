@@ -2,64 +2,13 @@
 %script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
 = javascript_include_tag 'map_functions'
 :javascript
-  var bus_stops = [#{@bus_stops}]
-  function do_autocomplete(id) {
-    $('#' + id).autocomplete({
-      source: bus_stops,
-      mustMatch: true,
-      matchContains: true,
-      focus: function( event, ui ) {
-        $( "#" + id ).val( ui.item.label );
-        try {
-          c = new google.maps.LatLng(parseFloat(ui.item.lat), parseFloat(ui.item.lng))
-          centerMarker.setPosition(c); 
-          map.setCenter(c);
-          map.setZoom(15);
-        } catch(err) {}
-        return false;
-      },
-      select: function(event, ui) {
-        $('#' + id).val(ui.item.label);
-        $('#intended_trip_' + id + '_stop_id').val(ui.item.value);
-        try {
-          c = new google.maps.LatLng(parseFloat(ui.item.lat), parseFloat(ui.item.lng))
-          centerMarker.setPosition(c); 
-          map.setCenter(c);
-          map.setZoom(15);
-          loadBusStops(map.getBounds());
-        } catch(err) {}
-        return false;
-      },
-      change: function(event, ui) {
-        if (!(ui.item)) {
-          $(this).val('');
-          $('#intended_trip_' + id + '_stop_id').val('');
-        }
-      }
-    })
-    .data( "autocomplete" )._renderItem = function( ul, item ) {
-      return $( "<li></li>" )
-      .data( "item.autocomplete", item )
-      .append( "<a>" + item.label  + "</a>" )
-      .appendTo( ul );
-    };
-  }
-  
-  $(document).ready(function() {
-    do_autocomplete('from');
-    do_autocomplete('to');
-    try {
-      map = new google.maps.Map(document.getElementById("map"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
-      centerMarker = new google.maps.Marker({map: map, position: map.getCenter()});
-      google.maps.event.addListener(map, 'moveend', function() {
-        loadBusStops(map.getBounds());
-      });
-      google.maps.event.addListener(map, 'dragend', function() {
-        loadBusStops(map.getBounds());
-      });
-    } catch(err) {}
+  $('#intended_trip_from_name').geo_autocomplete({
+      select: function(_event, _ui) {
+        if (_ui.item.viewport) map.fitBounds(_ui.item.viewport);
+        $('#intended_trip_from_lat').attr('value',_ui.item.lat);
+        $('#intended_trip_from_lng').attr('value',_ui.item.lng);
+  }});
 
-  })
 
 = form_for @intended_trip do |f|
   -if @intended_trip.errors.any? || (@intended_trip.user && @intended_trip.user.errors.any?)
@@ -69,8 +18,9 @@
         - (@intended_trip.errors.full_messages + @intended_trip.user.errors.full_messages).each do |msg|
           %li= msg
   %label I live at
-  = text_field_tag :from, params[:from], :class => "span4", :placeholder => "i.e. Malad West", :value => params[:from]
-  = f.hidden_field :from_stop_id
+  = f.text_field :from_name, :class => "span4", :placeholder => "Inorbit Mall", :value => params[:from]
+  = f.hidden_field :from_lat
+  = f.hidden_field :from_lng
   %br
   %label and work at
   = text_field_tag :to, params[:to], :class => "span4", :placeholder => "i.e. Bandra", :value => params[:to]

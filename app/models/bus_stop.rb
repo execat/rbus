@@ -11,8 +11,8 @@ class BusStop
   property :lng, Decimal, :precision => 18, :scale => 15, :required => true, :max => 180, :min => -180
   property :name, String, :required => true, :length => 200, :unique => true
 
-  has n, :trip_starts, :model => IntendedTrip, :child_key => [:from_stop_id]
-  has n, :trip_ends,   :model => IntendedTrip, :child_key => [:to_stop_id]
+  #has n, :trip_starts, :model => IntendedTrip, :child_key => [:from_stop_id]
+  #has n, :trip_ends,   :model => IntendedTrip, :child_key => [:to_stop_id]
 
   belongs_to :user
 
