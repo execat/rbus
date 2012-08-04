@@ -90,9 +90,8 @@ describe IntendedTripsController do
     end
     
     it "should not create a trip if user id is for other user" do
-      expect {
-        post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user_id => @u2.id}}
-      }.to raise_error(CanCan::Unauthorized)
+      post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user_id => @u2.id}}
+      response.should redirect_to "/"
     end
   end
 
@@ -188,8 +187,9 @@ describe IntendedTripsController do
     end
 
     describe "other's trip" do
-      it "should raise error for unauthorised" do
-        expect {get :edit, {:id => @other_trip.id}}.to raise_error(CanCan::Unauthorized)
+      it "should redirect to referer or root url" do
+        get :edit, {:id => @other_trip.id}
+        response.should redirect_to "/"
       end
     end
 
@@ -217,7 +217,9 @@ describe IntendedTripsController do
 
     describe "other's trip" do
       it "should raise error for unauthorised" do
-        expect {post :update, {:id => @other_trip.id}}.to raise_error(CanCan::Unauthorized)
+        post :update, {:id => @other_trip.id}
+        response.should redirect_to "/"
+        flash[:alert].should =~ /author/
       end
     end
 

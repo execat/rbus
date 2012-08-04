@@ -35,8 +35,9 @@ describe BusStopsController do
     end
 
     describe "not logged in" do
-      it "should raise CanCan::Unauthorized" do
-        expect { get :new }.to raise_error CanCan::Unauthorized
+      it "should redirect to login page" do
+        get :new
+        response.should redirect_to new_user_session_path
       end
     end
 

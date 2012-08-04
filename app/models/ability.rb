@@ -2,6 +2,7 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
+    can :access, :home
     if user
       if user.admin?
         can :access, :all
@@ -15,6 +16,7 @@ class Ability
       end
     else
       can [:read, :create], :intended_trips
+      can :read, :bus_stops
     end
     # Define abilities for the passed in (current) user. For example:
     #
