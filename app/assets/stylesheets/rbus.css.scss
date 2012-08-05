@@ -35,7 +35,7 @@ html {
  height: 100%;
 }
 body {
-  background: #7bc7df url(/assets/sky_bg.jpg) no-repeat left top;
+  //background: #7bc7df url(/assets/sky_bg.jpg) no-repeat left top;
   background-size: 100%;
 
 }
@@ -123,6 +123,10 @@ ul.thumbnails {
   li {
     font-size: 1.2em;
     text-align: justify;
+    background: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px;
     img {
       float: left;
       padding-right: 10px;
@@ -130,7 +134,7 @@ ul.thumbnails {
     }
     h2 {
       line-height: 1em;
-      font-family: 'Fredoka One', Helvetica;
+      font-family: Helvetica;
       font-weight: 300;
     }
   }
@@ -188,6 +192,15 @@ ul.ui-autocomplete {
     max-width: none;
   }
 }   
+
+#map {
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(123,147,153);
+  img {
+    max-width: none;
+  }
+}   
+
 
 #demo2_map {
   border-radius: 10px;
