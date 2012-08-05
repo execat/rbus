@@ -12,7 +12,7 @@
         $( "#" + id ).val( ui.item.label );
         try {
           c = new google.maps.LatLng(parseFloat(ui.item.lat), parseFloat(ui.item.lng))
-          m.setPosition(c); 
+          centerMarker.setPosition(c); 
           map.setCenter(c);
           map.setZoom(15);
         } catch(err) {}
@@ -23,7 +23,7 @@
         $('#intended_trip_' + id + '_stop_id').val(ui.item.value);
         try {
           c = new google.maps.LatLng(parseFloat(ui.item.lat), parseFloat(ui.item.lng))
-          m.setPosition(c); 
+          centerMarker.setPosition(c); 
           map.setCenter(c);
           map.setZoom(15);
           loadBusStops(map.getBounds());
@@ -50,7 +50,7 @@
     do_autocomplete('to');
     try {
       map = new google.maps.Map(document.getElementById("map"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
-      m = new google.maps.Marker({map: map, position: map.getCenter()});
+      centerMarker = new google.maps.Marker({map: map, position: map.getCenter()});
       google.maps.event.addListener(map, 'moveend', function() {
         loadBusStops(map.getBounds());
       });
