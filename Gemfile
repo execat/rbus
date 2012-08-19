@@ -33,6 +33,10 @@ gem 'yettings'
 gem 'rabl'
 gem 'json'
 
+gem 'pg'
+gem 'sequel'
+
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

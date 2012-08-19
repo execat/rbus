@@ -38,17 +38,7 @@ class IntendedTrip
   # sort_order -> one of :from, :to or :total, specifying whether to sort on distance at start, distance at end or total distance. Defaults to :total
   def nearest_trips(params = {}, sort_order = :total)
     params = {:limit => 100, :offset => 0}.merge(params)
-    sql = %Q{
-        SELECT * FROM 
-          (SELECT id, from_name, to_name, from_lat AS flat, from_lng AS flng, to_lat AS tlat, to_lng AS tlng, 
-               earth_distance(ll_to_earth(#{self.from_lat},#{self.from_lng}), ll_to_earth(from_lat, from_lng)) AS fdist, 
-               earth_distance(ll_to_earth(#{self.to_lat},#{self.to_lng}), ll_to_earth(to_lat, to_lng)) AS tdist 
-           FROM intended_trips) AS trips 
-         ORDER BY fdist + tdist 
-         LIMIT #{params[:limit]} 
-         OFFSET #{params[:offset]}
-      }
-    sorted_trips = repository.adapter.select(sql)
+    sorted_trips = trips_with_distance.order(distance(:from) + distance(:to))
     sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact.select{|x| x[:trip]}
   end
 
@@ -79,5 +69,30 @@ class IntendedTrip
   def inspect
     "[#{id}: from #{from_name}(#{from_lat},#{from_lng}) to #{to_name}(#{to_lat},#{to_lng}) on #{on}]"
   end
+
+
+  private
+
+  def trips_with_distance
+    DB[:intended_trips].select(:id, :from_name, :to_name, 
+                               :from_lat.as(:flat), :from_lng.as(:flng),
+                               :to_lat.as(:tlat), :to_lng.as(:tlng),
+                               distance(:from).as(:fdist),
+                               distance(:to).as(:tdist)
+                               )
+  end
+
+  def trips_within(meters, of)
+    trips_with_distance.where('tdist <= #{meters}')
+  end
+
+  def distance(what)
+    lat, lng = "#{what}_lat".to_sym, "#{what}_lng".to_sym
+    Sequel.function(:earth_distance, 
+                    Sequel.function(:ll_to_earth, self.send(lat), self.send(lng)),
+                    Sequel.function(:ll_to_earth, lat, lng)
+                    )
+  end
+
   
 end
