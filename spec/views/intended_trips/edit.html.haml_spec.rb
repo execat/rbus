@@ -2,6 +2,9 @@ require 'spec_helper'
 
 describe "intended_trips/edit" do
   before(:each) do
+    user = FactoryGirl.create(:user)
+    view.stub(:current_user, user)
+
     @intended_trip = assign(:intended_trip, stub_model(IntendedTrip))
   end
 

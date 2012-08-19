@@ -34,9 +34,9 @@
     - @intended_trips.each do |intended_trip|
       %tr
         %td
-          = intended_trip[:trip].from_stop.name
+          = intended_trip[:trip].from_name
         %td
-          = intended_trip[:trip].to_stop.name
+          = intended_trip[:trip].to_name
         %td
           = intended_trip[:trip].on
         %td

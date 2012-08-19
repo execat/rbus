@@ -15,8 +15,8 @@ describe "home/index" do
       
       # Run the generator again with the --webrat flag if you want to use webrat matchers
       assert_select "form", :action => intended_trips_path(@intended_trip), :method => "post" do
-        assert_select "#intended_trip_from_stop_id"
-        assert_select "#intended_trip_to_stop_id"
+        assert_select "#intended_trip_from_name"
+        assert_select "#intended_trip_to_name"
         assert_select "#intended_trip_on"
         assert_select "#intended_trip_user_email"
       end

@@ -1,10 +1,10 @@
 %div{:style => "line-height: 1.2em"}
   %h2
     %span.bigger.highlight
-      = @intended_trip.from_stop.name
+      = @intended_trip.from_name
     to
     %span.bigger.highlight
-      = @intended_trip.to_stop.name
+      = @intended_trip.to_name
   = link_to 'Edit', edit_intended_trip_path(@intended_trip), :class => "btn btn-info"
 
 = render 'intended_trips/nearest_list'

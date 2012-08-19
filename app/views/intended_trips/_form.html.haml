@@ -1,4 +1,3 @@
-- @bus_stops = BusStop.all(:order => [:name]).map{|b| "{label: '#{b.name}', value: #{b.id}, lat: #{b.lat}, lng: #{b.lng}}"}.join(",\n")
 %script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
 = javascript_include_tag 'map_functions'
 :javascript
@@ -23,8 +22,9 @@
   = f.hidden_field :from_lng
   %br
   %label and work at
-  = text_field_tag :to, params[:to], :class => "span4", :placeholder => "i.e. Bandra", :value => params[:to]
-  = f.hidden_field :to_stop_id
+  = f.text_field :to_name, :class => "span4", :placeholder => "i.e. Bandra", :value => params[:to]
+  = f.hidden_field :to_lat
+  = f.hidden_field :to_lng
   %br
   .row
     .span2

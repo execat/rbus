@@ -14,9 +14,9 @@
     - @intended_trips.each do |intended_trip|
       %tr
         %td
-          = intended_trip.from_stop.name
+          = intended_trip.from_name
         %td
-          = intended_trip.to_stop.name
+          = intended_trip.to_name
         %td
           = intended_trip.on
         - if intended_trip.user == current_user

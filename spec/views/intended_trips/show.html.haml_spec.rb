@@ -2,8 +2,11 @@ require 'spec_helper'
 
 describe "intended_trips/show" do
   before(:each) do
-    @t1 = Factory.create(:intended_trip)
-    @t2 = Factory.create(:intended_trip)
+    user = FactoryGirl.create(:user)
+    view.stub(:current_user, user)
+
+    @t1 = FactoryGirl.create(:intended_trip)
+    @t2 = FactoryGirl.create(:intended_trip)
     @t2.destroy
     @intended_trip = @t1
     @intended_trips = @t1.nearest_trips
