@@ -33,8 +33,8 @@ FactoryGirl.define do
     from_lat    0
     from_lng    0
     to_name     { generate :to_name }
-    to_lat      1
-    to_lng      1
+    to_lat      0
+    to_lng      0
     association :user
     
   end

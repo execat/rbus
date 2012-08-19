@@ -48,7 +48,6 @@ class IntendedTrip
          LIMIT #{params[:limit]} 
          OFFSET #{params[:offset]}
       }
-    puts sql
     sorted_trips = repository.adapter.select(sql)
     sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact.select{|x| x[:trip]}
   end
@@ -61,14 +60,19 @@ class IntendedTrip
   # example: Trip.filter(:from => {:lat1 => 19, :lng1 => 72, :lat2 => 20, :lng2 => 73})
   def self.filter(options = nil)
     return self.all unless options
-    q = {:conditions => []}
+    q = {}
     if f = options[:from]
-      q[:conditions].push(*["from_lat BETWEEN ? AND ? AND from_lng BETWEEN ? AND ?", f[:lat1], f[:lat2], f[:lng1], f[:lng2]])
+      q[:from_lat.gte] = f[:lat1]
+      q[:from_lng.gte] = f[:lng1]
+      q[:from_lat.lte] = f[:lat2]
+      q[:from_lng.lte] = f[:lng2]
     end
     if t = options[:to]
-      q[:conditions].push(*["to_lat BETWEEN ? AND ? AND to_lng BETWEEN ? AND ?", t[:lat1], t[:lat2], t[:lng1], t[:lng2]])
+      q[:to_lat.gte] = t[:lat1]
+      q[:to_lng.gte] = t[:lng1]
+      q[:to_lat.lte] = t[:lat2]
+      q[:to_lng.lte] = t[:lng2]
     end
-    debugger
     self.all(q)
   end
 

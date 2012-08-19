@@ -14,14 +14,6 @@ describe IntendedTrip do
   describe "nearby trips" do
     before :all do
 
-      @t1f = FactoryGirl.create(:bus_stop)
-      @t2f = FactoryGirl.create(:bus_stop, :lat => 0.008)
-      @t3f = FactoryGirl.create(:bus_stop, :lat => 0.1) # far away
-
-      @t1t = FactoryGirl.create(:bus_stop, :lat => 0.1)
-      @t2t = FactoryGirl.create(:bus_stop, :lat => 0.008, :lng => 0.1)
-      @t3t = FactoryGirl.create(:bus_stop, :lat => 0.108, :lng => 0.0)
-
       @t1 = FactoryGirl.create(:intended_trip, :to_lat => 0.1)
       @t2 = FactoryGirl.create(:intended_trip, :from_lat => 0.008, :to_lat => 0.008, :to_lng => 0.1)
       @t3 = FactoryGirl.create(:intended_trip, :from_lat => 0.1, :to_lat => 0.108, :to_lng => 0.0)

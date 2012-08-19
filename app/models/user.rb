@@ -50,7 +50,6 @@ class User
   property :created_at, DateTime
 
   has n, :intended_trips
-  has n, :bus_stops
 
   # Public: returns true if user is an admin
   def admin?
