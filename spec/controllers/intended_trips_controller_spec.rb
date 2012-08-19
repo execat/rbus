@@ -4,8 +4,6 @@ require 'spec_helper'
 describe IntendedTripsController do
   before :each do
     @request.env["devise.mapping"] = Devise.mappings[:user]
-    @bs1 = FactoryGirl.create(:bus_stop)
-    @bs2 = FactoryGirl.create(:bus_stop)
     @u = FactoryGirl.create(:user)
     @u2 = FactoryGirl.create(:user)
     @u.confirm!
@@ -15,11 +13,18 @@ describe IntendedTripsController do
     describe "user with valid email" do
       before :each do
         @email = FactoryGirl.generate(:email)
-        @valid_user_params = {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user => {:email => @email, :password => "abcdef", :password_confirmation => "abcdef"}}}
+        @valid_user_params = {
+          :intended_trip => {
+            :from_name => "from", :from_lat => 0, :from_lng => 0,
+            :to_name => "to", :to_lat => 0, :to_lng => 0,
+            :on => "weekdays", 
+            :user => {:email => @email, :password => "abcdef", :password_confirmation => "abcdef"}
+          }
+        }
       end
       it "should assign @trip properly" do
         post :create, @valid_user_params
-        assigns[:intended_trip_creator].trip.should  be_instance_of(IntendedTrip).with(:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => "weekdays")
+        assigns[:intended_trip_creator].trip.should  be_instance_of(IntendedTrip).with(:from_name => "from", :to_name => "to", :on => "weekdays")
         assigns(:map).should be_nil
         response.should redirect_to assigns(:intended_trip_creator).trip
       end
@@ -37,7 +42,14 @@ describe IntendedTripsController do
 
     describe "user with invalid email" do
       it "should not create new trip and account" do
-        post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user => {:email => "abc", :password => "abcdef", :password_confirmation => "abcdef"}}}
+        post :create, {
+          :intended_trip => {
+            :from_name => "from", :from_lat => 0, :from_lng => 0,
+            :to_name => "to", :to_lat => 0, :to_lng => 0,
+            :on => "weekdays", 
+            :user => {:email => "abc", :password => "abcdef", :password_confirmation => "abcdef"}
+          }
+        }
         assigns(:intended_trip_creator).errors.keys.should include(:email)
         response.should render_template(:new)
       end
@@ -46,7 +58,14 @@ describe IntendedTripsController do
     describe "with invalid bus_stops" do
       before :each do
         @u = FactoryGirl.build(:user)
-        @valid_params = {:intended_trip => {:from_stop_id => nil, :to_stop_id => nil, :on => :weekdays, :user => {:email => @u.email, :password => "abcdef", :password_confirmation => "abcdef"}}}
+        @valid_params = {
+          :intended_trip => {
+            :from_name => "from", :from_lat => 0,
+            :to_name => "to", :to_lat => 0, :to_lng => 0,
+            :on => "weekdays", 
+            :user => {:email => @u.email, :password => "abcdef", :password_confirmation => "abcdef"}
+          }
+        }
       end
 
       it "should show the map" do
@@ -63,14 +82,25 @@ describe IntendedTripsController do
   end
 
   context "new trip by unloggedin user with existing email" do
+    before :each do
+      @existing_email_params = {
+        :intended_trip => {
+          :from_name => "from", :from_lat => 0, :from_lng => 0,
+          :to_name => "to", :to_lat => 0, :to_lng => 0,
+          :on => "weekdays", 
+          :user => {:email => @u.email}
+        }
+      }
+    end
+
     it "should not create new trip" do
       expect {
-        post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user => {:email => @u.email}}}
+        post :create, @existing_email_params
       }.to change(IntendedTrip, :count).by(0)
     end
 
     it "should redirect to sign in page" do
-      post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user => {:email => @u.email}}}
+      post :create, @existing_email_params
       response.should redirect_to new_user_session_path
     end
 
@@ -85,12 +115,25 @@ describe IntendedTripsController do
 
     it "should create new trip" do
       expect {
-        post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays}}
+        post :create, {
+          :intended_trip => {
+            :from_name => "from", :from_lat => 0, :from_lng => 0,
+            :to_name => "to", :to_lat => 0, :to_lng => 0,
+            :on => "weekdays", 
+          }
+        }
       }.to change(IntendedTrip, :count).by(1)
     end
     
     it "should not create a trip if user id is for other user" do
-      post :create, {:intended_trip => {:from_stop_id => @bs1.id, :to_stop_id => @bs2.id, :on => :weekdays, :user_id => @u2.id}}
+      post :create, {
+        :intended_trip => {
+          :from_name => "from", :from_lat => 0, :from_lng => 0,
+          :to_name => "to", :to_lat => 0, :to_lng => 0,
+          :on => "weekdays", 
+          :user_id => @u2.id
+        }
+      }
       response.should redirect_to "/"
     end
   end
@@ -205,8 +248,8 @@ describe IntendedTripsController do
     
     describe "own trip" do
       it "should assign data correctly" do
-        IntendedTrip.any_instance.should_receive(:update).with("from_stop_id" => "1")
-        post :update, {:id => @my_trip.id, :intended_trip => {:from_stop_id => 1}}
+        IntendedTrip.any_instance.should_receive(:update).with("from_lat" => "55")
+        post :update, {:id => @my_trip.id, :intended_trip => {:from_lat => 55}}
       end
 
       it "should assign data correctly" do
