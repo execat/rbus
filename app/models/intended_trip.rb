@@ -23,14 +23,11 @@ class IntendedTrip
   # accepts_nested_attributes_for :user
 
   # Public: finds all the trips starting and ending within a particular radius of this trip
-  # start_radius -> an Integer, specifying the maximum distance from the start point to search within. Pass nil to ignore
-  # end_radius   -> an Integer, specifying the maximum distance from the end point to search within. Pass nil or omit this parameter to ignore
-  # 
-  # return a DataMapper::Collection of IntendedTrips matching the distance criteria
-  def trips_within(start_radius, end_radius = nil)
-    return [] unless (start_radius or end_radius)
-    start_radius ? from_stop.within(start_radius).trip_starts : IntendedTrip.all(:id.lt => 0)  ||  # empty collection
-      end_radius ? to_stop.within(end_radius).trip_ends       : IntendedTrip.all(:id.lt => 0)
+  # meters -> the radius within which to search. currently returns trips where the sum of the start distance and end distance is less than this parameter
+  def trips_within(meters)
+    f = distance(:from)
+    t = distance(:to)
+    trips_with_distance.where{(f + t <= meters)}.exclude(:id => self.id).all
   end
 
   # Public: gets the nearest trips, sorted by a given order
@@ -39,8 +36,15 @@ class IntendedTrip
   def nearest_trips(params = {}, sort_order = :total)
     params = {:limit => 100, :offset => 0}.merge(params)
     sorted_trips = trips_with_distance.order(distance(:from) + distance(:to))
-    sorted_trips.map{|t| {:trip => IntendedTrip.get(t[:id]), :start_distance => t[:fdist], :end_distance => t[:tdist]} unless t[:id] == self.id}.compact.select{|x| x[:trip]}
+    sorted_trips.map{|t| {
+        :trip => IntendedTrip.get(t[:id]), 
+        :start_distance => t[:fdist], 
+        :end_distance => t[:tdist], 
+        :total_distance => t[:fdist] + t[:tdist]
+      } unless t[:id] == self.id}.compact.select{|x| x[:trip]}
   end
+
+
 
   # Public: return trips that match the given lat/lng filters
   # options  -> a Hash with the following keys
@@ -73,19 +77,17 @@ class IntendedTrip
 
   private
 
+  # Returns all the other trips in the database with their fdist and tdist calculated
   def trips_with_distance
     DB[:intended_trips].select(:id, :from_name, :to_name, 
-                               :from_lat.as(:flat), :from_lng.as(:flng),
-                               :to_lat.as(:tlat), :to_lng.as(:tlng),
+                               :from_lat, :from_lng,
+                               :to_lat, :to_lng,
                                distance(:from).as(:fdist),
                                distance(:to).as(:tdist)
                                )
   end
 
-  def trips_within(meters, of)
-    trips_with_distance.where('tdist <= #{meters}')
-  end
-
+  # Returns a Sequel.function to calculate the distance between a trip and all other trips
   def distance(what)
     lat, lng = "#{what}_lat".to_sym, "#{what}_lng".to_sym
     Sequel.function(:earth_distance, 
