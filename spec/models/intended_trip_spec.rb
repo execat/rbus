@@ -13,6 +13,7 @@ describe IntendedTrip do
 
   describe "nearby trips" do
     before :all do
+      IntendedTrip.all.destroy!
 
       @t1 = FactoryGirl.create(:intended_trip, :to_lat => 0.1)
       @t2 = FactoryGirl.create(:intended_trip, :from_lat => 0.008, :to_lat => 0.008, :to_lng => 0.1)
