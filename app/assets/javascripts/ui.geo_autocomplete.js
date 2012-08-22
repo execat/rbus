@@ -25,16 +25,16 @@ $.widget( "ui.geo_autocomplete", {
 
   // default values
   options: {
-    geocoder_region: '', // filter to a specific region, e.g. 'Europe'
-    geocoder_types: 'locality,political,sublocality,neighborhood,country,geocode,bus_station,establishment', // array of acceptable location types, see http://code.google.com/apis/maps/documentation/javascript/services.html#GeocodingAddressTypes
-    geocoder_address: false, // true = use the full formatted address, false = use only the segment that matches the search term
+    geocoder_region: 'IN', // filter to a specific region, e.g. 'Europe'
+    geocoder_types: 'locality,political,sublocality,neighborhood,country,geocode,bus_station,establishment,colloquial_area,premise,subpremise', // array of acceptable location types, see http://code.google.com/apis/maps/documentation/javascript/services.html#GeocodingAddressTypes
+    geocoder_address: true, // true = use the full formatted address, false = use only the segment that matches the search term
 
     mapwidth: 100, // width of static map thumbnail
     mapheight: 100, // height of static map thumbnail
     maptype: 'map', // see http://code.google.com/apis/maps/documentation/staticmaps/#MapTypes
     mapsensor: false, // see http://code.google.com/apis/maps/documentation/staticmaps/#Sensor
 
-    minLength: 3, // see http://jqueryui.com/demos/autocomplete/#option-minLength
+    minLength: 1, // see http://jqueryui.com/demos/autocomplete/#option-minLength
     delay: 300, // see http://jqueryui.com/demos/autocomplete/#option-delay
     // callback function to get autocomplete results
     source: function(_request, _response) {

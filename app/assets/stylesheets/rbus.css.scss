@@ -68,11 +68,6 @@ body {
 
 #new_form {
   form {
-      margin-top: 10px;
-      background: rgba(196,226,235,0.5);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 4px rgb(123,147,153);;
   }
 }
 
@@ -93,12 +88,15 @@ label {
 }
 
 
-form {
+#form {
   background: rgba(196,226,235,0.5);
   border-radius: 10px;
   padding: 20px;
   float: left;
   box-shadow: 2px 2px 4px rgb(123,147,153);;
+  input {
+    margin-bottom: 9px;
+  }
 
 }
 
@@ -123,7 +121,7 @@ ul.thumbnails {
   li {
     font-size: 1.2em;
     text-align: justify;
-    background: #efefef;
+    //background: #efefef;
     padding: 10px;
     border-radius: 10px;
     margin: 2px;

@@ -12,7 +12,7 @@
   %h2
     %span.highlight.bigger
       = @intended_trips.count
-    trips nearby
+    trips within 2 kms
   %h3
     Spread the word on 
     %a{:href => "http://clicktotweet.com/tc83f"}
@@ -27,24 +27,15 @@
           From
         %th
           To
-        %th
-          On
-        %th start distance
-        %th end distance
     - @intended_trips.each do |intended_trip|
       %tr
         %td
-          = intended_trip[:trip].from_name
+          = intended_trip[:from_name]
+          = "(#{(intended_trip[:fdist]/1000).round(2)} kms away)" rescue ""
         %td
-          = intended_trip[:trip].to_name
-        %td
-          = intended_trip[:trip].on
-        %td
-          = (intended_trip[:start_distance]/1000.0).round(2)
-          kms
-        %td
-          = (intended_trip[:end_distance]/1000.0).round(2)
-          kms
+          = intended_trip[:to_name]
+          = "(#{(intended_trip[:tdist]/1000).round(2)} kms away)" rescue ""
+
   
   
   

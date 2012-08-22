@@ -1,68 +1,127 @@
 %script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 = javascript_include_tag 'map_functions'
 = javascript_include_tag 'ui.geo_autocomplete'
 :javascript
   $(document).ready(function() {
-    $('#intended_trip_from_name').geo_autocomplete({
-      select: function(_event, _ui) {
-        if (typeof map != "undefined") {
-          if (_ui.item.viewport) map.fitBounds(_ui.item.viewport);
-        };
-        $('#intended_trip_from_lat').attr('value',_ui.item.lat);
-        $('#intended_trip_from_lng').attr('value',_ui.item.lng);
+    x = 0; y = 0;
+    $('#from').keypress(function(e) { 
+      if ((e.which > 0) && (e.which != 13) ){
+        $('#intended_trip_from_lat').attr('value','')
+        $('#intended_trip_from_lng').attr('value','')
       }
     });
-    $('#intended_trip_to_name').geo_autocomplete({
-      select: function(_event, _ui) {
-        if (typeof map != "undefined") {
-          if (_ui.item.viewport) map.fitBounds(_ui.item.viewport);
-        };
-        $('#intended_trip_to_lat').attr('value',_ui.item.lat);
-        $('#intended_trip_to_lng').attr('value',_ui.item.lng);
+    $('#to').keypress(function(e) { 
+      if ((e.which > 0) && (e.which != 13) ){
+        $('#intended_trip_to_lat').attr('value','')
+        $('#intended_trip_to_lng').attr('value','')
       }
     });
+
+    if ($('#map').length == 1) {
+      map = new google.maps.Map(document.getElementById("map"), { mapTypeId: google.maps.MapTypeId.ROADMAP, center: new google.maps.LatLng(19.09, 72.91), zoom: 11 });
+      infowindow = new google.maps.InfoWindow();
+      marker = new google.maps.Marker({
+        map: map
+      });
+    }
+    var defaultBounds = new google.maps.LatLngBounds(
+    new google.maps.LatLng(18, 71),
+    new google.maps.LatLng(19, 73));
+
+    var from_input = document.getElementById('from');
+    var to_input = document.getElementById('to');
+    var options = {
+      bounds: defaultBounds,
+      types: ['establishment','geocode'],
+      componentRestrictions: {country: 'in'}
+    };
+  
+    from_autocomplete = new google.maps.places.Autocomplete(from_input, options);
+    to_autocomplete = new google.maps.places.Autocomplete(to_input, options);
+
+
+    google.maps.event.addListener(from_autocomplete, 'place_changed', function() {place_changed("from");});
+    google.maps.event.addListener(to_autocomplete, 'place_changed', function() {place_changed("to");});
 
   });
 
 
-= form_for @intended_trip do |f|
+  function place_changed(which) {
+    autocomplete = which == "from" ? from_autocomplete : to_autocomplete
+    var place = autocomplete.getPlace();
+    var address = '';
+    if (place.address_components) {
+      address = [
+        (place.address_components[0] && place.address_components[0].short_name || ''),
+        (place.address_components[1] && place.address_components[1].short_name || ''),
+        (place.address_components[2] && place.address_components[2].short_name || '')
+      ].join(' ');
+    }
+    if ((typeof infowindow != "undefined")) {
+      infowindow.close();
+      infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+      infowindow.open(map, marker);
+    }
+    if ((typeof map != "undefined")) {
+      if (place.geometry.viewport) {
+        map.fitBounds(place.geometry.viewport);
+      } else {
+        map.setCenter(place.geometry.location);
+        map.setZoom(17);  // Why 17? Because it looks good.
+        var image = new google.maps.MarkerImage(
+          place.icon,
+          new google.maps.Size(71, 71),
+          new google.maps.Point(0, 0),
+          new google.maps.Point(17, 34),
+          new google.maps.Size(35, 35)
+        );
+        marker.setIcon(image);
+        marker.setPosition(place.geometry.location);
+      }
+
+    }
+
+    $('#intended_trip_' + which + '_name').attr('value', $('#' + which).attr('value').split(",")[0]);
+    $('#intended_trip_' + which + '_lat').attr('value', place.geometry.location.lat());
+    $('#intended_trip_' + which + '_lng').attr('value', place.geometry.location.lng());
+  }
+
+#change
+#kp
+%div#form
   -if @intended_trip.errors.any? || (@intended_trip.user && @intended_trip.user.errors.any?)
     #error_explanation
       %h2= "#{pluralize(@intended_trip.errors.count + @intended_trip.user.errors.count, "error")} prohibited this intended_trip from being saved:"
       %ul
         - (@intended_trip.errors.full_messages + @intended_trip.user.errors.full_messages).each do |msg|
           %li= msg
-  %label I live at
-  = f.text_field :from_name, :class => "span4", :placeholder => "Inorbit Mall", :value => params[:from]
-  = f.hidden_field :from_lat
-  = f.hidden_field :from_lng
-  %br
-  %label and work at
-  = f.text_field :to_name, :class => "span4", :placeholder => "i.e. Bandra", :value => params[:to]
-  = f.hidden_field :to_lat
-  = f.hidden_field :to_lng
-  %br
-  .row
-    .span2
-      &nbsp;
-    .span3
-      - if params[:action] == "index"
-        = link_to 'My bus stop is not listed', new_intended_trip_path
-          
-  %br
-  %label on
-  = f.select :on, ["weekdays", "weekdays and saturday", "all days"]
-  %br
-  - unless current_user
-    = f.fields_for :user do |u|
-      %label Email
-      = u.text_field :email, :value => (params[:intended_trip][:user][:email] rescue nil)
-      %br
-      %label Password
-      = u.text_field :password, :placeholder => "please choose a password", :type => "password", :value => (params[:intended_trip][:user][:password] rescue nil)
-      %br
-      %label Confirm Password
-      = u.text_field :password_confirmation, :placeholder => "please type your password again", :type => "password", :value => (params[:intended_trip][:user][:password_confirmation] rescue nil)
-  %br
-  = f.submit "Register my Trip", :class => "btn btn-info"
+  %form{:style => "margin: 0px;"}
+    %label I live at
+    %input{:id => "from"}
+    %br
+    %label and work at
+    %input{:id => "to"}
+  = form_for @intended_trip do |f|
+    = f.hidden_field :from_name, :class => "span4", :placeholder => "i.e. Inorbit Mall", :value => params[:from]
+    = f.hidden_field :from_lat
+    = f.hidden_field :from_lng
+    = f.hidden_field :to_name, :class => "span4", :placeholder => "i.e. Marol", :value => params[:to]
+    = f.hidden_field :to_lat
+    = f.hidden_field :to_lng
+    %label on
+    = f.select :on, ["weekdays", "weekdays and saturday", "all days"]
+    %br
+    - unless current_user
+      = f.fields_for :user do |u|
+        %label Email
+        = u.text_field :email, :value => (params[:intended_trip][:user][:email] rescue nil)
+        %br
+        %label Password
+        = u.text_field :password, :placeholder => "please choose a password", :type => "password", :value => (params[:intended_trip][:user][:password] rescue nil)
+        %br
+        %label Confirm Password
+        = u.text_field :password_confirmation, :placeholder => "please type your password again", :type => "password", :value => (params[:intended_trip][:user][:password_confirmation] rescue nil)
+        %br
+    = f.submit "Register my Trip", :class => "btn btn-info"
   

@@ -30,7 +30,6 @@ gem 'formtastic'
 gem 'haml-rails'
 gem 'exceptional'
 gem 'yettings'
-gem 'rabl'
 gem 'json'
 
 gem 'pg'

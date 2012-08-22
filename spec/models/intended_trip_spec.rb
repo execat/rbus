@@ -29,7 +29,7 @@ describe IntendedTrip do
     end
     it "trips within" do
       @t1.trips_within(13000)[0].except(:from_lat, :from_lng, :to_lat, :to_lng).should == 
-                                         { :id => @t3.id, :from_name => "from3", :to_name => "to3",
+                                         { :id => @t3.id, :from_name => @t3.from_name, :to_name => @t3.to_name,
                                            :fdist => 11132.0031845342, :tdist => 890.560254762731
                                          }
                                         

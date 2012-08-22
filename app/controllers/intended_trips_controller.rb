@@ -12,7 +12,7 @@ class IntendedTripsController < ApplicationController
         (render :filter and return) if (params[:from] || params[:to] || params[:filter])
         render
       }
-      format.json { }
+      format.json { render json: @intended_trips}
     end
   end
 
@@ -31,7 +31,7 @@ class IntendedTripsController < ApplicationController
   # GET /intended_trips/1.json
   def show
     @intended_trip = IntendedTrip.get(params[:id])
-    @intended_trips = @intended_trip.nearest_trips
+    @intended_trips = @intended_trip.trips_within(2000)
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @intended_trip }

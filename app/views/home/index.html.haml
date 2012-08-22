@@ -10,7 +10,7 @@
 
 
 .row{:style => "margin-bottom: 20px"}
-  .span5#headline
+  .span4#headline
     %h1 Mumbai,   
     %h2
       Stress free commutes are here!
@@ -31,33 +31,64 @@
           twitter
         and facebook.
       <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="true"></div>
-  .span7{:style => "display: table"}
+  .span5{:style => "display: table"}
     .row
       %a{:href => intended_trips_path(:map => true)}
         %h1{:style => "margin-bottom:10px; margin-left: 20px;"}
           %span.highlight
             = IntendedTrip.all.count
           commutes registered
-    .row
+    .row{:style => "margin: auto"}
       #new_form{:style => "display: table-cell; vertical-align: middle;"}
         = render 'intended_trips/form'
+  .span3
+    :plain
+      <script charset="utf8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 5,
+      interval: 30000,
+      width: 300,
+      height: 300,
+      theme: {
+      shell: {
+      background: '#d8f1f6',
+      color: '#030303'
+      },
+      tweets: {
+      background: '#bce7f5',
+      color: '#0f0e0f',
+      links: '#1e1ee6'
+      }
+      },
+      features: {
+      scrollbar: false,
+      loop: false,
+      live: false,
+      behavior: 'all'
+      }
+      }).render().setUser('rbus_in').start();
+      </script>
+      
 .row
   %ul.thumbnails
     %li.span4
       = image_tag 'gps.png'
-      %h2
-        GPS on every bus
-      Wait for your bus in the comfort of your home or office, and be alerted as it approaches
+      %h1
+        Zero Waiting
+      We have GPS on all busses. Wait for your bus in the comfort of your home or office, and be alerted as it approaches
     %li.span4
       = image_tag 'qrcode.png'
-      %h2
-        Book your seat with your mobile
-      Running late? No problem. Just let us know that you'll need a seat on a later bus.
+      %h1
+        Guaranteed Seat
+      When you're ready to leave, use our mobile/web app to reserve a seat on the bus
     %li.span4
       = image_tag 'bus-icon.png', :style => "padding-bottom: 40px"
-      %h2
-        Enjoy stress free commutes
-      in a modern and safe environment. Save money, save the earth and stay dry!
+      %h1
+        Flexible timings
+      Running early or late? No problem. Reserve a seat on a different bus and travel at your convenience.
 
 .row#pricing
   %h1 plans and pricing
@@ -105,21 +136,21 @@
         %td 1500
         %td bad
         %td very bad
+      %tr{:style => "background: lightgreen"}
+        %td rBus non-a/c
+        %td 2000
+        %td good
+        %td very good
+      %tr{:style => "background: lightgreen"}
+        %td rBus a/c
+        %td 3000
+        %td good
+        %td very good
       %tr
         %td rickshaw
         %td 3000
         %td bad
         %td bad
-      %tr{:style => "background: lightgreen"}
-        %td rBus non-a/c
-        %td 3000
-        %td good
-        %td very good
-      %tr{:style => "background: lightgreen"}
-        %td rBus a/c
-        %td 5000
-        %td good
-        %td very good
       %tr
         %td self driven car
         %td 12000
@@ -134,34 +165,20 @@
   
 .row
   %h1 frequently asked questions
-  #not_on_list.faq
-    %h3 My stop is not on your list
-    If you are in Navi Mumbai or Thane, your bus stop may not be listed. Please use the feedback link on top to send me your trip details (or email contact@rbus.in) 
-    and I will add the relevant bus stops. If you are in Mumbai and you cannot locate your stop, try using our 
-    = link_to "map interface", new_intended_trip_path
   .faq
     %h3 How does it work, exactly?
-    If you leave us your commute details and spread the word far and wide amongst your social network, we are confident that we can find another 19 
-    people who share your commute. Once we find them, we'll let you know and soon after, a bus will arrive every morning at a 
-    bus-stop of your choice with a seat on it for you. The more people we find, the more buses we can run on your route. i.e. if we find a mere 200 people,
-    we can run ten 20-seater buses, one every ten minutes or so, which gives you ample flexibility in your commute time. Running a bit late in the morning? 
-    No problem. Just let us know and you can catch a later bus. Meeting finished early? Log on and switch to an earlier return trip. Magic!
+    rBus works very simply. First, we gather the commute details of people. Then, when we find enough of them going from the same place to the same place, we 
+    start running buses between those points. If we find say 200 people, it means we can run 10 twenty-seater buses on that route, which gives you ample
+    flexibility in terms of timings. We wire up the buses with GPS and voila - your personal public transport system!
   .faq#expensive
     %h3 Why is it so expensive compared to the bus/train?
-    Naturally, we cannot compete with Government subsidised modes of transportation in terms of price. However, we can offer a qualitatively better experience
-    to compensate for our relatively higher pricing. We do this by providing
+    Since we are not subsidised by the taxpayer, it does cost a bit more for us to provide all the nice features like
     %ul
       %li guaranteed seating
       %li point-to-point service (faster than the bus)
       %li no bus changes en-route (get in, sit down, relax! till you reach office)
       %li no waiting at bus stops/stations - get intimated by SMS/email as bus approaches your stop.
-    %h3 Will it get cheaper in time?
-    %b For sure, yes!
-    As the number of commuters grows, we can start using 40 seater buses instead of the 20 seaters we are using now. As we take more buses, we get volume discounts
-    which we will pass on to customers. As the network grows and stabilises, and our computer algorithms get better, we will be able to offer better pricing based
-    on the distance you travel. Given constant petrol prices, this is the maximum price you can expect to pay.
-    %b If you are not signing up because it's too expensive, please sign up. It's only with your help can we make the service cheaper.
-  .faq#in_my_city
+    Waiting for the bus costs you in terms of time. We eliminate the wait entirely!
     %h3 Can we have rBus in my city?
     rBus is currently operational only in Mumbai as that's where I live. However, if you wish to start an rBus service in your city I will provide the 
     software to manage the service there. You will have to run it under your own brand name (not rBus) and you can pay me something for the 

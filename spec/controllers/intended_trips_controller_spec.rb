@@ -58,7 +58,7 @@ describe IntendedTripsController do
     describe "with invalid bus_stops" do
       before :each do
         @u = FactoryGirl.build(:user)
-        @valid_params = {
+        @invalid_bus_stop_params = {
           :intended_trip => {
             :from_name => "from", :from_lat => 0,
             :to_name => "to", :to_lat => 0, :to_lng => 0,
@@ -69,13 +69,12 @@ describe IntendedTripsController do
       end
 
       it "should show the map" do
-        post :create, @valid_params
-        assigns(:map).should be_true
+        post :create, @invalid_bus_stop_params
         response.should render_template(:new)
       end
 
       it "should not save the user" do
-        expect { post :create, @valid_params}.to change(User, :count).by(0)
+        expect { post :create, @invalid_bus_stop_params}.to change(User, :count).by(0)
       end
     end
     
@@ -192,7 +191,7 @@ describe IntendedTripsController do
 
     it "should show nearest trips" do
       get :show, {:id => @my_trip.id}
-      assigns(:intended_trips).should == assigns(:intended_trip).nearest_trips.map(&:stringify_keys)
+      assigns(:intended_trips).should == assigns(:intended_trip).trips_within(2000).map(&:stringify_keys)
       response.should be_ok
     end
 

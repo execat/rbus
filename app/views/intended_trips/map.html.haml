@@ -14,10 +14,10 @@
     $.get('/intended_trips.json', function(data) {
       $.each(data, function() { 
         // draw the line
-        lat1 = parseFloat(this.intended_trip.from_stop.lat);
-        lng1 = parseFloat(this.intended_trip.from_stop.lng);
-        lat2 = parseFloat(this.intended_trip.to_stop.lat);
-        lng2 = parseFloat(this.intended_trip.to_stop.lng);
+        lat1 = parseFloat(this.from_lat);
+        lng1 = parseFloat(this.from_lng);
+        lat2 = parseFloat(this.to_lat);
+        lng2 = parseFloat(this.to_lng);
         p = new google.maps.Polyline( {
           path: [ new google.maps.LatLng(lat1,lng1), 
                   new google.maps.LatLng(lat2, lng2)],

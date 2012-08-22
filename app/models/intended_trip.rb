@@ -5,11 +5,11 @@ class IntendedTrip
 
   property :on, Enum["weekdays", "weekdays and saturday", "all days"], :required => true
 
-  property :from_name, String, :required => true
+  property :from_name, String, :required => true, :length => 150;
   property :from_lat, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
   property :from_lng, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
 
-  property :to_name, String, :required => true
+  property :to_name, String, :required => true, :length => 150;
   property :to_lat, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
   property :to_lng, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
 
@@ -84,7 +84,7 @@ class IntendedTrip
                                :to_lat, :to_lng,
                                distance(:from).as(:fdist),
                                distance(:to).as(:tdist)
-                               )
+                               ).where(:deleted_at => nil)
   end
 
   # Returns a Sequel.function to calculate the distance between a trip and all other trips
