@@ -26,10 +26,11 @@
       <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="false"></div>
       <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out rBus.in - stress free commutes for Mumbai" data-via="rbus_in" data-size="large">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      %h3
-        = link_to "#{IntendedTrip.count} commutes registered", intended_trips_path
   .span5{:style => "display: table"}
     .row{:style => "margin: auto"}
+      %h1
+        = link_to "#{IntendedTrip.count} commutes registered", intended_trips_path
+
       #new_form{:style => "display: table-cell; vertical-align: middle;"}
         = render 'intended_trips/form'
 
@@ -40,7 +41,7 @@
       new TWTR.Widget({
       version: 2,
       type: 'profile',
-      rpp: 3,
+      rpp: 4,
       interval: 30000,
       width: 300,
       height: 300,
@@ -66,7 +67,7 @@
 
 
       
-.row{:style => "position: relative; top: 80px; margin-bottom: 60px;"}
+.row{:style => "position: relative; top: 50px; margin-bottom: 50px;"}
   %ul.thumbnails
     %li.span4
       = image_tag 'gps.png'
