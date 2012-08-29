@@ -9,4 +9,6 @@
     %h1.btn.btn-success.button
       = link_to '+', new_intended_trip_path
 
+%h3
+  = link_to "See these trips on a map", intended_trips_path(:map => true)
 = render 'intended_trips/list'

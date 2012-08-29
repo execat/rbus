@@ -1,3 +1,7 @@
+%h1
+  == #{@intended_trips.count} commutes registered
+
+%h3= link_to 'See as list', intended_trips_path
 %script{:type => "text/javascript" , :src => "http://maps.googleapis.com/maps/api/js?key=#{Yetting.maps}&sensor=false"}
 :javascript
   function initialize() {
