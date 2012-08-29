@@ -5,7 +5,8 @@
     to
     %span.bigger.highlight
       = @intended_trip.to_name
-  = link_to 'Edit', edit_intended_trip_path(@intended_trip), :class => "btn btn-info"
+  - if can?(:edit, @intended_trip)
+    = link_to 'Edit', edit_intended_trip_path(@intended_trip), :class => "btn btn-info"
 
 = render 'intended_trips/nearest_list'
 

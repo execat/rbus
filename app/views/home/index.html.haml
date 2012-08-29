@@ -23,24 +23,14 @@
       %span.highlight flexible timings
       &amp;
       %span.highlight your level of luxury.
-    %div{:style => "font-family: Helvetica, Sans"}
-      %h2 Not a commuter?
-      %h2
-        Help us spread the word on
-        %a#twitter{:href => "http://clicktotweet.com/tc83f"}
-          twitter
-        and facebook.
-      <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="true"></div>
+      <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="false"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out rBus.in - stress free commutes for Mumbai" data-via="rbus_in" data-size="large">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   .span5{:style => "display: table"}
-    .row
-      %a{:href => intended_trips_path(:map => true)}
-        %h1{:style => "margin-bottom:10px; margin-left: 20px;"}
-          %span.highlight
-            = IntendedTrip.all.count
-          commutes registered
     .row{:style => "margin: auto"}
       #new_form{:style => "display: table-cell; vertical-align: middle;"}
         = render 'intended_trips/form'
+
   .span3
     :plain
       <script charset="utf8" src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -48,7 +38,7 @@
       new TWTR.Widget({
       version: 2,
       type: 'profile',
-      rpp: 5,
+      rpp: 3,
       interval: 30000,
       width: 300,
       height: 300,
@@ -71,6 +61,8 @@
       }
       }).render().setUser('rbus_in').start();
       </script>
+
+
       
 .row
   %ul.thumbnails

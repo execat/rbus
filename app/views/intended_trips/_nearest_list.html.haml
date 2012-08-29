@@ -1,4 +1,7 @@
+
 :plain
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -13,12 +16,12 @@
     %span.highlight.bigger
       = @intended_trips.count
     trips within 2 kms
-  %h3
-    Spread the word on 
-    %a{:href => "http://clicktotweet.com/tc83f"}
-      twitter
-    and facebook. The more people you find to share your commute, the sooner we can arrange a bus for you all.
-    <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="450" data-show-faces="true"></div>
+  %h3 
+    Spread the word!
+    %br
+    %a{:href => "https://twitter.com/share", :class => "twitter-share-button", :'data-text' => "Come join my commute from #{@intended_trip.from_name} to #{@intended_trip.to_name}", :'data-via' => "rbus_in", :'data-size' => "large"} Tweet
+    <div class="fb-like" data-href=#{request.path} data-send="true" data-width="450" data-show-faces="true"></div>
+
 - if @intended_trips.count > 0
   %table.table
     %thead
