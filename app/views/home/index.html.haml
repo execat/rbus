@@ -23,9 +23,18 @@
       %span.highlight flexible timings
       &amp;
       %span.highlight your level of luxury.
-      <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="false"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out rBus.in - stress free commutes for Mumbai" data-via="rbus_in" data-size="large">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    .well{:style => "padding: 5px"}
+      As seen in
+      %br
+      %a{:href => "http://www.dnaindia.com/mumbai/report_bus-pool-may-take-you-to-work-soon_1734424", :target => "_blank"}
+        = image_tag 'logo-dna.gif', :width => "100px"
+      %a{:href => "http://valuemax.in/?p=488", :target => "_blank"}
+        = image_tag 'valuemax.png'
+
+    <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="false"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out rBus.in - stress free commutes for Mumbai" data-via="rbus_in" data-size="large">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
   .span5{:style => "display: table"}
     .row{:style => "margin: auto"}
       %h1
@@ -165,15 +174,6 @@
     rBus works very simply. First, we gather the commute details of people. Then, when we find enough of them going from the same place to the same place, we 
     start running buses between those points. If we find say 200 people, it means we can run 10 twenty-seater buses on that route, which gives you ample
     flexibility in terms of timings. We wire up the buses with GPS and voila - your personal public transport system!
-  .faq#expensive
-    %h3 Why is it so expensive compared to the bus/train?
-    Since we are not subsidised by the taxpayer, it does cost a bit more for us to provide all the nice features like
-    %ul
-      %li guaranteed seating
-      %li point-to-point service (faster than the bus)
-      %li no bus changes en-route (get in, sit down, relax! till you reach office)
-      %li no waiting at bus stops/stations - get intimated by SMS/email as bus approaches your stop.
-    Waiting for the bus costs you in terms of time. We eliminate the wait entirely!
     %h3 Can we have rBus in my city?
     rBus is currently operational only in Mumbai as that's where I live. However, if you wish to start an rBus service in your city I will provide the 
     software to manage the service there. You will have to run it under your own brand name (not rBus) and you can pay me something for the 
