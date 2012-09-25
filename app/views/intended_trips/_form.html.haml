@@ -98,15 +98,15 @@
           %li= msg
   %form{:style => "margin: 0px;"}
     %label I live at
-    %input{:id => "from"}
+    %input{:id => "from", :value => @intended_trip.from_name}
     %br
     %label and work at
-    %input{:id => "to"}
+    %input{:id => "to", :value => @intended_trip.to_name}
   = form_for @intended_trip do |f|
-    = f.hidden_field :from_name, :class => "span4", :placeholder => "i.e. Inorbit Mall", :value => params[:from]
+    = f.hidden_field :from_name, :class => "span4", :placeholder => "i.e. Inorbit Mall", :value => params[:from] || @intended_trip.from_name
     = f.hidden_field :from_lat
     = f.hidden_field :from_lng
-    = f.hidden_field :to_name, :class => "span4", :placeholder => "i.e. Marol", :value => params[:to]
+    = f.hidden_field :to_name, :class => "span4", :placeholder => "i.e. Marol", :value => params[:to] || @intended_trip.to_name
     = f.hidden_field :to_lat
     = f.hidden_field :to_lng
     %label on

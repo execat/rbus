@@ -247,7 +247,7 @@ describe IntendedTripsController do
     
     describe "own trip" do
       it "should assign data correctly" do
-        IntendedTrip.any_instance.should_receive(:update).with("from_lat" => "55")
+        IntendedTrip.any_instance.should_receive(:save)
         post :update, {:id => @my_trip.id, :intended_trip => {:from_lat => 55}}
       end
 

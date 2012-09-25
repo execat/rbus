@@ -95,8 +95,8 @@ class IntendedTripsController < ApplicationController
     @intended_trip = IntendedTrip.get(params[:id])
 
     respond_to do |format|
-      if @intended_trip.update(params[:intended_trip])
-        format.html { redirect_to @intended_trip, notice: 'Intended trip was successfully updated.' }
+      if @intended_trip.save
+        format.html { redirect_to @intended_trip, notice: 'Your trip has been updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
