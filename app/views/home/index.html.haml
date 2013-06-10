@@ -13,7 +13,9 @@
   .span4#headline
     %h1 Mumbai,   
     %h2
-      Stress free commutes are here!
+      Stress free commutes are here
+      %span.highlight
+        from Rs.1800 only!
     %h3
       Simply leave us your commute details and we'll arrange for you a
       %span.highlight point-to-point 
@@ -23,16 +25,13 @@
       %span.highlight flexible timings
       &amp;
       %span.highlight your level of luxury.
-    .well{:style => "padding: 5px"}
+    .well{:style => "padding: 5px; margin-top: 15px"}
       As seen in
       %br
       %a{:href => "http://www.pluggd.in/rbus-attempts-to-reduce-traffic-in-mumbai-by-creating-buspools-297/", :target => "_blank"}
         = image_tag 'pi.jpeg'
       %a{:href => "http://www.dnaindia.com/mumbai/report_bus-pool-may-take-you-to-work-soon_1734424", :target => "_blank"}
         = image_tag 'logo-dna.gif'
-    <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="400" data-show-faces="false"></div>
-    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out rBus.in - stress free commutes for Mumbai" data-via="rbus_in" data-size="large">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   .span5{:style => "display: table"}
     .row{:style => "margin: auto"}
@@ -43,6 +42,7 @@
         = render 'intended_trips/form'
 
   .span3
+    <div style="margin-top: 1.5em;">&nbsp;</div>
     :plain
       <script charset="utf8" src="http://widgets.twimg.com/j/2/widget.js"></script>
       <script>
@@ -72,6 +72,9 @@
       }
       }).render().setUser('rbus_in').start();
       </script>
+    <div class="fb-like" data-href="http://rbus.in" data-send="true" data-width="300" data-show-faces="false" style="margin-top: 10px"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out rBus.in - stress free commutes for Mumbai" data-via="rbus_in" data-size="large">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
       
@@ -81,12 +84,12 @@
       = image_tag 'gps.png'
       %h1
         Zero Waiting
-      We have GPS on all busses. Wait for your bus in the comfort of your home or office, and be alerted as it approaches
+      Wait for your bus in the comfort of your home or office, and be alerted as it approaches
     %li.span4
       = image_tag 'qrcode.png'
       %h1
         Guaranteed Seat
-      When you're ready to leave, use our mobile/web app to reserve a seat on the bus
+      Book your seat in advance and ride daily in comfort with no tension.
     %li.span4
       = image_tag 'bus-icon.png', :style => "padding-bottom: 40px"
       %h1
@@ -97,19 +100,19 @@
   %h1 plans and pricing
   Commuter plans start from monthly payment of 
   %span.highlight
-    Rs. 1200 for trips less than 20km 
-  (round trip) going up to 
+    Rs. 1800 for trips less than 20km (round trip) 
+  going up to 
   %span.highlight
-    Rs. 3000 for 80 km 
+    Rs. 4000 for 80 km (round trip)
   commute for 
   %span.highlight
     non a/c bus. 
   For a/c, the rates are 
   %span.highlight
-    Rs. 2000 
+    Rs. 2800 
   and 
   %span.highlight
-    Rs. 5000 
+    Rs. 7000 
   respectively.
   %span.highlight
     More people sign up, cheaper it gets!
@@ -117,7 +120,7 @@
 
   %p 
     %h2 See how our pricing compares with other modes of transport
-    %table.table
+    %table.table#pricing
       %thead
         %tr
           %th mode of commute
@@ -139,12 +142,12 @@
         %td 1500
         %td bad
         %td very bad
-      %tr{:style => "background: lightgreen"}
+      %tr.yellow-gradient
         %td rBus non-a/c
         %td 2000
         %td good
         %td very good
-      %tr{:style => "background: lightgreen"}
+      %tr.yellow-gradient
         %td rBus a/c
         %td 3000
         %td good

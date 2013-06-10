@@ -212,3 +212,21 @@ ul.ui-autocomplete {
 .red {
   color: red;
 }
+
+
+.yellow-gradient {
+  background: lightyellow;
+}
+
+
+table#pricing {
+  background: #fcfcfc;
+  font-size: 1em;
+  border-radius: 5px;
+  th {
+    font-size: 1.4em;
+    background: lightyellow;
+    font-weight: normal;
+  }
+  box-shadow: 2px 2px 4px #ccc;
+}
