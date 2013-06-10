@@ -13,6 +13,7 @@ class IntendedTrip
   property :to_lat, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
   property :to_lng, Decimal, :precision => 18, :scale => 15, :required => true, :max => 90, :min => -90
 
+  property :type, String
 
   belongs_to :user
 
@@ -29,7 +30,7 @@ class IntendedTrip
     t = distance(:to)
     trips_with_distance.where{(f + t <= meters)}.exclude(:id => self.id).all
   end
-
+ 
   # Public: gets the nearest trips, sorted by a given order
   # params     ->  a Hash with keys for limit and offset. Defaults to {:limit => 20, :offset => 0}
   # sort_order -> one of :from, :to or :total, specifying whether to sort on distance at start, distance at end or total distance. Defaults to :total

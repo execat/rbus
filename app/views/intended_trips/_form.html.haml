@@ -111,6 +111,8 @@
     = f.hidden_field :to_lng
     %label on
     = f.select :on, ["weekdays", "weekdays and saturday", "all days"]
+    %label type
+    = f.select :type, ["a/c", "non-a/c"]
     %br
     - unless current_user
       = f.fields_for :user do |u|
