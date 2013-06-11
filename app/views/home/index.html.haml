@@ -130,43 +130,82 @@
       %tr
         %td BEST
         %td 600
-        %td very bad
-        %td very good
+        %td
+          - 2.times do |i|
+            = image_tag('saddey.png')
+
+        %td
+          - 2.times do |i|
+            = image_tag('smiley.png')
+
       %tr
         %td train + rickshaw
         %td 1000
-        %td very bad        
-        %td bad
+        %td 
+          - 2.times do |i|
+            = image_tag('saddey.png')
+        %td
+          - 1.times do |i|
+            = image_tag('saddey.png')
       %tr
         %td motorcycle
         %td 1500
-        %td bad
-        %td very bad
+        %td
+          - 3.times do |i|
+            = image_tag('saddey.png')
+        %td
+          - 3.times do |i|
+            = image_tag('saddey.png')
       %tr.yellow-gradient
         %td rBus non-a/c
         %td 2000
-        %td good
-        %td very good
+        %td
+          - 2.times do |i|
+            = image_tag('smiley.png')
+        %td
+          - 2.times do |i|
+            = image_tag('smiley.png')
+
       %tr.yellow-gradient
         %td rBus a/c
         %td 3000
-        %td good
-        %td very good
+        %td
+          - 2.times do |i|
+            = image_tag('smiley.png')
+        %td
+          - 3.times do |i|
+            = image_tag('smiley.png')
+
       %tr
         %td rickshaw
         %td 3000
-        %td bad
-        %td bad
+        %td
+          - 2.times do |i|
+            = image_tag('saddey.png')
+
+        %td
+          - 1.times do |i|
+            = image_tag('saddey.png')
+
       %tr
         %td self driven car
         %td 12000
-        %td very good
-        %td good
+        %td
+          - 2.times do |i|
+            = image_tag('smiley.png')
+        %td
+          - 3.times do |i|
+            = image_tag('smiley.png')
+
       %tr
         %td chauffeur-driven car
         %td 20000
-        %td very good
-        %td good
+        %td
+          - 3.times do |i|
+            = image_tag('smiley.png')
+        %td
+          - 2.times do |i|
+            = image_tag('smiley.png')
   
   
 .row
