@@ -21,7 +21,7 @@ feature "edit trips" do
     click_on 'Register my Trip'
     click_on 'Edit'
     page.should have_content 'Inorbit Mall'
-    page.find('#intended_trip_to_lat').value.should == "18.994359"
+    page.find('#intended_trip_to_lat').value.should == "18.99501"
     fill_in 'from', :with => "Malabar Hill"
     sleep(1)
     find(".pac-item").click
