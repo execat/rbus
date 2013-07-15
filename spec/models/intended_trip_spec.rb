@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'debugger'
 describe IntendedTrip do
 
   it {should have_property(:on) }
@@ -28,11 +27,11 @@ describe IntendedTrip do
                                    ]
     end
     it "trips within" do
-      @t1.trips_within(13000)[0].except(:from_lat, :from_lng, :to_lat, :to_lng).should == 
+      @t1.trips_within(13000)[0].except(:from_lat, :from_lng, :to_lat, :to_lng).should ==
                                          { :id => @t3.id, :from_name => @t3.from_name, :to_name => @t3.to_name,
                                            :fdist => 11132.0031845342, :tdist => 890.560254762731
                                          }
-                                        
+
     end
 
     describe "#filter" do
@@ -40,7 +39,7 @@ describe IntendedTrip do
         @from_coordinates = {:lng1 => 0, :lat1 => 0, :lng2 => 0.01, :lat2 => 0.01}
         @to_coordinates = {:lng1 => 0.0, :lat1 => 0.008, :lng2 => 0.1, :lat2 => 0.108}
       end
-      
+
       it "should return all with no trips" do
         IntendedTrip.filter.should == IntendedTrip.all
       end
@@ -52,7 +51,7 @@ describe IntendedTrip do
       it "should filter to correctly" do
         IntendedTrip.filter(:to => @to_coordinates).should == [@t1,@t2, @t3]
       end
-      
+
       it "should filter both correctly" do
         IntendedTrip.filter(:from => @from_coordinates, :to => @to_coordinates).should == [@t1, @t2]
       end

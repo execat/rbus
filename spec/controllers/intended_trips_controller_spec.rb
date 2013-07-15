@@ -1,4 +1,3 @@
-require 'debugger'
 require 'spec_helper'
 
 describe IntendedTripsController do
@@ -17,24 +16,27 @@ describe IntendedTripsController do
           :intended_trip => {
             :from_name => "from", :from_lat => 0, :from_lng => 0,
             :to_name => "to", :to_lat => 0, :to_lng => 0,
-            :on => "weekdays", 
+            :on => "weekdays",
             :user => {:email => @email, :password => "abcdef", :password_confirmation => "abcdef"}
           }
         }
       end
       it "should assign @trip properly" do
         post :create, @valid_user_params
-        assigns[:intended_trip_creator].trip.should  be_instance_of(IntendedTrip).with(:from_name => "from", :to_name => "to", :on => "weekdays")
+        assigns[:intended_trip_creator].trip.should  be_instance_of(IntendedTrip)
+        {:from_name => "from", :to_name => "to", :on => "weekdays"}.each do |attr, value|
+          assigns[:intended_trip_creator].trip.send(attr).should == value
+        end
         assigns(:map).should be_nil
         response.should redirect_to assigns(:intended_trip_creator).trip
       end
       it "should add a new trip" do
-        expect {         
+        expect {
           post :create, @valid_user_params
         }.to change(IntendedTrip, :count).by(1)
       end
       it "should send confirmation email" do
-        expect {         
+        expect {
           post :create, @valid_user_params
         }.to change(ActionMailer::Base.deliveries, :count).by(1)
       end
@@ -46,14 +48,14 @@ describe IntendedTripsController do
           :intended_trip => {
             :from_name => "from", :from_lat => 0, :from_lng => 0,
             :to_name => "to", :to_lat => 0, :to_lng => 0,
-            :on => "weekdays", 
+            :on => "weekdays",
             :user => {:email => "abc", :password => "abcdef", :password_confirmation => "abcdef"}
           }
         }
         assigns(:intended_trip_creator).errors.keys.should include(:email)
         response.should render_template(:new)
       end
-    end      
+    end
 
     describe "with invalid bus_stops" do
       before :each do
@@ -62,7 +64,7 @@ describe IntendedTripsController do
           :intended_trip => {
             :from_name => "from", :from_lat => 0,
             :to_name => "to", :to_lat => 0, :to_lng => 0,
-            :on => "weekdays", 
+            :on => "weekdays",
             :user => {:email => @u.email, :password => "abcdef", :password_confirmation => "abcdef"}
           }
         }
@@ -77,7 +79,7 @@ describe IntendedTripsController do
         expect { post :create, @invalid_bus_stop_params}.to change(User, :count).by(0)
       end
     end
-    
+
   end
 
   context "new trip by unloggedin user with existing email" do
@@ -86,7 +88,7 @@ describe IntendedTripsController do
         :intended_trip => {
           :from_name => "from", :from_lat => 0, :from_lng => 0,
           :to_name => "to", :to_lat => 0, :to_lng => 0,
-          :on => "weekdays", 
+          :on => "weekdays",
           :user => {:email => @u.email}
         }
       }
@@ -118,18 +120,18 @@ describe IntendedTripsController do
           :intended_trip => {
             :from_name => "from", :from_lat => 0, :from_lng => 0,
             :to_name => "to", :to_lat => 0, :to_lng => 0,
-            :on => "weekdays", 
+            :on => "weekdays",
           }
         }
       }.to change(IntendedTrip, :count).by(1)
     end
-    
+
     it "should not create a trip if user id is for other user" do
       post :create, {
         :intended_trip => {
           :from_name => "from", :from_lat => 0, :from_lng => 0,
           :to_name => "to", :to_lat => 0, :to_lng => 0,
-          :on => "weekdays", 
+          :on => "weekdays",
           :user_id => @u2.id
         }
       }
@@ -166,10 +168,10 @@ describe IntendedTripsController do
     describe "filter" do
       before :each do
         IntendedTrip.all.destroy!
-        @t1 = create_trip_by_latlng(0,0,1,1) 
-        @t2 = create_trip_by_latlng(0,0,0.5,0.5) 
-        @t3 = create_trip_by_latlng(1,1,1,1) 
-        @t4 = create_trip_by_latlng(1,1,2,2) 
+        @t1 = create_trip_by_latlng(0,0,1,1)
+        @t2 = create_trip_by_latlng(0,0,0.5,0.5)
+        @t3 = create_trip_by_latlng(1,1,1,1)
+        @t4 = create_trip_by_latlng(1,1,2,2)
       end
 
       it "should filter properly" do
@@ -177,7 +179,7 @@ describe IntendedTripsController do
         assigns(:intended_trips).should == [@t1, @t2]
         response.should render_template(:filter)
       end
-      
+
     end
   end
 
@@ -200,7 +202,7 @@ describe IntendedTripsController do
         @deleted_trip = FactoryGirl.create(:intended_trip)
         @deleted_trip.destroy
       end
-      
+
       it "should render template ok" do
         get :show, {:id => @my_trip.id}
         response.should render_template(:show)
@@ -215,7 +217,7 @@ describe IntendedTripsController do
       @other_trip = FactoryGirl.create(:intended_trip, :user => @u2)
       sign_in @u
     end
-    
+
     describe "own trip" do
       it "should assign data correctly" do
         get :edit, {:id => @my_trip.id}
@@ -244,7 +246,7 @@ describe IntendedTripsController do
       @other_trip = FactoryGirl.create(:intended_trip, :user => @u2)
       sign_in @u
     end
-    
+
     describe "own trip" do
       it "should assign data correctly" do
         IntendedTrip.any_instance.should_receive(:save)

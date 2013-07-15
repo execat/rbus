@@ -30,3 +30,12 @@ end
 
 
 DataMapper.auto_migrate!
+
+module DataMapper
+  module Resource
+
+    def new_record?
+      new?
+    end
+  end
+end
