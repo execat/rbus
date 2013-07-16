@@ -17,3 +17,6 @@
 dump.sql
 *dump
 *\#*
+
+.DS_Store
+.rvmrc
