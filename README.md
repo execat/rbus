@@ -37,3 +37,8 @@ rspec spec
 Enjoy. Let me know if something doesn't work.
 
 Send me PRs!
+
+## License
+
+The code for rBus in licensed under the Apache License 2.0.
+
